@@ -1,0 +1,14 @@
+base: 'https://dev-typografix.de/elisabethstift/app/'
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    languageId: 0
+    base: /
+    locale: de_DE
+    navigationTitle: Deutsch
+    flag: de
+    hreflang: de-DE
+    websiteTitle: ''
+rootPageId: 1
+websiteTitle: ''
