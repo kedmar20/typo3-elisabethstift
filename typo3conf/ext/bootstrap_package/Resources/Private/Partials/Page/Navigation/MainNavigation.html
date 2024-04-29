@@ -6,15 +6,14 @@
                 <f:then>
                     <li class="nav-spacer" aria-hidden="true"></li>
                 </f:then>
-                <f:else>
-
-                    <f:variable name="dropdownStyle">simple</f:variable>
-                    <f:for each="{item.children}" as="tempChild">
-                        <f:if condition="{tempChild.children}">
-                            <f:variable name="dropdownStyle">mega</f:variable>
-                        </f:if>
-                    </f:for>
-                    <li class="nav-item{f:if(condition: item.children, then:' nav-style-{dropdownStyle}')}">
+            <f:else>
+                <f:variable name="dropdownStyle">simple</f:variable>
+                 <f:for each="{item.children}" as="tempChild">
+                     <f:if condition="{tempChild.children}">
+                        <f:variable name="dropdownStyle">mega</f:variable>
+                    </f:if>
+                </f:for>
+                <li class="nav-item{f:if(condition: item.children, then:' nav-style-{dropdownStyle}')}">
                         <a
                             id="nav-item-{item.data.uid}"
                             href="{item.link}"
@@ -50,9 +49,8 @@
                         <div class="dropdown-menu{f:if(condition: item.children, then:' dropdown-menu-{dropdownStyle}')}">
                             <f:render partial="Navigation/MainNavigationDropDown" arguments="{data: data, page: item, items: item.children, theme: theme}" />
                         </div>
-                    </li>
-
-                </f:else>
+                </li>
+            </f:else>
             </f:if>
         </f:for>
     </ul>

@@ -30,22 +30,17 @@ mod {
                             3 {
                                 columns {
                                     1 {
-                                        name = LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:backend_layout.column.middle1
+                                        name = LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:backend_layout.2_columns_50_50
                                         colPos = 20
-                                        colspan = 4
+                                        colspan = 6
                                     }
                                     2 {
-                                        name = LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:backend_layout.column.middle2
+                                        name = LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:backend_layout.2_columns_50_50
                                         colPos = 21
-                                        colspan = 4
-                                    }
-                                    3 {
-                                        name = LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:backend_layout.column.middle3
-                                        colPos = 22
-                                        colspan = 4
-                                    }
+                                        colspan = 6
+                                    }                                
                                 }
-                            }
+                            }                        
                             4 {
                                 columns {
                                     1 {
@@ -58,13 +53,32 @@ mod {
                             5 {
                                 columns {
                                     1 {
+                                        name = LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:backend_layout.column.custom1
+                                        colPos = 120
+                                        colspan = 4
+                                    }
+                                    2 {
+                                        name = LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:backend_layout.column.custom2
+                                        colPos = 121
+                                        colspan = 4
+                                    }
+                                    3 {
+                                        name = LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:backend_layout.column.custom3
+                                        colPos = 122
+                                        colspan = 4
+                                    }
+                                }
+                            }
+                            6 {
+                                columns {
+                                    1 {
                                         name = LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:backend_layout.column.contentafter
                                         colPos = 9
                                         colspan = 12
                                     }
                                 }
                             }
-                            6 {
+                            7 {
                                 columns {
                                     1 {
                                         name = LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:backend_layout.column.footer1

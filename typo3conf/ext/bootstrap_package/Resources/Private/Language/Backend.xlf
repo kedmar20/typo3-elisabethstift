@@ -82,6 +82,15 @@
             <trans-unit id="backend_layout.column.middle3">
                 <source>Middle: Right</source>
             </trans-unit>
+             <trans-unit id="backend_layout.column.custom1">
+                <source>Custom: Left</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.custom2">
+                <source>Custom: Center</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.custom3">
+                <source>Custom: Right</source>
+            </trans-unit>
 
             <trans-unit id="backend_layout.column.main2">
                 <source>Normal 2</source>
