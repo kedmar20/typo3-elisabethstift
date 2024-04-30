@@ -37,7 +37,7 @@ return [
         'bootstrap_package' => [
             'disableCssProcessing' => '0',
             'disableGoogleFontCaching' => '0',
-            'disablePageTsBackendLayouts' => '0',
+            'disablePageTsBackendLayouts' => '1',
             'disablePageTsContentElements' => '0',
             'disablePageTsRTE' => '0',
             'disablePageTsTCADefaults' => '0',
