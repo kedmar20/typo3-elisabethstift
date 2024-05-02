@@ -2,7 +2,11 @@
    <f:comment>DropIn Placeholder. Will be rendered after the main menu, inside the wrapping container.</f:comment>
    <!--////////Start MainAfter//////////////////////////////////////////////////////////-->
 
-   <form
+  
+
+ 
+   <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="">
+      <form
       method="post"
       id="tx_indexedsearch"
       action="/elisabethstift/app/suchergebnis?tx_indexedsearch_pi2%5Baction%5D=search&amp;tx_indexedsearch_pi2%5Bcontroller%5D=Search&amp;cHash=f72ab313864097c88a9cfe58008ca4af"
@@ -59,8 +63,25 @@
         
       </fieldset>
    </form>
+    </div>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+         
+            <svg aria-hidden="true" class="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+               <path
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"
+               ></path>
+            </svg>
+       
+        </button>
+      </div>
+    </nav>
 
-   <div>
+
+    <div>
       <svg aria-hidden="true" class="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
          <path
             stroke="currentColor"
@@ -69,4 +90,5 @@
          ></path>
       </svg>
    </div>
+
 </html>
