@@ -3,4 +3,3 @@ node_modules/
 .htaccess
 index.php
 typo3temp/
-fileadmin/
