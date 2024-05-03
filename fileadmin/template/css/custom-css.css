@@ -46,6 +46,12 @@
 
 /**************************************************/
 /*FONTS*/
+.h1 {
+   color: red;
+}
+.h5 {
+   color: green;
+}
 .font-header-menu-desktop {
    font-family: "Catamaran";
    font-size: 24px;
@@ -112,7 +118,7 @@ header.navbar-mainnavigation {
    .container-lg,
    .container-xl,
    .container-xxl {
-      max-width: 83%;
+      max-width: 88%;
       padding: 0;
    }
    ul.navbar-nav {
