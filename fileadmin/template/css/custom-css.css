@@ -1,97 +1,143 @@
 /* catamaran-regular - latin */
 @font-face {
    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-   font-family: 'Catamaran';
+   font-family: "Catamaran";
    font-style: normal;
    font-weight: 400;
-   src: url('../fonts/catamaran-v19-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        url('../fonts/catamaran-v19-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
- }
- /* catamaran-500 - latin */
- @font-face {
+   src: url("../fonts/catamaran-v19-latin-regular.woff2") format("woff2"),
+      /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url("../fonts/catamaran-v19-latin-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* catamaran-500 - latin */
+@font-face {
    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-   font-family: 'Catamaran';
+   font-family: "Catamaran";
    font-style: normal;
    font-weight: 500;
-   src: url('../fonts/catamaran-v19-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        url('../fonts/catamaran-v19-latin-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
- }
- /* catamaran-600 - latin */
- @font-face {
+   src: url("../fonts/catamaran-v19-latin-500.woff2") format("woff2"),
+      /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url("../fonts/catamaran-v19-latin-500.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* catamaran-600 - latin */
+@font-face {
    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-   font-family: 'Catamaran';
+   font-family: "Catamaran";
    font-style: normal;
    font-weight: 600;
-   src: url('../fonts/catamaran-v19-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        url('../fonts/catamaran-v19-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
- }
- /* catamaran-700 - latin */
- @font-face {
+   src: url("../fonts/catamaran-v19-latin-600.woff2") format("woff2"),
+      /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url("../fonts/catamaran-v19-latin-600.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* catamaran-700 - latin */
+@font-face {
    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-   font-family: 'Catamaran'; 
+   font-family: "Catamaran";
    font-style: normal;
    font-weight: 700;
-   src: url('../fonts/catamaran-v19-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        url('../fonts/catamaran-v19-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
- }
- /* catamaran-800 - latin */
- @font-face {
+   src: url("../fonts/catamaran-v19-latin-700.woff2") format("woff2"),
+      /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url("../fonts/catamaran-v19-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* catamaran-800 - latin */
+@font-face {
    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-   font-family: 'Catamaran';
+   font-family: "Catamaran";
    font-style: normal;
    font-weight: 800;
-   src: url('../fonts/catamaran-v19-latin-800.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        url('../fonts/catamaran-v19-latin-800.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
- }
+   src: url("../fonts/catamaran-v19-latin-800.woff2") format("woff2"),
+      /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url("../fonts/catamaran-v19-latin-800.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
 
- /**************************************************/
- .font-header-menu-desktop {
-font-family: 'Catamaran';
-font-size: 24px;
-font-weight: 700;
-color: #003087;
- }
-
- /**************************************************/
+/**************************************************/
+/*FONTS*/
+.font-header-menu-desktop {
+   font-family: "Catamaran";
+   font-size: 24px;
+   font-weight: 700;
+   color: #003087;
+}
+@media (max-width: 1440px) {
+   .font-header-menu-desktop {
+      font-size: 22px;
+   }
+}
+@media (max-width: 1200px) {
+   .font-header-menu-desktop {
+      font-size: 20px;
+   }
+}
+/**************************************************/
 body {
-   background-color: aquamarine;   
+   background-color: aquamarine;
    font-family: "gelica", sans-serif;
 }
 
 /*Navbar-Searchbar-dieLupe*/
-.pre-nav-design-icon {    
+.pre-nav-design-icon {
    width: 24px;
    height: 24px;
 }
 
-#mainnavigation > nav > div > button{ 
+#mainnavigation > nav > div > button {
    background-color: transparent;
-   border: none;   
+   border: none;
 }
 
-.custom-icon-menu{
-transition: transform 0.5s ease;
+.custom-icon-menu {
+   transition: transform 0.5s ease;
+   width: 34px;
+   height: 34px;
 }
-.custom-icon-menu:hover{   
+.custom-icon-menu:hover {
    transform: scale(0.8);
 }
-
-@media (min-width: 992px){
+#tx-indexedsearch-searchbox-sword {
+   order: 1;
+}
+#tx-indexedsearch-searchbox-button-submit {
+   order: 2;
+}
+#navbarToggleExternalContent {
+   width: 100%;
+}
+header.navbar-mainnavigation {
+   flex-wrap: wrap;
+}
+@media (min-width: 992px) {
    .navbar-mainnavigation .navbar-nav {
       flex-direction: row;
       justify-content: end;
-  }
+   }
 }
-@media (min-width: 1400px){
-.container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 83%;
-    padding: 0;    
+@media (min-width: 1400px) {
+   .container,
+   .container-sm,
+   .container-md,
+   .container-lg,
+   .container-xl,
+   .container-xxl {
+      max-width: 83%;
+      padding: 0;
+   }
+   ul.navbar-nav {
+      gap: 38px !important;
+      padding-right: 38px;
+   }
 }
-ul.navbar-nav {
-   gap: 38px !important;
-   padding-right: 38px;
-}
-}
-a:hover{
+a:hover {
    color: #003087;
+}
+@media (max-width: 992px) {
+   #mainnavigation > button {
+      display: none;
+   }
+   .custom-icon-menu {
+      height: 25px;
+   }
+   nav.navbar,
+   div.custom-icon-menu {
+      display: inline-block;
+   }
+   #tx-indexedsearch-searchbox-sword {
+      order: 2;
+   }
+   #tx-indexedsearch-searchbox-button-submit {
+      order: 1;
+   }
 }
