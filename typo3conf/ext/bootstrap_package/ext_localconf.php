@@ -93,7 +93,7 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/bootstrap-package/icons']['provid
     = \BK2K\BootstrapPackage\Icons\GlyphiconsProvider::class;
 
 // Add default RTE configuration for bootstrap package
-$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['bootstrap'] = 'EXT:bootstrap_package/Configuration/RTE/Default.yaml';
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] = 'fileadmin/template/RTE/Custom.yaml';
 
 // Extend TYPO3 upgrade wizards to handle bootstrap package specific upgrades
 if (isset($GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\TYPO3\CMS\Install\Updates\SectionFrameToFrameClassUpdate::class])) {

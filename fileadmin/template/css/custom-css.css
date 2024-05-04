@@ -47,7 +47,9 @@
 /**************************************************/
 /*FONTS*/
 .h1 {
-   color: red;
+   font-family: "gelica", sans-serif;
+   font-size: 50px;
+   font-weight: 500;
 }
 .h5 {
    color: green;
@@ -56,7 +58,6 @@
    font-family: "Catamaran";
    font-size: 24px;
    font-weight: 700;
-   color: #003087;
 }
 @media (max-width: 1440px) {
    .font-header-menu-desktop {
@@ -78,6 +79,9 @@ body {
 .pre-nav-design-icon {
    width: 24px;
    height: 24px;
+   background-color: red;
+   font-family: "gelica", sans-serif;
+   color: beige;
 }
 
 #mainnavigation > nav > div > button {
