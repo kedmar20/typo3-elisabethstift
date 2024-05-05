@@ -30,9 +30,11 @@ editor:
             - { model: "formatted", view: "p", title: "Pre-Formatted Text" }
 
       stylesSet:
-         - { name: "Lead22", element: "p", attributes: { "class": "lead" } }
-         - { name: "Lead232", element: "h2", attributes: { "class": "pre-nav-design-icon" } }
-         - { name: "Small", element: "small" }
+         - { name: "Gelica50regular", element: "h2", attributes: { "class": "gelica-50-regular" } }
+         - { name: "Gelica40regular", element: "h2", attributes: { "class": "gelica-40-regular" } }
+         - { name: "Catamaran24bold", element: "h4", attributes: { "class": "catamaran-24-bold" } }
+         - { name: "Catamaran25semiBold", element: "h4", attributes: { "class": "catamaran-25-semibold" } }
+         - { name: "Catamaran22regular", element: "h5", attributes: { "class": "catamaran-22-medium" } }
 
          - { name: "Table", element: "table", attributes: { "class": "table" } }
          - { name: "Table Striped", element: "table", attributes: { "class": "table table-striped" } }
@@ -88,18 +90,15 @@ editor:
          - { name: "List Ban", element: "ul", attributes: { "class": "list-ban" } }
          - { name: "List Chevron", element: "ul", attributes: { "class": "list-chevron" } }
 
-         - { name: "Lowercased text", element: "span", attributes: { "class": "text-lowercase" } }
-         - { name: "Uppercased text", element: "span", attributes: { "class": "text-uppercase" } }
-         - { name: "Capitalized text", element: "span", attributes: { "class": "text-capitalize" } }
-         - { name: "Muted", element: "span", attributes: { "class": "text-muted" } }
-         - { name: "Primary", element: "span", attributes: { "class": "text-primary" } }
-         - { name: "Secondary", element: "span", attributes: { "class": "text-secondary" } }
-         - { name: "Tertiary", element: "span", attributes: { "class": "text-tertiary" } }
-         - { name: "Quaternary", element: "span", attributes: { "class": "text-quaternary" } }
-         - { name: "Success", element: "span", attributes: { "class": "text-success" } }
-         - { name: "Info", element: "span", attributes: { "class": "text-info" } }
-         - { name: "Warning", element: "span", attributes: { "class": "text-warning" } }
-         - { name: "Danger", element: "span", attributes: { "class": "text-danger" } }
+         - { name: "Lowercased Text", element: "span", attributes: { "class": "text-lowercase" } }
+         - { name: "Uppercased Text", element: "span", attributes: { "class": "text-uppercase" } }
+         - { name: "Capitalized Text", element: "span", attributes: { "class": "text-capitalize" } }
+
+         - { name: "Color:Blue", element: "span", attributes: { "class": "custom-blue" } }
+         - { name: "Color:Orange", element: "span", attributes: { "class": "text-secondary custom-orange" } }
+         - { name: "Color:LightBlue", element: "span", attributes: { "class": "text-tertiary custom-lightblue" } }
+         - { name: "Color:Violet", element: "span", attributes: { "class": "text-quaternary custom-violet" } }
+         - { name: "Color:White", element: "span", attributes: { "class": "text-success custom-white" } }
 
       toolbarGroups:
          - { name: styles, groups: [format, styles] }
