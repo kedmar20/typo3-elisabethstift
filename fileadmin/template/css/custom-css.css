@@ -1,3 +1,8 @@
+:root,
+[data-bs-theme="light"] {
+   --bs-secondary-rgb: 255, 105, 0 !important;
+}
+
 /* catamaran-regular - latin */
 @font-face {
    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -46,42 +51,189 @@
 
 /**************************************************/
 /*FONTS*/
-.h1 {
+h1 {
    font-family: "gelica", sans-serif;
    font-size: 50px;
-   font-weight: 500;
+   font-weight: 400;
 }
-.h5 {
-   color: green;
+h2 {
+   font-family: "gelica", sans-serif;
+   font-size: 45px;
+   font-weight: 400;
 }
-.font-header-menu-desktop {
-   font-family: "Catamaran";
+h3 {
+   font-family: "gelica", sans-serif;
+   font-size: 30px;
+   font-weight: 400;
+}
+h4 {
+   font-family: "catamaran", sans-serif;
+   font-size: 25px;
+   font-weight: 400;
+}
+h5 {
+   font-family: "catamaran", sans-serif;
+   font-size: 22px;
+   font-weight: 400;
+}
+.gelica-50-regular {
+   font-family: "gelica", sans-serif;
+   font-size: 50px;
+   font-weight: 400;
+}
+.gelica-40-regular {
+   font-family: "gelica", sans-serif;
+   font-size: 40px;
+   font-weight: 400;
+}
+.catamaran-24-bold {
+   font-family: "catamaran", sans-serif;
    font-size: 24px;
    font-weight: 700;
 }
+.catamaran-25-semibold {
+   font-family: "catamaran", sans-serif;
+   font-size: 25px;
+   font-weight: 600;
+}
+.catamaran-22-medium {
+   font-family: "catamaran", sans-serif;
+   font-size: 22px;
+   font-weight: 500;
+}
+
 @media (max-width: 1440px) {
-   .font-header-menu-desktop {
+   h1 {
+      font-family: "gelica", sans-serif;
+      font-size: 45px;
+      font-weight: 400;
+   }
+   h2 {
+      font-family: "gelica", sans-serif;
+      font-size: 41px;
+      font-weight: 400;
+   }
+   h3 {
+      font-family: "gelica", sans-serif;
+      font-size: 27px;
+      font-weight: 400;
+   }
+   h4 {
+      font-family: "catamaran", sans-serif;
+      font-size: 23px;
+      font-weight: 400;
+   }
+   h5 {
+      font-family: "catamaran", sans-serif;
+      font-size: 21px;
+      font-weight: 400;
+   }
+   .gelica-50-regular {
+      font-family: "gelica", sans-serif;
+      font-size: 45px;
+      font-weight: 400;
+   }
+   .gelica-40-regular {
+      font-family: "gelica", sans-serif;
+      font-size: 41px;
+      font-weight: 400;
+   }
+   .catamaran-24-bold {
+      font-family: "catamaran", sans-serif;
       font-size: 22px;
+      font-weight: 700;
+   }
+   .catamaran-25-semibold {
+      font-family: "catamaran", sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+   }
+   .catamaran-22-medium {
+      font-family: "catamaran", sans-serif;
+      font-size: 21px;
+      font-weight: 500;
    }
 }
 @media (max-width: 1200px) {
-   .font-header-menu-desktop {
+   h1 {
+      font-family: "gelica", sans-serif;
+      font-size: 41px;
+      font-weight: 400;
+   }
+   h2 {
+      font-family: "gelica", sans-serif;
+      font-size: 37px;
+      font-weight: 400;
+   }
+   h3 {
+      font-family: "gelica", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+   }
+   h4 {
+      font-family: "catamaran", sans-serif;
       font-size: 20px;
+      font-weight: 400;
+   }
+   h5 {
+      font-family: "catamaran", sans-serif;
+      font-size: 19px;
+      font-weight: 400;
+   }
+   .gelica-50-regular {
+      font-family: "gelica", sans-serif;
+      font-size: 40px;
+      font-weight: 400;
+   }
+   .gelica-40-regular {
+      font-family: "gelica", sans-serif;
+      font-size: 37px;
+      font-weight: 400;
+   }
+   .catamaran-24-bold {
+      font-family: "catamaran", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+   }
+   .catamaran-25-semibold {
+      font-family: "catamaran", sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+   }
+   .catamaran-22-medium {
+      font-family: "catamaran", sans-serif;
+      font-size: 19px;
+      font-weight: 500;
    }
 }
+/*Colors*/
+.custom-orange {
+   color: #ff6900 !important;
+   border: #003087 solid 3px;
+}
+.custom-blue {
+   color: #003087 !important;
+}
+.custom-white {
+   color: white !important;
+}
+.custom-violet {
+   color: #8246af !important;
+}
+.custom-lightblue {
+   color: #00a7b5 !important;
+}
+
 /**************************************************/
 body {
    background-color: aquamarine;
-   font-family: "gelica", sans-serif;
+   font-family: "catamaran", sans-serif;
 }
 
 /*Navbar-Searchbar-dieLupe*/
 .pre-nav-design-icon {
    width: 24px;
    height: 24px;
-   background-color: red;
-   font-family: "gelica", sans-serif;
-   color: beige;
 }
 
 #mainnavigation > nav > div > button {
@@ -122,7 +274,7 @@ header.navbar-mainnavigation {
    .container-lg,
    .container-xl,
    .container-xxl {
-      max-width: 88%;
+      max-width: 100%;
       padding: 0;
    }
    ul.navbar-nav {
@@ -150,4 +302,19 @@ a:hover {
    #tx-indexedsearch-searchbox-button-submit {
       order: 1;
    }
+}
+
+/*Carousel-HomePage*/
+.carousel-item-type-image .carousel-image img {
+   margin: 0 0 auto auto !important;
+   width: 100% !important;
+}
+.carousel .carousel-content-inner {
+   align-items: top !important;
+}
+#c40 {
+   padding-top: 0 !important;
+}
+.carousel .item {
+   height: auto !important ;
 }
