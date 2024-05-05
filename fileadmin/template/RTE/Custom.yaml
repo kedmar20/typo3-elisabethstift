@@ -22,9 +22,12 @@ editor:
       heading:
          options:
             - { model: "paragraph", title: "Paragraph" }
-            - { model: "heading2", view: "h2", title: "Heading 2" }
-            - { model: "heading3", view: "h3", title: "Heading 3" }
-            - { model: "formatted", view: "pre", title: "Pre-Formatted Text" }
+            - { model: "heading1", view: "h1", title: "H1" }
+            - { model: "heading2", view: "h2", title: "H2" }
+            - { model: "heading3", view: "h3", title: "H3" }
+            - { model: "heading4", view: "h4", title: "H4" }
+            - { model: "heading5", view: "h5", title: "H5" }
+            - { model: "formatted", view: "p", title: "Pre-Formatted Text" }
 
       stylesSet:
          - { name: "Lead22", element: "p", attributes: { "class": "lead" } }
