@@ -2,6 +2,9 @@
 [data-bs-theme="light"] {
    --bs-secondary-rgb: 255, 105, 0 !important;
 }
+[data-bs-theme="light"] {
+   --bs-secondary-rgb: 255, 105, 0 !important;
+}
 
 /* catamaran-regular - latin */
 @font-face {
