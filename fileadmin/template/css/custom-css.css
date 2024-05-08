@@ -203,12 +203,12 @@ h5 {
    }
 }
 /*Colors*/
-.custom-orange {
-   color: #ff6900 !important;
-   border: #003087 solid 3px;
-}
 .custom-blue {
-   color: #003087 !important;
+   color: var(--bs-primary) !important;
+}
+.custom-orange {
+   color: var(--bs-secondary) !important;
+   border: #003087 solid 3px;
 }
 .custom-white {
    color: white !important;
@@ -222,10 +222,13 @@ h5 {
 
 /**************************************************/
 body {
-   background-color: aquamarine;
+   background-color: white;
    font-family: "catamaran", sans-serif;
 }
-
+/*Navbar-Searchbar-Menu*/
+.nav-link-text{
+color: red;
+}
 /*Navbar-Searchbar-dieLupe*/
 .pre-nav-design-icon {
    width: 24px;

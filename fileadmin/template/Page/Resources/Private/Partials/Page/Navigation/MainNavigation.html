@@ -44,7 +44,7 @@
                                 >
                                 <span class="nav-link-indicator" aria-hidden="true"></span>
                                 <span class="nav-link-text visually-hidden">Submenu for "{item.title}"</span>
-                            </button>
+                            </button> 
                         </f:if>
                         <div class="dropdown-menu{f:if(condition: item.children, then:' dropdown-menu-{dropdownStyle}')}">
                             <f:render partial="Navigation/MainNavigationDropDown" arguments="{data: data, page: item, items: item.children, theme: theme}" />
