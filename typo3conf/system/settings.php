@@ -147,7 +147,7 @@ return [
             'security.backend.enforceContentSecurityPolicy' => true,
             'security.usePasswordPolicyForFrontendUsers' => true,
         ],
-        'sitename' => 'New TYPO3 site',
+        'sitename' => 'Elisabethstift - Typo3',
         'systemMaintainers' => [
             1,
         ],
