@@ -110,7 +110,7 @@ editor:
          - { name: editing, groups: [spellchecker] }
          - { name: insert, groups: [insert] }
          - { name: tools, groups: [table, specialchar] }
-         - { name: document, groups: [mode] }
+         - { name: document, groups: [mode] } 
 
       format_tags: "p;h1;h2;h3;h4;h5;pre"
 
@@ -135,7 +135,7 @@ editor:
       removeButtons:
          - Anchor
          - Underline
-         - Strike
+         - Strike      
 
 classesAnchor:
    page:
