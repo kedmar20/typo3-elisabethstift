@@ -1,4 +1,8 @@
 
+#ck-editor__label_e2db87439ef60374c3a138e8a2a94a0d6{
+   display: none;
+   border: red solid 2px;
+}
 /* catamaran-regular - latin */
 @font-face {
    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -205,24 +209,28 @@ h5 {
 /*Colors*/
 .custom-blue {
    color: var(--bs-primary) !important;
+   border: #003087 solid 3px;
 }
 .custom-orange {
    color: var(--bs-secondary) !important;
-   border: #003087 solid 3px;
+   border: #FF6900 solid 3px;
 }
 .custom-white {
-   color: white !important;
+   color: var(--bs-tertiary) !important;
+   border: #ffffff solid 3px;
 }
 .custom-violet {
-   color: #8246af !important;
+   color: var(--bs-quaternary) !important;
+   border: #8246af solid 3px;
 }
 .custom-lightblue {
-   color: #00a7b5 !important;
+   color: var(--bs-success) !important;
+   border: #00a7b5 solid 3px;
 }
 
 /**************************************************/
 body {
-   background-color: white;
+   background-color: rgb(244, 145, 145);
    font-family: "catamaran", sans-serif;
 }
 /*Navbar-Searchbar-Menu*/
