@@ -1,8 +1,3 @@
-
-#ck-editor__label_e2db87439ef60374c3a138e8a2a94a0d6{
-   display: none;
-   border: red solid 2px;
-}
 /* catamaran-regular - latin */
 @font-face {
    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -233,9 +228,14 @@ body {
    background-color: rgb(244, 145, 145);
    font-family: "catamaran", sans-serif;
 }
+/*Header*/
+#page-header{
+   padding-left: 7%;
+   padding-right: 7%;
+}
 /*Navbar-Searchbar-Menu*/
 .nav-link-text{
-color: red;
+color: #003087;
 }
 /*Navbar-Searchbar-dieLupe*/
 .pre-nav-design-icon {
@@ -317,11 +317,31 @@ a:hover {
    width: 100% !important;
 }
 .carousel .carousel-content-inner {
-   align-items: top !important;
+   align-items: start !important; 
 }
 #c40 {
    padding-top: 0 !important;
 }
 .carousel .item {
    height: auto !important ;
+}
+
+/*Mega Menu - Dropdownmenu*/
+@media (min-width: 992px){
+   .navbar-mainnavigation .nav-style-simple .dropdown-menu{
+      width: 100% !important;
+   }
+   .navbar-mainnavigation .dropdown-menu{
+      position: fixed !important;
+   }
+   .dropdown-menu[data-bs-popper]{
+      top: 00%;
+       left: 0%;
+   }
+}
+
+
+/*Hero Section*/
+#page-content > div:nth-child(3){
+   padding-left: 7%;
 }
