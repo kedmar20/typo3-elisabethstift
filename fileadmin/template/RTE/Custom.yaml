@@ -1,161 +1,140 @@
+####
+# Example of what CKEditor can all bring
+###
+
+# Load default processing options
 imports:
-   - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
-   - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
-   - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Processing.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml' }
 
+# Add configuration for the editor
+# For complete documentation see https://ckeditor.com/docs/ckeditor5/latest/features/index.html
 editor:
-   externalPlugins:
-      bootstrappackage_address:
-         resource: "EXT:bootstrap_package/Resources/Public/CKEditor/Plugins/Address/plugin.min.js"
-      bootstrappackage_box:
-         resource: "EXT:bootstrap_package/Resources/Public/CKEditor/Plugins/Box/plugin.min.js"
-      bootstrappackage_columns:
-         resource: "EXT:bootstrap_package/Resources/Public/CKEditor/Plugins/Columns/plugin.min.js"
-      bootstrappackage_indent:
-         resource: "EXT:bootstrap_package/Resources/Public/CKEditor/Plugins/Indent/plugin.min.js"
-      bootstrappackage_table:
-         resource: "EXT:bootstrap_package/Resources/Public/CKEditor/Plugins/Table/plugin.min.js"
+  config:    
+    heading:
+      options:
+        - { model: 'paragraph', title: 'Paragraph' }
+        - { model: 'heading1', view: 'h1', title: 'H1' }
+        - { model: 'heading2', view: 'h2', title: 'H2' }
+        - { model: 'heading3', view: 'h3', title: 'H3' }
+        - { model: 'heading4', view: 'h4', title: 'H4' }
+        - { model: 'heading5', view: 'h5', title: 'H5' }
+        - { model: 'formatted', view: 'pre', title: 'Pre-Formatted Text' }
 
-   config:
-      contentsCss: "EXT:bootstrap_package/Resources/Public/Css/bootstrap5-rte.min.css"
+    style:
+      definitions:
+        # block level styles
+        - { name: 'Gelica50regular', element: 'h2', classes: ['gelica-50-regular', 'custom-blue'], styles: { color: '', background: 'transparent' } }
+        - { name: 'Gelica40regular', element: 'h2', classes: ['gelica-40-regular', 'custom-blue'], styles: { color: '', background: 'transparent' } }
+        - { name: 'Catamaran24bold', element: 'h4', classes: ['catamaran-24-bold', 'custom-blue'], styles: { color: '', background: 'transparent' } }
+        - { name: 'Catamaran25semiBold', element: 'h4', classes: ['catamaran-25-semibold', 'custom-blue'], styles: { color: '', background: 'transparent' } }
+        - { name: 'Catamaran22regular', element: 'h5', classes: ['catamaran-22-medium', 'custom-blue'], styles: { color: '', background: 'transparent' } }
+        
+        # Inline styles
+        - { name: 'Yellow marker', element: 'span', classes: [], styles: { background-color: 'yellow' } }
 
-      heading:
-         options:
-            - { model: "paragraph", title: "Paragraph" }
-            - { model: "heading1", view: "h1", title: "H1" }
-            - { model: "heading2", view: "h2", title: "H2" }
-            - { model: "heading3", view: "h3", title: "H3" }
-            - { model: "heading4", view: "h4", title: "H4" }
-            - { model: "heading5", view: "h5", title: "H5" }
-            - { model: "formatted", view: "p", title: "Pre-Formatted Text" }
+    toolbar:
+      items:
+        - removeFormat
+        - undo
+        - redo
+        # grouping separator
+        - '|'
+        - findAndReplace
+        - link
+        - '|'
+        - insertTable
+        - tableColumn
+        - tableRow
+        - mergeTableCells
+        - TableProperties
+        - TableCellProperties
+        - '|'
+        - selectAll
+        - '|'
+        - sourceEditing
+        - showBlocks
+        - horizontalLine
+        # line break
+        - '-'
+        - bold
+        - italic
+        - underline
+        - strikethrough
+        - subscript
+        - superscript
+        - softhyphen
+        - '|'
+        - bulletedList
+        - numberedList
+        - blockQuote
+        - indent
+        - outdent
+        - alignment
+        - '|'
+        - specialCharacters
+        - '-'
+        - heading
+        - style        
+        - fontFamily
+        - fontBackgroundColor
+        - fontColor
+        - fontSize
 
-      stylesSet:
-         - { name: "Gelica50regular", element: "h2", attributes: { "class": "gelica-50-regular" } }
-         - { name: "Gelica40regular", element: "h2", attributes: { "class": "gelica-40-regular" } }
-         - { name: "Catamaran24bold", element: "h4", attributes: { "class": "catamaran-24-bold" } }
-         - { name: "Catamaran25semiBold", element: "h4", attributes: { "class": "catamaran-25-semibold" } }
-         - { name: "Catamaran22regular", element: "h5", attributes: { "class": "catamaran-22-medium" } }
+    alignment:
+      options:
+        - { name: 'left', className: 'text-start' }
+        - { name: 'center', className: 'text-center' }
+        - { name: 'right', className: 'text-end' }
+        - { name: 'justify', className: 'text-justify' }
 
-         - { name: "Table", element: "table", attributes: { "class": "table" } }
-         - { name: "Table Striped", element: "table", attributes: { "class": "table table-striped" } }
-         - { name: "Table Bordered", element: "table", attributes: { "class": "table table-bordered" } }
-         - { name: "Table Condensed", element: "table", attributes: { "class": "table table-condensed" } }
+    table:
+      defaultHeadings: { rows: 1 }
+      contentToolbar:
+        - tableColumn
+        - tableRow
+        - mergeTableCells
+        - tableProperties
+        - tableCellProperties
+        - toggleTableCaption
 
-         - { name: "Row Active", element: "tr", attributes: { "class": "table-active" } }
-         - { name: "Row Success", element: "tr", attributes: { "class": "table-success" } }
-         - { name: "Row Info", element: "tr", attributes: { "class": "table-info" } }
-         - { name: "Row Warning", element: "tr", attributes: { "class": "table-warning" } }
-         - { name: "Row Danger", element: "tr", attributes: { "class": "table-danger" } }
+    fontColor:
+      colors:
+        - { label: 'Blau', color: '#003087' }
+        - { label: 'Orange', color: '#FF6900' }
+        - { label: 'Weiß', color: '#ffffff' }
+        - { label: 'Violett', color: '#8246af' }
+        - { label: 'Hellblau', color: '#00a7b5' }
+      documentColors:
 
-         - { name: "Cell Active", element: "td", attributes: { "class": "table-active" } }
-         - { name: "Cell Success", element: "td", attributes: { "class": "table-success" } }
-         - { name: "Cell Info", element: "td", attributes: { "class": "table-info" } }
-         - { name: "Cell Warning", element: "td", attributes: { "class": "table-warning" } }
-         - { name: "Cell Danger", element: "td", attributes: { "class": "table-danger" } }
+    fontFamily:
+      options:
+        - 'default'
+        - 'Arial, sans-serif'
+        - 'Catamaran, sans-serif'
+        - 'Gelica, sans-serif'
 
-         - { name: "Button Default", element: "a", attributes: { "class": "btn btn-default" } }
-         - { name: "Button Primary", element: "a", attributes: { "class": "btn btn-primary" } }
-         - { name: "Button Secondary", element: "a", attributes: { "class": "btn btn-secondary" } }
-         - { name: "Button Tertiary", element: "a", attributes: { "class": "btn btn-tertiary" } }
-         - { name: "Button Quaternary", element: "a", attributes: { "class": "btn btn-quaternary" } }
-         - { name: "Button Success", element: "a", attributes: { "class": "btn btn-success" } }
-         - { name: "Button Info", element: "a", attributes: { "class": "btn btn-info" } }
-         - { name: "Button Warning", element: "a", attributes: { "class": "btn btn-warning" } }
-         - { name: "Button Danger", element: "a", attributes: { "class": "btn btn-danger" } }
+    fontSize:
+      options:
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 22
+        - 23
+        - 24
+        - 25
+        - 30
+        - 35
+        - 40
+        - 45
+        - 50
 
-         - { name: "Button Outline Default", element: "a", attributes: { "class": "btn btn-outline-default" } }
-         - { name: "Button Outline Primary", element: "a", attributes: { "class": "btn btn-outline-primary" } }
-         - { name: "Button Outline Secondary", element: "a", attributes: { "class": "btn btn-outline-secondary" } }
-         - { name: "Button Outline Tertiary", element: "a", attributes: { "class": "btn btn-outline-tertiary" } }
-         - { name: "Button Outline Quaternary", element: "a", attributes: { "class": "btn btn-outline-quaternary" } }
-         - { name: "Button Outline Success", element: "a", attributes: { "class": "btn btn-outline-success" } }
-         - { name: "Button Outline Info", element: "a", attributes: { "class": "btn btn-outline-info" } }
-         - { name: "Button Outline Warning", element: "a", attributes: { "class": "btn btn-outline-warning" } }
-         - { name: "Button Outline Danger", element: "a", attributes: { "class": "btn btn-outline-danger" } }
-
-         - { name: "Link Arrow", element: "a", attributes: { "class": "link-arrow" } }
-         - { name: "Link Chevron", element: "a", attributes: { "class": "link-chevron" } }
-         - { name: "Link Page", element: "a", attributes: { "class": "link-page" } }
-         - { name: "Link Folder", element: "a", attributes: { "class": "link-folder" } }
-         - { name: "Link File", element: "a", attributes: { "class": "link-file" } }
-         - { name: "Link External", element: "a", attributes: { "class": "link-external" } }
-         - { name: "Link Mail", element: "a", attributes: { "class": "link-mail" } }
-         - { name: "Link Globe", element: "a", attributes: { "class": "link-globe" } }
-
-         - { name: "List Unstyled", element: "ul", attributes: { "class": "list-unstyled" } }
-         - { name: "List Inline", element: "ul", attributes: { "class": "list-inline" } }
-         - { name: "List Check", element: "ul", attributes: { "class": "list-check" } }
-         - { name: "List Info", element: "ul", attributes: { "class": "list-info" } }
-         - { name: "List Warning", element: "ul", attributes: { "class": "list-warning" } }
-         - { name: "List Ban", element: "ul", attributes: { "class": "list-ban" } }
-         - { name: "List Chevron", element: "ul", attributes: { "class": "list-chevron" } }
-
-         - { name: "Lowercased Text", element: "span", attributes: { "class": "text-lowercase" } }
-         - { name: "Uppercased Text", element: "span", attributes: { "class": "text-uppercase" } }
-         - { name: "Capitalized Text", element: "span", attributes: { "class": "text-capitalize" } }
-
-         - { name: "Color:Blue", element: "span", attributes: { "class": "custom-blue" } }
-         - { name: "Color:Orange", element: "span", attributes: { "class": "text-secondary custom-orange" } }
-         - { name: "Color:LightBlue", element: "span", attributes: { "class": "text-tertiary custom-lightblue" } }
-         - { name: "Color:Violet", element: "span", attributes: { "class": "text-quaternary custom-violet" } }
-         - { name: "Color:White", element: "span", attributes: { "class": "text-success custom-white" } }
-
-      toolbarGroups:
-         - { name: styles, groups: [format, styles] }
-         - { name: basicstyles, groups: [basicstyles] }
-         - { name: paragraph, groups: [list, indent, blocks, align] }
-         - "/"
-         - { name: links, groups: [links] }
-         - { name: clipboard, groups: [clipboard, cleanup, undo] }
-         - { name: editing, groups: [spellchecker] }
-         - { name: insert, groups: [insert] }
-         - { name: tools, groups: [table, specialchar] }
-         - { name: document, groups: [mode] } 
-
-      format_tags: "p;h1;h2;h3;h4;h5;pre"
-
-      justifyClasses:
-         - text-left
-         - text-center
-         - text-right
-         - text-justify
-
-      extraPlugins:
-         - justify
-         - autolink
-         - bootstrappackage_address
-         - bootstrappackage_box
-         - bootstrappackage_columns
-         - bootstrappackage_indent
-         - bootstrappackage_table
-
-      removePlugins:
-         - image
-
-      removeButtons:
-         - Anchor
-         - Underline
-         - Strike      
-
-classesAnchor:
-   page:
-      class: "link-page"
-      type: "page"
-   folder:
-      class: "link-folder"
-      type: "folder"
-   file:
-      class: "link-file"
-      type: "file"
-   external:
-      class: "link-external"
-      type: "url"
-   mail:
-      class: "link-mail"
-      type: "mail"
-
-buttons:
-   link:
-      properties:
-         class:
-            allowedClasses: "link-arrow, link-page, link-folder, link-file, link-external, link-mail"
+    importModules:
+      - { 'module': '@ckeditor/ckeditor5-font', 'exports': ['Font'] }
+      - { 'module': '@ckeditor/ckeditor5-show-blocks', 'exports': ['ShowBlocks'] }
+      - { 'module': '@ckeditor/ckeditor5-word-count', 'exports': ['WordCount'] }
