@@ -16,6 +16,9 @@
                 <source>Thumbnail</source>
             </trans-unit>
 
+             <trans-unit id="backend_layout.header_1">
+                <source>Header-1</source>
+            </trans-unit>
             <trans-unit id="backend_layout.default">
                 <source>Default</source>
             </trans-unit>
