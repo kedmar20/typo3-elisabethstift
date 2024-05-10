@@ -11,7 +11,8 @@
    >
    <header id="page-header" class="{headerClass}">
       <div class="container container-mainnavigation">
-         <f:render partial="Header/Logo" arguments="{_all}" />
+         <!-- <f:render partial="Header/Logo" arguments="{_all}" />-->
+         <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '13', colPos: '10'}" />
 
          <f:if condition="{mainnavigation}">
             <f:render partial="Header/Toggle" arguments="{_all}" />
@@ -29,4 +30,4 @@
       </div>
       <f:render partial="DropIn/Navigation/SearchForm" arguments="{_all}" />
    </header>
-</html> 
+</html>
