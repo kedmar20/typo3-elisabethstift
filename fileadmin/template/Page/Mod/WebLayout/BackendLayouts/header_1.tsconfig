@@ -1,7 +1,7 @@
 mod {
     web_layout {
         BackendLayouts {
-            # BACKENDLAYOUT: 2 COLUMNS
+            # BACKENDLAYOUT: Header 1
             header_1 {
                 title = LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:backend_layout.header_1
                 config {
