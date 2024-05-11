@@ -95,6 +95,9 @@ return [
         'bootstrap_package' => [
             'packagePath' => 'typo3conf/ext/bootstrap_package/',
         ],
+        'news' => [
+            'packagePath' => 'typo3conf/ext/news/',
+        ],
     ],
     'version' => 5,
 ];

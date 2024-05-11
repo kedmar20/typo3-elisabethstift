@@ -24,6 +24,13 @@ return [
             ],
         ],
     ],
+    'EXTCONF' => [
+        'lang' => [
+            'availableLanguages' => [
+                'de',
+            ],
+        ],
+    ],
     'EXTENSIONS' => [
         'backend' => [
             'backendFavicon' => '',
@@ -68,6 +75,23 @@ return [
             'unzip' => '/usr/bin/',
             'useMysqlFulltext' => '0',
             'xlhtml' => '/usr/bin/',
+        ],
+        'news' => [
+            'advancedMediaPreview' => '1',
+            'archiveDate' => 'date',
+            'categoryBeGroupTceFormsRestriction' => '0',
+            'categoryRestriction' => '',
+            'contentElementRelation' => '1',
+            'dateTimeNotRequired' => '0',
+            'hidePageTreeForAdministrationModule' => '0',
+            'manualSorting' => '0',
+            'prependAtCopy' => '1',
+            'resourceFolderImporter' => '/news_import',
+            'rteForTeaser' => '0',
+            'showAdministrationModule' => '1',
+            'slugBehaviour' => 'unique',
+            'storageUidImporter' => '1',
+            'tagPid' => '1',
         ],
     ],
     'FE' => [
