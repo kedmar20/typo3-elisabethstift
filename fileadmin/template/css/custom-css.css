@@ -96,6 +96,12 @@ h5 {
    font-size: 22px;
    font-weight: 500;
 }
+.catamaran-26-medium {
+   /*dropdown menu*/
+   font-family: "catamaran", sans-serif;
+   font-size: 26px;
+   font-weight: 500;
+}
 
 @media (max-width: 1440px) {
    h1 {
@@ -146,6 +152,11 @@ h5 {
    .catamaran-22-medium {
       font-family: "catamaran", sans-serif;
       font-size: 21px;
+      font-weight: 500;
+   }
+   .catamaran-26-medium {
+      font-family: "catamaran", sans-serif;
+      font-size: 24px;
       font-weight: 500;
    }
 }
@@ -200,6 +211,11 @@ h5 {
       font-size: 19px;
       font-weight: 500;
    }
+   .catamaran-26-medium {
+      font-family: "catamaran", sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+   }
 }
 /*Colors*/
 .custom-blue {
@@ -246,6 +262,12 @@ header {
       height: 12vw !important;
       z-index: 2 !important;
    }
+   header:has(.collapsing) {
+      height: 18vw !important;
+   }
+   header:has(.collapse.show) {
+      height: 18vw !important;
+   }
 }
 /*Navbar-Searchbar-Menu*/
 .nav-link-text,
@@ -286,6 +308,11 @@ header {
    }
    #c44 > div > div > div > div > div > div > figure > picture > img {
       padding-bottom: 5px;
+   }
+   #mainnavigation.collapsing {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
    }
    #mainnavigation.show {
       display: flex;
@@ -336,7 +363,7 @@ header.navbar-mainnavigation {
       justify-content: end;
    }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
    #mainnavigation > button {
       display: none;
    }
@@ -368,7 +395,7 @@ header .frame {
 }
 /*SearchForm*/
 #navbarToggleExternalContent {
-   margin-top: 50px;
+   margin-top: 30px;
 }
 #tx-indexedsearch-searchbox-button-submit,
 #tx-indexedsearch-searchbox-sword {
@@ -383,6 +410,10 @@ header .frame {
 @media (min-width: 992px) {
    .navbar-mainnavigation .nav-style-simple .dropdown-menu {
       width: 100% !important;
+      height: 300px;
+      padding-left: 10vw;
+      padding-right: 50vw;
+      padding-top: 50px;
    }
    .navbar-mainnavigation .dropdown-menu {
       position: fixed !important;
@@ -395,6 +426,10 @@ header .frame {
       outline: none !important;
       border-radius: 0 !important;
       z-index: 2 !important;
+   }
+   #mainnavigation ul.dropdown-nav {
+      grid-column-gap: 5vw !important;
+      grid-template-columns: 1fr 1fr !important;
    }
 }
 
