@@ -233,6 +233,9 @@ h5 {
 .custom-lightblue {
    color: var(--bs-success) !important;
 }
+.custom-azure {
+   color: var(--bs-info) !important;
+}
 
 /**************************************************/
 body {
@@ -247,7 +250,7 @@ body {
 a:hover {
    color: var(--bs-primary) !important;
 }
-
+/**************************************************/
 /*Header*/
 header {
    padding-left: 7vw !important;
@@ -456,4 +459,88 @@ main {
 /*Hero Section*/
 #page-content > div:nth-child(3) {
    padding-left: 7%;
+}
+/***********************************************************************/
+/*FOOTER*/
+/*footer-raw-top*/
+footer,
+.footer-section-content {
+   background-color: var(--bs-info);
+}
+#c56 > div > div > div > div > ul {
+   list-style-type: none;
+   margin: 0 !important;
+   padding: 0 !important;
+}
+#c56 > div > div > div > div > ul li {
+   padding-left: 1.5em;
+   margin-bottom: 0.5em;
+   position: relative;
+}
+#c56 > div > div > div > div > ul li::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 6px;
+   width: 1em;
+   height: 1em;
+   background-repeat: no-repeat;
+   background-image: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='check-circle' class='svg-inline--fa fa-check-circle fa-w-16' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%2315aabf' d='M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z'></path></svg>");
+}
+/*#c56 > div > div > div > div > ul li a */
+footer a {
+   text-decoration: none !important;
+}
+/*#c56 > div > div > div > div > ul li:hover a */
+footer a:hover {
+   text-decoration: underline 2px !important;
+   text-underline-offset: 4px;
+}
+.frame a:not([class]) {
+   color: var(--bs-primary) !important;
+}
+#c52 > div > div > div > div > div > div > figure > a > picture > img {
+   width: 270px;
+   margin: 0 !important;
+}
+#c65 > div > div > div > div > div > div > figure > a > picture > img {
+   width: 45px;
+   margin: 0 !important;
+}
+#c55,
+#c57 {
+   padding-top: 70px !important;
+}
+#c66 {
+   vertical-align: top;
+   margin: 0 !important;
+   display: inline-block;
+   padding: 7px 0 0 25px !important;
+   display: inline-block;
+}
+#c65 {
+   vertical-align: top;
+   margin: 0 !important;
+   display: inline-block;
+   padding: 0 !important;
+}
+/*footer-raw-bottom*/
+#page-footer > section > div:nth-child(2) {
+   border-top: dotted 1px var(--bs-primary);
+   padding-left: 7vw !important;
+   padding-right: 7vw !important;
+}
+#page-footer > section > div:nth-child(1) {
+   padding: 50px 27vw 50px 7vw !important;
+}
+#page-footer > section > div:nth-child(2) > div > div.section-column.footer-section-content-column.footer-section-content-column-left {
+   column-gap: 30px;
+   justify-content: start;
+   display: flex;
+   align-items: center;
+}
+#c59,
+#c16 {
+   margin: 0 !important;
+   padding: 0 !important;
 }
