@@ -271,6 +271,18 @@ header {
    header:has(.collapse.show) {
       height: 18vw !important;
    }
+   ul.navbar-nav {
+      gap: 2vw !important;   
+      padding-right: 2vw !important;
+   }  
+   #mainnavigation > nav{
+      padding-right: 1vw !important;
+   }
+
+  .navbar-nav a:hover .nav-link-text{
+   border-radius: 30px;
+   background-color: red;
+  }
 }
 /*Navbar-Searchbar-Menu*/
 .nav-link-text,
@@ -282,6 +294,13 @@ header {
    padding: 4px !important;
    color: var(--bs-primary) !important;
 }
+.custom-icon-menu figure picture img {
+   width: 34px !important;
+   max-width: 34px !important;
+      }
+      .nav-link-indicator{
+         display: none !important;
+      }
 @media (max-width: 991px) {
    .nav-link {
       font-size: 28px !important;
@@ -312,6 +331,7 @@ header {
    #c44 > div > div > div > div > div > div > figure > picture > img {
       padding-bottom: 5px;
    }
+
    #mainnavigation.collapsing {
       display: flex;
       flex-wrap: wrap;
@@ -504,7 +524,7 @@ footer a:hover {
    margin: 0 !important;
 }
 #c65 > div > div > div > div > div > div > figure > a > picture > img {
-   width: 45px;
+   width: 34px;
    margin: 0 !important;
 }
 #c55,
@@ -543,4 +563,37 @@ footer a:hover {
 #c16 {
    margin: 0 !important;
    padding: 0 !important;
+}
+@media screen and (max-width: 1380px){
+   #page-footer > section > div:nth-child(1) {
+      padding: 50px 17vw 50px 7vw !important;      
+   }
+   #c66{
+      vertical-align: middle !important;
+      width: 80%;
+      padding: 0 0 0 25px!important;
+   }
+}
+@media screen and (max-width: 1120px){
+   #page-footer > section > div:nth-child(1) {
+      padding: 50px 7vw 50px 7vw !important;
+   }
+}
+@media screen and (max-width: 767px){
+   .container .frame-container{
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+   }
+   #page-footer > section > div:nth-child(2) > div{
+      padding-top: 35px;
+   }
+   #c17 > div > div > div > div > h5{
+      text-align: left !important;
+   }
+   #c55, #c57 {
+      padding-top: 35px !important;
+   }
+   #c52{
+      padding-top: 0px !important;
+   }
 }
