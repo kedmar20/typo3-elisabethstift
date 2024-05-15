@@ -255,6 +255,14 @@ a:hover {
 header {
    padding-left: 7vw !important;
    padding-right: 7vw !important;
+   background-image: radial-gradient(circle, #003087 16%, rgba(255,255,255,0) 18%);  
+background-position: bottom;
+background-size: 10px 20px;
+background-repeat: no-repeat;
+}
+
+#mainnavigation > ul > li:nth-child(1) > div{/*Megamenu-Shadows*/
+   box-shadow: none !important;
 }
 @media (min-width: 992px) {
    header {
