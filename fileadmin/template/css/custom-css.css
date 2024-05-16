@@ -255,10 +255,10 @@ a:hover {
 header {
    padding-left: 7vw !important;
    padding-right: 7vw !important;
-   background-image: radial-gradient(circle, #003087 16%, rgba(255,255,255,0) 18%);  
-background-position: bottom;
-background-size: 10px 20px;
-background-repeat: no-repeat;
+   background-image: radial-gradient(circle, #003087 1px, rgba(255, 255, 255, 0) 1.6px);  
+   background-position: bottom;
+   background-size: 10px 2px;
+   background-repeat: repeat-x;
 }
 
 #mainnavigation > ul > li:nth-child(1) > div{/*Megamenu-Shadows*/
@@ -286,11 +286,18 @@ background-repeat: no-repeat;
    #mainnavigation > nav{
       padding-right: 1vw !important;
    }
-
-  .navbar-nav a:hover .nav-link-text{
-   border-radius: 30px;
-   background-color: red;
+   .navbar-nav a .nav-link-text{
+      border-radius: 5px;
+      background-color: transparent !important;
+      padding: 5px 10px !important;      
+     }
+  .navbar-nav a:hover .nav-link-text, .navbar-nav a:focus-visible .nav-link-text, .navbar-nav a:active .nav-link-text{   
+   background-color: #E8F6FD !important;   
+   
   }
+  .navbar-nav a::before{
+   text-decoration: none !important;
+   }
 }
 /*Navbar-Searchbar-Menu*/
 .nav-link-text,
@@ -419,11 +426,11 @@ header .frame {
 /*Header-Text-Underline-Hover*/
 .navbar-mainnavigation .nav-link:not(.nav-link-toggle):hover:before,
 .navbar-mainnavigation .nav-link:not(.nav-link-toggle):focus-visible:before {
-   opacity: 1 !important;
-}
+   opacity: 0 !important;
+}/*
 .navbar-mainnavigation .nav-link.nav-link-main:before {
    background: var(--bs-primary) !important;
-}
+}*/
 /*SearchForm*/
 #navbarToggleExternalContent {
    margin-top: 30px;
@@ -553,10 +560,13 @@ footer a:hover {
    padding: 0 !important;
 }
 /*footer-raw-bottom*/
-#page-footer > section > div:nth-child(2) {
-   border-top: dotted 1px var(--bs-primary);
+#page-footer > section > div:nth-child(2) {   
    padding-left: 7vw !important;
    padding-right: 7vw !important;
+   background-image: radial-gradient(circle, #003087 1px, rgba(255, 255, 255, 0) 1.6px);  
+   background-position: top;
+   background-size: 10px 2px;
+   background-repeat: repeat-x;
 }
 #page-footer > section > div:nth-child(1) {
    padding: 50px 27vw 50px 7vw !important;
