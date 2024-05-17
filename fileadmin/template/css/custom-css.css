@@ -264,6 +264,59 @@ header {
 #mainnavigation > ul > li:nth-child(1) > div{/*Megamenu-Shadows*/
    box-shadow: none !important;
 }
+/*menu - hover+focus effects - Hauptmenu*/
+/*Header-Text-Underline-Hover*/
+.navbar-mainnavigation .nav-link:not(.nav-link-toggle):hover:before,
+.navbar-mainnavigation .nav-link:not(.nav-link-toggle):focus-visible:before {
+   opacity: 0 !important;
+}
+.navbar-mainnavigation .nav-link:not(.nav-link-toggle).active:before{
+   opacity: 0 !important;
+}
+.navbar-nav a:not(.nav-link-dropdown) .nav-link-text{
+   border-radius: 5px;
+   background-color: transparent !important;
+   padding: 6px 10px 4px !important;      
+  }
+.navbar-nav a:not(.nav-link-dropdown):hover .nav-link-text{   
+   background-color: #E8F6FD !important;      
+}
+.navbar-nav a:not(.nav-link-dropdown).active .nav-link-text{   
+   background-color: #E8F6FD !important;      
+}
+
+/*menu - hover+focus effects - Dropdowntmenu*/
+.navbar-nav a:not(.nav-link-toggle).nav-link-dropdown .nav-link-text{
+   position: relative;
+   overflow: hidden;
+}
+.navbar-nav a:not(.nav-link-toggle).nav-link-dropdown .nav-link-text::after{
+   background-image: radial-gradient(circle, #003087 1px, rgba(255, 255, 255, 0) 1.6px);  
+   background-position: bottom;
+   background-size: 10px 2px;
+   background-repeat: repeat-x; 
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 100%;
+   width: 100%;   
+   transform: translateX(-101%);
+   transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav a:not(.active).nav-link-dropdown:hover .nav-link-text::after{
+   transform: translateX(0%);
+}
+
+.navbar-nav a:not(.nav-link-toggle).nav-link-dropdown.active .nav-link-text{        
+   background-image: radial-gradient(circle, #003087 1px, rgba(255, 255, 255, 0) 1.6px);  
+   background-position: bottom;
+   background-size: 10px 2px;
+   background-repeat: repeat-x;   
+}
+
+
 @media (min-width: 992px) {
    header {
       position: fixed !important;
@@ -285,19 +338,7 @@ header {
    }  
    #mainnavigation > nav{
       padding-right: 1vw !important;
-   }
-   .navbar-nav a .nav-link-text{
-      border-radius: 5px;
-      background-color: transparent !important;
-      padding: 5px 10px !important;      
-     }
-  .navbar-nav a:hover .nav-link-text, .navbar-nav a:focus-visible .nav-link-text, .navbar-nav a:active .nav-link-text{   
-   background-color: #E8F6FD !important;   
-   
-  }
-  .navbar-nav a::before{
-   text-decoration: none !important;
-   }
+   }  
 }
 /*Navbar-Searchbar-Menu*/
 .nav-link-text,
@@ -423,14 +464,7 @@ header .frame {
    padding-top: 0;
    padding-bottom: 0;
 }
-/*Header-Text-Underline-Hover*/
-.navbar-mainnavigation .nav-link:not(.nav-link-toggle):hover:before,
-.navbar-mainnavigation .nav-link:not(.nav-link-toggle):focus-visible:before {
-   opacity: 0 !important;
-}/*
-.navbar-mainnavigation .nav-link.nav-link-main:before {
-   background: var(--bs-primary) !important;
-}*/
+
 /*SearchForm*/
 #navbarToggleExternalContent {
    margin-top: 30px;
