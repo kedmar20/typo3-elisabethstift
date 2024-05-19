@@ -6,6 +6,8 @@ fotterMenuUl.classList.add("catamaran-22-medium");
 /*Dropdownmenu on hover*/
 const hauptmenuItemAll = [...document.querySelectorAll("#mainnavigation > ul > li")];
 const header1 = document.querySelector("header");
+const dropdownContainer = document.querySelectorAll(".dropdown-menu");
+console.log(dropdownContainer);
 
 hauptmenuItemAll.forEach((elemHauptMenuItem) => {
    const megaMenuContainer = elemHauptMenuItem.querySelector(".dropdown-menu.dropdown-menu-simple");
@@ -41,15 +43,28 @@ hauptmenuItemAll.forEach((elemHauptMenuItem) => {
 });
 
 /*scroll event + smaller Header*/
+
 window.addEventListener("scroll", (e) => {
-   console.log("Scrolling...");
-   console.log(window.scrollY);
    if (!!(window.scrollY > 5)) {
-      header1.style.paddingTop = "10px";
+      header1.classList.remove("header-scroll-null");
+      header1.classList.add("header-scroll");
+      /*header1.style.paddingTop = "10px";
       header1.style.paddingBottom = "10px";
       header1.style.height = "8vw";
-      header1.style.maxHeight = "8vw";
+      header1.style.maxHeight = "8vw";*/
+      !!dropdownContainer
+         ? dropdownContainer.forEach((item) => {
+              /* item.style.top = "8vw";*/
+              item.classList.add("dropdown-scroll");
+           })
+         : "";
    } else {
-      header1.style.transform = "scale(1)";
+      header1.classList.remove("header-scroll");
+      header1.classList.add("header-scroll-null");
+      !!dropdownContainer
+         ? dropdownContainer.forEach((item) => {
+              item.classList.remove("dropdown-scroll");
+           })
+         : "";
    }
 });
