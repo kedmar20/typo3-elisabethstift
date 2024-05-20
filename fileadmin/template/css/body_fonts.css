@@ -1,0 +1,262 @@
+/* catamaran-regular - latin */
+@font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: "Catamaran";
+   font-style: normal;
+   font-weight: 400;
+   src: url("../fonts/catamaran-v19-latin-regular.woff2") format("woff2"),
+      /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url("../fonts/catamaran-v19-latin-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* catamaran-500 - latin */
+@font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: "Catamaran";
+   font-style: normal;
+   font-weight: 500;
+   src: url("../fonts/catamaran-v19-latin-500.woff2") format("woff2"),
+      /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url("../fonts/catamaran-v19-latin-500.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* catamaran-600 - latin */
+@font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: "Catamaran";
+   font-style: normal;
+   font-weight: 600;
+   src: url("../fonts/catamaran-v19-latin-600.woff2") format("woff2"),
+      /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url("../fonts/catamaran-v19-latin-600.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* catamaran-700 - latin */
+@font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: "Catamaran";
+   font-style: normal;
+   font-weight: 700;
+   src: url("../fonts/catamaran-v19-latin-700.woff2") format("woff2"),
+      /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url("../fonts/catamaran-v19-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* catamaran-800 - latin */
+@font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: "Catamaran";
+   font-style: normal;
+   font-weight: 800;
+   src: url("../fonts/catamaran-v19-latin-800.woff2") format("woff2"),
+      /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url("../fonts/catamaran-v19-latin-800.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/**************************************************/
+/*FONTS*/
+h1 {
+   font-family: "gelica", sans-serif;
+   font-size: 50px;
+   font-weight: 400;
+}
+h2 {
+   font-family: "gelica", sans-serif;
+   font-size: 45px;
+   font-weight: 400;
+}
+h3 {
+   font-family: "gelica", sans-serif;
+   font-size: 30px;
+   font-weight: 400;
+}
+h4 {
+   font-family: "catamaran", sans-serif;
+   font-size: 25px;
+   font-weight: 400;
+}
+h5 {
+   font-family: "catamaran", sans-serif;
+   font-size: 22px;
+   font-weight: 400;
+}
+.gelica-50-regular {
+   font-family: "gelica", sans-serif;
+   font-size: 50px;
+   font-weight: 400;
+}
+.gelica-40-regular {
+   font-family: "gelica", sans-serif;
+   font-size: 40px;
+   font-weight: 400;
+}
+.catamaran-24-bold {
+   font-family: "catamaran", sans-serif;
+   font-size: 24px;
+   font-weight: 700;
+}
+.catamaran-25-semibold {
+   font-family: "catamaran", sans-serif;
+   font-size: 25px;
+   font-weight: 600;
+}
+.catamaran-22-medium {
+   font-family: "catamaran", sans-serif;
+   font-size: 22px;
+   font-weight: 500;
+}
+.catamaran-26-medium {
+   /*dropdown menu*/
+   font-family: "catamaran", sans-serif;
+   font-size: 26px;
+   font-weight: 500;
+}
+
+@media (max-width: 1440px) {
+   h1 {
+      font-family: "gelica", sans-serif;
+      font-size: 45px;
+      font-weight: 400;
+   }
+   h2 {
+      font-family: "gelica", sans-serif;
+      font-size: 41px;
+      font-weight: 400;
+   }
+   h3 {
+      font-family: "gelica", sans-serif;
+      font-size: 27px;
+      font-weight: 400;
+   }
+   h4 {
+      font-family: "catamaran", sans-serif;
+      font-size: 23px;
+      font-weight: 400;
+   }
+   h5 {
+      font-family: "catamaran", sans-serif;
+      font-size: 21px;
+      font-weight: 400;
+   }
+   .gelica-50-regular {
+      font-family: "gelica", sans-serif;
+      font-size: 45px;
+      font-weight: 400;
+   }
+   .gelica-40-regular {
+      font-family: "gelica", sans-serif;
+      font-size: 41px;
+      font-weight: 400;
+   }
+   .catamaran-24-bold {
+      font-family: "catamaran", sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+   }
+   .catamaran-25-semibold {
+      font-family: "catamaran", sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+   }
+   .catamaran-22-medium {
+      font-family: "catamaran", sans-serif;
+      font-size: 21px;
+      font-weight: 500;
+   }
+   .catamaran-26-medium {
+      font-family: "catamaran", sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+   }
+}
+@media (max-width: 1240px) {
+   h1 {
+      font-family: "gelica", sans-serif;
+      font-size: 41px;
+      font-weight: 400;
+   }
+   h2 {
+      font-family: "gelica", sans-serif;
+      font-size: 37px;
+      font-weight: 400;
+   }
+   h3 {
+      font-family: "gelica", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+   }
+   h4 {
+      font-family: "catamaran", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+   }
+   h5 {
+      font-family: "catamaran", sans-serif;
+      font-size: 19px;
+      font-weight: 400;
+   }
+   .gelica-50-regular {
+      font-family: "gelica", sans-serif;
+      font-size: 40px;
+      font-weight: 400;
+   }
+   .gelica-40-regular {
+      font-family: "gelica", sans-serif;
+      font-size: 37px;
+      font-weight: 400;
+   }
+   .catamaran-24-bold {
+      font-family: "catamaran", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+   }
+   .catamaran-25-semibold {
+      font-family: "catamaran", sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+   }
+   .catamaran-22-medium {
+      font-family: "catamaran", sans-serif;
+      font-size: 19px;
+      font-weight: 500;
+   }
+   .catamaran-26-medium {
+      font-family: "catamaran", sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+   }
+}
+/*Colors*/
+.custom-blue {
+   color: var(--bs-primary) !important;
+}
+.custom-orange {
+   color: var(--bs-secondary) !important;
+}
+.custom-white {
+   color: var(--bs-tertiary) !important;
+}
+.custom-violet {
+   color: var(--bs-quaternary) !important;
+}
+.custom-lightblue {
+   color: var(--bs-success) !important;
+}
+.custom-azure {
+   color: var(--bs-info) !important;
+}
+
+/**************************************************/
+body {
+   background-color: rgb(244, 145, 145);
+   font-family: "catamaran", sans-serif;
+}
+.container {
+   max-width: 1920px !important;
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+}
+a:hover {
+   color: var(--bs-primary) !important;
+}
+.frame a:not([class]) {
+   color: var(--bs-primary) !important;
+}
+@media screen and (max-width: 767px) {
+   .container .frame-container {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+   }
+}
+/**************************************************/

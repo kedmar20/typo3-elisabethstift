@@ -1,0 +1,60 @@
+/*MAIN*/
+@media (min-width: 992px) {
+   main {
+      padding-top: 12vw !important;
+   }
+   /*Hero Section*/
+   /*****Carousel-HomePage*/
+   .carousel-item-type-image .carousel-image img {
+      margin: 0 0 auto auto !important;
+      width: 100% !important;
+   }
+   .carousel .carousel-content-inner {
+      align-items: start !important;
+   }
+   #c40 {
+      padding-top: 0 !important;
+   }
+   .carousel .item {
+      height: auto !important ;
+   }
+   #page-content > div:nth-child(1) > div > div > div:nth-child(2) {
+      width: 50% !important;
+      padding-left: 2vw !important;
+   }
+   /*****Left Section*/
+   #page-content > div:nth-child(1) {
+      padding-left: 7vw !important;
+   }
+   #page-content > div:nth-child(1) > div > div {
+      gap: 0 !important;
+   }
+   #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
+      width: 40% !important;
+      display: flex !important;
+      flex-direction: column;
+      align-items: start;
+      justify-content: end;
+      padding-bottom: 50px !important;
+   }
+   /*Sticky Section*/
+
+   /*3-Column-Section*/
+   #page-content > div:nth-child(3) .section-row {
+      width: 100vw;
+      background-color: blueviolet;
+      border: 3px black solid;
+      clip-path: polygon(0 11%, 12% 10%, 23% 10%, 35% 12%, 45% 15%, 59% 16%, 71% 15%, 81% 13%, 100% 11%, 100% 100%, 0 100%);
+      /*clip-path: url(#wave);*/
+      /*clip-path: path(
+         "M0,256L60,229.3C120,203,240,149,360,144C480,139,600,181,720,181.3C840,181,960,139,1080,133.3C1200,128,1320,160,1380,176L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+      );*/
+      /*clip-path: path(
+         "M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+      );*/
+   }
+   #page-content > div:nth-child(3) .section-column.section-column-third {
+      background-color: aqua;
+      padding-top: 150px;
+   }
+}
