@@ -106,6 +106,7 @@ return [
         ],
     ],
     'GFX' => [
+        'jpg_quality' => 100,
         'processor' => 'GraphicsMagick',
         'processor_allowTemporaryMasksAsPng' => false,
         'processor_colorspace' => 'RGB',
