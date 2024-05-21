@@ -236,7 +236,9 @@ h5 {
 .custom-azure {
    color: var(--bs-info) !important;
 }
-
+.custom-sand-color {
+   color: var(--bs-default) !important; 
+}
 /**************************************************/
 body {
    background-color: rgb(244, 145, 145);
