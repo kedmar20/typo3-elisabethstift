@@ -91,6 +91,8 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/bootstrap-package/icons']['provid
     = \BK2K\BootstrapPackage\Icons\IoniconsProvider::class;
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/bootstrap-package/icons']['provider'][\BK2K\BootstrapPackage\Icons\GlyphiconsProvider::class]
     = \BK2K\BootstrapPackage\Icons\GlyphiconsProvider::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/bootstrap-package/icons']['provider'][\BK2K\BootstrapPackage\Icons\SubmenuProvider::class]
+    = \BK2K\BootstrapPackage\Icons\SubmenuProvider::class;
 
 // Add default RTE configuration for bootstrap package
 $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] = 'fileadmin/template/RTE/Custom.yaml';

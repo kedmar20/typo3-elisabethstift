@@ -282,4 +282,9 @@ header .frame {
       transform: translateY(0vw);
       transition: all 500ms;
    }
+   /********icons dropdown-megamenu*/
+   .dropdown-menu .nav-link-icon{
+      /*width: 200%;
+      padding-right: 50px;*/
+   }
 }
