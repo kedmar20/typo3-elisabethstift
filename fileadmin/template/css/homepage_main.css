@@ -1,16 +1,32 @@
 /*MAIN*/
-@media (min-width: 992px) {
+@media (min-width: 768px) {
    main {
       padding-top: 12vw !important;
    }
    /*Hero Section*/
    #page-content > div:nth-child(1) {
       position: relative;
-      z-index: 1;
-      background-image: url(../../../fileadmin/user_upload/images/Gruppe_547.png);
-      min-height: 100vh;
-      background-size: cover;
+      z-index: 1;  
+      min-height: 100vh;      
    }
+   #c90{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
+      width: 100%;
+      margin: 0 !important;      
+      padding: 0 !important;
+   }
+   #c90 img{
+      width: 100vw !important;
+      max-width: 100vw !important;
+   }
+   #c90 > div > div > div{
+      margin: 0 !important;   
+   }
+
+
    /*****Carousel-HomePage*/
    .carousel-item-layout-secondary {
       background: none !important;
@@ -22,13 +38,13 @@
    .carousel .carousel-content-inner {
       align-items: start !important;
    }
-   #c87 {
+   #c89 {
       padding-top: 0 !important;
    }
    .carousel .item {
       height: auto !important ;
    }
-   #page-content > div:nth-child(1) > div > div > div:nth-child(2) {
+   #page-content > div:nth-child(1) > div > div > div:nth-child(2){
       width: 50% !important;
    }
    /*****Left Section*/
