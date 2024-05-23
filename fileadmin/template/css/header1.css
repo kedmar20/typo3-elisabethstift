@@ -308,7 +308,7 @@ header .frame {
       transform: scale(1.7);
    }
 }
-@media (min-width: 1060px) {
+@media (min-width: 1150px) {
    .navbar-mainnavigation .nav-style-simple .dropdown-menu {
       padding-right: 40vw;
    }

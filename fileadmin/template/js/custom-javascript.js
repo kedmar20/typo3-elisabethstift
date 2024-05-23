@@ -1,4 +1,4 @@
-if (screen.width > 1025){ 
+if (screen.width > 1150){ 
 console.log("hello JavaScript");
 /*Footer-Menu*/
 const fotterMenuUl = document.querySelector("#c56 > div > div > div > div > ul");
