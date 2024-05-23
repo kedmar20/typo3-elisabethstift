@@ -1,3 +1,4 @@
+if (screen.width > 1025){ 
 console.log("hello JavaScript");
 /*Footer-Menu*/
 const fotterMenuUl = document.querySelector("#c56 > div > div > div > div > ul");
@@ -86,3 +87,4 @@ setTimeout(() => {
    const sectionRow = parentOf3columnsWrapper.querySelector(".section-row");
    sectionRow.style.clipPath = "url(#wave)";   
 }, 100);
+}
