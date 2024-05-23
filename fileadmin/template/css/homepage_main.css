@@ -73,6 +73,11 @@
       max-width: 1920px;
       padding: 0 !important;
    }
+   #c67 > div > div > div img{
+      height: 100vh;
+      width: auto;
+      max-width: none;
+   }
    #c67 {
       /**********SectionWithBildFixed*/
       min-height: 100vh !important;
@@ -112,6 +117,12 @@
    #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
       /***herosection-leftcolumn*/
       width: 45% !important;
+   }
+   #c67 > div > div > div img{
+      /*StickySection*/
+      height: auto;
+      width: 100%;
+      max-width: 100%;
    }
 }
 @media (min-width: 1240px) {
