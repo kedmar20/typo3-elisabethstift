@@ -24,7 +24,7 @@ header {
 .navbar-nav a:not(.nav-link-dropdown) .nav-link-text {
    border-radius: 5px;
    background-color: transparent !important;
-   padding: 6px 10px 4px !important;
+   padding: 6px 5px 4px !important;
 }
 .navbar-nav a:not(.nav-link-dropdown):hover .nav-link-text {
    background-color: #e8f6fd !important;
@@ -80,14 +80,32 @@ header {
       height: 18vw !important;
    }
    ul.navbar-nav {
-      gap: 2vw !important;
-      padding-right: 2vw !important;
+      gap: 0vw !important;
+      padding-right: 0vw !important;
    }
    #mainnavigation > nav {
       padding-right: 1vw !important;
    }
    .nav-link-indicator {
       display: none !important;
+   }
+}
+@media (min-width: 1440px) {
+   ul.navbar-nav {
+      gap: 1vw !important;
+      padding-right: 1vw !important;
+   }
+   .navbar-nav a:not(.nav-link-dropdown) .nav-link-text {
+      padding: 6px 7px 4px !important;
+   }
+}
+@media (min-width: 1600px) {
+   ul.navbar-nav {
+      gap: 2vw !important;
+      padding-right: 2vw !important;
+   }
+   .navbar-nav a:not(.nav-link-dropdown) .nav-link-text {
+      padding: 6px 10px 4px !important;
    }
 }
 /*Navbar-Searchbar-Menu*/
@@ -117,8 +135,12 @@ header {
       padding-left: 30vw;
       padding-right: 30vw;
    }
+   #mainnavigation {
+      /***dropdown-section*/
+      padding-bottom: 25px !important;
+   }
    #mainnavigation > nav {
-      padding-top: 10px !important;
+      padding-top: 0px !important;
       padding-bottom: 0 !important;
    }
    .custom-icon-menu {
@@ -128,9 +150,6 @@ header {
    #mainnavigation > nav > div {
       padding-left: 0 !important;
       padding-right: 50px !important;
-   }
-   header {
-      padding-bottom: 40px !important;
    }
    #c44 > div > div > div > div > div > div > figure > picture > img {
       padding-bottom: 5px;
@@ -190,6 +209,7 @@ header.navbar-mainnavigation {
       justify-content: end;
    }
 }
+
 @media (max-width: 991px) {
    #mainnavigation > button {
       display: none;
@@ -232,7 +252,7 @@ header .frame {
       width: 100% !important;
       height: 300px;
       padding-left: 10vw;
-      padding-right: 50vw;
+      padding-right: 35vw;
       padding-top: 50px;
    }
    .navbar-mainnavigation .dropdown-menu {
@@ -283,8 +303,19 @@ header .frame {
       transition: all 500ms;
    }
    /********icons dropdown-megamenu*/
-   .dropdown-menu .nav-link-icon{
-      /*width: 200%;
-      padding-right: 50px;*/
+   .dropdown-menu .nav-link-icon svg {
+      margin-right: 15px;
+      transform: scale(1.7);
+   }
+}
+@media (min-width: 1060px) {
+   .navbar-mainnavigation .nav-style-simple .dropdown-menu {
+      padding-right: 40vw;
+   }
+}
+
+@media (min-width: 1690px) {
+   .navbar-mainnavigation .nav-style-simple .dropdown-menu {
+      padding-right: 50vw;
    }
 }
