@@ -217,6 +217,13 @@ h5 {
       font-weight: 500;
    }
 }
+@media (max-width: 991px) {
+   h1 {
+      font-family: "gelica", sans-serif;
+      font-size: 35px;
+      font-weight: 400;
+   }
+}
 /*Colors*/
 .custom-blue {
    color: var(--bs-primary) !important;
@@ -237,7 +244,7 @@ h5 {
    color: var(--bs-info) !important;
 }
 .custom-sand-color {
-   color: var(--bs-default) !important; 
+   color: var(--bs-default) !important;
 }
 /**************************************************/
 body {
