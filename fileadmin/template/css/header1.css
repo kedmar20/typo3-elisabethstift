@@ -64,7 +64,7 @@ header {
    background-repeat: repeat-x;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1150px) {
    header {
       position: fixed !important;
       top: 0 !important;
@@ -123,7 +123,7 @@ header {
    max-width: 34px !important;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1149px) {
    .nav-link {
       font-size: 28px !important;
       font-weight: 500 !important;
@@ -203,14 +203,14 @@ header {
 header.navbar-mainnavigation {
    flex-wrap: wrap;
 }
-@media (min-width: 992px) {
+@media (min-width: 1150px) {
    .navbar-mainnavigation .navbar-nav {
       flex-direction: row;
       justify-content: end;
    }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1149px) {
    #mainnavigation > button {
       display: none;
    }
@@ -247,7 +247,7 @@ header .frame {
    color: var(--bs-primary) !important;
 }
 /*Mega Menu - Dropdownmenu*/
-@media (min-width: 992px) {
+@media (min-width: 1150px) {
    .navbar-mainnavigation .nav-style-simple .dropdown-menu {
       width: 100% !important;
       height: 300px;
@@ -319,3 +319,9 @@ header .frame {
       padding-right: 50vw;
    }
 }
+
+
+
+/***********************************************************/
+/****************************************/
+/************************/
