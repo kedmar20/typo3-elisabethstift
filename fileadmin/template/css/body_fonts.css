@@ -46,30 +46,40 @@
 
 /**************************************************/
 /*FONTS*/
-h1 {
+h1,
+.h1-custom {
    font-family: "gelica", sans-serif;
    font-size: 50px;
    font-weight: 400;
+   color: var(--bs-primary);
 }
-h2 {
+h2,
+.h2-custom {
    font-family: "gelica", sans-serif;
    font-size: 45px;
    font-weight: 400;
+   color: var(--bs-primary);
 }
-h3 {
+h3,
+.h3-custom {
    font-family: "gelica", sans-serif;
    font-size: 30px;
    font-weight: 400;
+   color: var(--bs-primary);
 }
-h4 {
+h4,
+.h4-custom {
    font-family: "catamaran", sans-serif;
    font-size: 25px;
    font-weight: 400;
+   color: var(--bs-primary);
 }
-h5 {
+h5,
+.h5-custom {
    font-family: "catamaran", sans-serif;
    font-size: 22px;
    font-weight: 400;
+   color: var(--bs-primary);
 }
 .gelica-50-regular {
    font-family: "gelica", sans-serif;
@@ -104,124 +114,89 @@ h5 {
 }
 
 @media (max-width: 1440px) {
-   h1 {
-      font-family: "gelica", sans-serif;
+   h1,
+   .h1-custom {
       font-size: 45px;
-      font-weight: 400;
    }
-   h2 {
-      font-family: "gelica", sans-serif;
+   h2,
+   .h2-custom {
       font-size: 41px;
-      font-weight: 400;
    }
-   h3 {
-      font-family: "gelica", sans-serif;
+   h3,
+   .h3-custom {
       font-size: 27px;
-      font-weight: 400;
    }
-   h4 {
-      font-family: "catamaran", sans-serif;
+   h4,
+   .h4-custom {
       font-size: 23px;
-      font-weight: 400;
    }
-   h5 {
-      font-family: "catamaran", sans-serif;
+   h5,
+   .h5-custom {
       font-size: 21px;
-      font-weight: 400;
    }
    .gelica-50-regular {
-      font-family: "gelica", sans-serif;
       font-size: 45px;
-      font-weight: 400;
    }
    .gelica-40-regular {
-      font-family: "gelica", sans-serif;
       font-size: 41px;
-      font-weight: 400;
    }
    .catamaran-24-bold {
-      font-family: "catamaran", sans-serif;
       font-size: 22px;
-      font-weight: 700;
    }
    .catamaran-25-semibold {
-      font-family: "catamaran", sans-serif;
       font-size: 22px;
-      font-weight: 600;
    }
    .catamaran-22-medium {
-      font-family: "catamaran", sans-serif;
       font-size: 21px;
-      font-weight: 500;
    }
    .catamaran-26-medium {
-      font-family: "catamaran", sans-serif;
       font-size: 24px;
-      font-weight: 500;
    }
 }
 @media (max-width: 1240px) {
-   h1 {
-      font-family: "gelica", sans-serif;
+   h1,
+   .h1-custom {
       font-size: 41px;
-      font-weight: 400;
    }
-   h2 {
-      font-family: "gelica", sans-serif;
+   h2,
+   .h2-custom {
       font-size: 37px;
-      font-weight: 400;
    }
-   h3 {
-      font-family: "gelica", sans-serif;
+   h3,
+   .h3-custom {
       font-size: 24px;
-      font-weight: 400;
    }
-   h4 {
-      font-family: "catamaran", sans-serif;
+   h4,
+   .h4-custom {
       font-size: 20px;
-      font-weight: 400;
    }
-   h5 {
-      font-family: "catamaran", sans-serif;
+   h5,
+   .h5-custom {
       font-size: 19px;
-      font-weight: 400;
    }
    .gelica-50-regular {
-      font-family: "gelica", sans-serif;
       font-size: 40px;
-      font-weight: 400;
    }
    .gelica-40-regular {
-      font-family: "gelica", sans-serif;
       font-size: 37px;
-      font-weight: 400;
    }
    .catamaran-24-bold {
-      font-family: "catamaran", sans-serif;
       font-size: 18px;
-      font-weight: 700;
    }
    .catamaran-25-semibold {
-      font-family: "catamaran", sans-serif;
       font-size: 20px;
-      font-weight: 600;
    }
    .catamaran-22-medium {
-      font-family: "catamaran", sans-serif;
       font-size: 19px;
-      font-weight: 500;
    }
    .catamaran-26-medium {
-      font-family: "catamaran", sans-serif;
       font-size: 20px;
-      font-weight: 500;
    }
 }
 @media (max-width: 991px) {
-   h1 {
-      font-family: "gelica", sans-serif;
+   h1,
+   .h1-custom {
       font-size: 35px;
-      font-weight: 400;
    }
 }
 /*Colors*/

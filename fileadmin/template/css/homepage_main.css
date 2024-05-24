@@ -232,3 +232,8 @@
       padding: 50px 5.5vw;
    }
 }
+
+/*Aktuelle Nachrichten*/
+.list-group-item h3 a {
+   text-decoration: none !important;
+}

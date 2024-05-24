@@ -4,8 +4,8 @@
    data-namespace-typo3-fluid="true"
 >
    <!--
-	=====================
-		Partials/List/Item.html - aa
+	===================== 
+		Partials/List/Item.html - bb
 -->
    <div
       class="article articletype-{newsItem.type}{f:if(condition: newsItem.istopnews, then: ' topnews')}"
@@ -18,10 +18,15 @@
          <h3>
             <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}" additionalAttributes="{itemprop:'url'}">
                <span itemprop="headline">{newsItem.title}</span>
+               <span itemprop="headline">newsItem.title</span>
             </n:link>
          </h3>
       </div>
-
+      <div class="header">
+         <h3>
+            <span itemprop="headline">newsItem</span>
+         </h3>
+      </div>
       <f:if condition="{newsItem.mediaPreviews}">
          <!-- media preview element -->
          <f:then>
