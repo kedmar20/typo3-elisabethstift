@@ -2,8 +2,8 @@
    <f:layout name="Default" />
 
    <f:section name="Main">
-      <!--<f:debug inline="true">{_all}</f:debug>--> 
-      <div class="section section-default druga">
+      <!--<f:debug inline="true">{_all}</f:debug>-->
+      <div class="section section-default wrapper-pierwsza-sekcja">
          <div class="container">
             <div class="section-row">
                <div class="section-column section-column-third">
@@ -22,14 +22,14 @@
          </div>
       </div>
 
-      <div class="section section-light">
+      <div class="section section-light wrapper-druga-sekcja">
          <f:cObject
             typoscriptObjectPath="lib.dynamicContent"
             data="{pageUid: '{data.uid}', colPos: '0', slide: '{theme.pagelayout.{pagelayout}.colPos.0.slide}'}"
          />
       </div>
 
-      <div class="section section-default">
+      <div class="section section-default wrapper-trzykolumny-sekcja">
          <div class="container">
             <div class="section-row">
                <div class="section-column section-column-third">
@@ -78,7 +78,7 @@
          </div>
       </div>
 
-      <div class="section section-default">
+      <div class="section section-default wrapper-posts-sekcja">
          <div class="container">
             <div class="section-row">
                <div class="section-column section-column-third">

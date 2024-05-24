@@ -47,7 +47,8 @@
 /**************************************************/
 /*FONTS*/
 h1,
-.h1-custom {
+.h1-custom,
+h2.h1 {
    font-family: "gelica", sans-serif;
    font-size: 50px;
    font-weight: 400;
@@ -115,7 +116,8 @@ h5,
 
 @media (max-width: 1440px) {
    h1,
-   .h1-custom {
+   .h1-custom,
+   h2.h1 {
       font-size: 45px;
    }
    h2,
@@ -155,7 +157,8 @@ h5,
 }
 @media (max-width: 1240px) {
    h1,
-   .h1-custom {
+   .h1-custom,
+   h2.h1 {
       font-size: 41px;
    }
    h2,
@@ -195,7 +198,8 @@ h5,
 }
 @media (max-width: 991px) {
    h1,
-   .h1-custom {
+   .h1-custom,
+   h2.h1 {
       font-size: 35px;
    }
 }
