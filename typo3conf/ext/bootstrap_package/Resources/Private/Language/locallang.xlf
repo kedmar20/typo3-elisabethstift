@@ -47,7 +47,7 @@
             </trans-unit>
 
             <trans-unit id="previous">
-                <source>Previous</source>
+                <source>dd</source>
             </trans-unit>
 
             <trans-unit id="next">

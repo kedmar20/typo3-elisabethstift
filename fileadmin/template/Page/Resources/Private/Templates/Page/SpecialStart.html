@@ -3,7 +3,7 @@
 
    <f:section name="Main">
       <!--<f:debug inline="true">{_all}</f:debug>-->
-      <div class="section section-default wrapper-pierwsza-sekcja">
+      <div class="section section-default custom-hero-section">
          <div class="container">
             <div class="section-row">
                <div class="section-column section-column-third">
@@ -22,14 +22,14 @@
          </div>
       </div>
 
-      <div class="section section-light wrapper-druga-sekcja">
+      <div class="section section-light custom-sticky-section">
          <f:cObject
             typoscriptObjectPath="lib.dynamicContent"
             data="{pageUid: '{data.uid}', colPos: '0', slide: '{theme.pagelayout.{pagelayout}.colPos.0.slide}'}"
          />
       </div>
 
-      <div class="section section-default wrapper-trzykolumny-sekcja">
+      <div class="section section-default custom-3columns-section">
          <div class="container">
             <div class="section-row">
                <div class="section-column section-column-third">
@@ -53,13 +53,13 @@
             </div>
          </div>
       </div>
-
-      <f:cObject
-         typoscriptObjectPath="lib.dynamicContent"
-         data="{pageUid: '{data.uid}', colPos: '9', slide: '{theme.pagelayout.{pagelayout}.colPos.9.slide}'}"
-      />
-
-      <div class="section section-default">
+      <div class="custom-news-section">
+         <f:cObject
+            typoscriptObjectPath="lib.dynamicContent"
+            data="{pageUid: '{data.uid}', colPos: '9', slide: '{theme.pagelayout.{pagelayout}.colPos.9.slide}'}"
+         />
+      </div>
+      <div class="section section-default custom-arbeiten-section">
          <div class="container">
             <div class="section-row">
                <div class="section-column section-column-third">
@@ -78,7 +78,7 @@
          </div>
       </div>
 
-      <div class="section section-default wrapper-posts-sekcja">
+      <div class="section section-default custom-instafeed-section">
          <div class="container">
             <div class="section-row">
                <div class="section-column section-column-third">
