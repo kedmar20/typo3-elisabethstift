@@ -79,10 +79,10 @@
       min-height: 90vh !important;
       border: solid yellow 3px;
    }
-   #page-content > div.section.section-default.druga > div {
-      border: green 4px solid;
-      background-color: var(--bs-default);
+   #page-content > div.section.section-default.custom-hero-section > div {
       position: relative;
+      border: solid green 13px;
+      background-color: var(--bs-default);
    }
    #c90 {
       top: 80% !important;
@@ -214,7 +214,7 @@
 /*****************************************/
 /*3-ThreeColumns-Section*/
 @media (min-width: 768px) {
-   .wrapper-trzykolumny-sekcja .section-row {
+   .custom-3columns-section .section-row {
       width: 100vw;
       background-color: blueviolet;
       min-height: 500px;
@@ -222,30 +222,30 @@
       display: flex;
       flex-direction: column;
    }
-   .wrapper-trzykolumny-sekcja .section-column.section-column-third {
+   .custom-3columns-section .section-column.section-column-third {
       width: 100% !important;
       padding: 50px 7vw;
       min-height: 30vh !important;
    }
-   .wrapper-trzykolumny-sekcja .section-column.section-column-third h5 {
+   .custom-3columns-section .section-column.section-column-third h5 {
       line-height: 1.6;
    }
-   .wrapper-trzykolumny-sekcja .section-row > div:nth-child(1) {
+   .custom-3columns-section .section-row > div:nth-child(1) {
       background-color: var(--bs-secondary);
    }
-   .wrapper-trzykolumny-sekcja .section-row > div:nth-child(2) {
+   .custom-3columns-section .section-row > div:nth-child(2) {
       background-color: var(--bs-success);
    }
-   .wrapper-trzykolumny-sekcja .section-row > div:nth-child(3) {
+   .custom-3columns-section .section-row > div:nth-child(3) {
       background-color: var(--bs-quaternary);
    }
 }
 @media (min-width: 1240px) {
    /*3-Column-Section*/
-   .wrapper-trzykolumny-sekcja .section-row {
+   .custom-3columns-section .section-row {
       flex-direction: row;
    }
-   .wrapper-trzykolumny-sekcja .section-column.section-column-third {
+   .custom-3columns-section .section-column.section-column-third {
       width: 33.33% !important;
       padding: 50px 5.5vw;
       min-height: none !important;
@@ -315,4 +315,48 @@
 /*****************************************/
 /*5-Arbeiten*/
 @media (min-width: 768px) {
+   .custom-arbeiten-section {
+      background-color: #ffeee2;
+   }
+   .custom-arbeiten-section > div > div > div:nth-child(1) {
+      width: 45% !important;
+   }
+   .custom-arbeiten-section > div > div > div:nth-child(2) {
+      width: 55% !important;
+   }
+   .custom-arbeiten-section .section-row {
+      gap: 0 !important;
+   }
+   /*5-Arbeiten-Carousel*/
+   #carousel-22 > div > div {
+      position: relative;
+      background-color: transparent !important;
+   }
+   #carousel-22 > div > div .carousel-text {
+      position: absolute;
+      color: var(--bs-primary);
+      top: 20%;
+      left: 5%;
+      padding-right: 70%;
+      color: red;
+   }
+   #carousel-22 > div > div .carousel-image img {
+      min-height: 555px !important;
+      max-width: none !important;
+      width: auto !important;
+   }
+   .custom-carousel-button {
+      height: 100px;
+      width: 100px;
+      background-color: black;
+      border: red 1px solid;
+   }
+}
+
+/*****************************************/
+/*-InstaFeef*/
+@media (min-width: 768px) {
+   .custom-instafeed-section {
+      background-color: rgb(209, 163, 252);
+   }
 }
