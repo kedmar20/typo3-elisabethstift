@@ -317,6 +317,7 @@
 @media (min-width: 768px) {
    .custom-arbeiten-section {
       background-color: #ffeee2;
+      padding: 100px 7vw !important;
    }
    .custom-arbeiten-section > div > div > div:nth-child(1) {
       width: 45% !important;
@@ -351,8 +352,67 @@
       background-color: black;
       border: red 1px solid;
    }
+   #carousel-22 .carousel-control {
+      width: 100px;
+   }
+   #carousel-22 .carousel-indicators {
+      display: none !important;
+   }
+   /*5-Arbeiten-RightColumn*/
+   .custom-arbeiten-section > div > div > div:nth-child(2) {
+      padding-left: 5vw !important;
+      display: flex !important;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 15px;
+   }
+   .custom-arbeiten-section > div > div > div:nth-child(2) #c93 {
+      padding-right: 10vw !important;
+   }
+   .custom-arbeiten-section #c94 {
+      padding: 20px 45px;
+      border-radius: 100px;
+   }
+   .custom-arbeiten-section #c94 .texticon-icon {
+      margin-left: 155px !important;
+      color: white !important;
+   }
 }
-
+/*5-Arbeiten-custom-button-1*/
+.custom-a-button {
+   text-decoration: none;
+}
+.custom-button-1 {
+   align-items: center;
+   background-color: var(--bs-secondary);
+   border: none;
+   border-radius: 100px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   max-width: 650px;
+   min-height: 70px;
+   padding: 20px 45px;
+}
+.custom-button-1 h4 {
+   margin-bottom: 0 !important;
+}
+.custom-button-1-icon {
+   height: 45px;
+   fill: white;
+   margin-left: 145px;
+   transition: all 0.5s ease-out;
+}
+.custom-button-1-span {
+   margin-bottom: 0 !important;
+   text-decoration: none;
+   color: white;
+}
+.custom-button-1:hover .custom-button-1-icon {
+   transform: translateX(15px);
+}
 /*****************************************/
 /*-InstaFeef*/
 @media (min-width: 768px) {
