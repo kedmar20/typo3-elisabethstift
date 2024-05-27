@@ -37,10 +37,30 @@
          </div>
       </div>
 
-      <f:cObject
-         typoscriptObjectPath="lib.dynamicContent"
-         data="{pageUid: '{data.uid}', colPos: '9', slide: '{theme.pagelayout.{pagelayout}.colPos.9.slide}'}"
-      />
+      <div class="section section-default custom-3columns-section">
+         <div class="container">
+            <div class="section-row">
+               <div class="section-column section-column-third">
+                  <f:cObject
+                     typoscriptObjectPath="lib.dynamicContent"
+                     data="{pageUid: '{data.uid}', colPos: '21', slide: '{theme.pagelayout.{pagelayout}.colPos.21.slide}'}"
+                  />
+               </div>
+               <div class="section-column section-column-third">
+                  <f:cObject
+                     typoscriptObjectPath="lib.dynamicContent"
+                     data="{pageUid: '{data.uid}', colPos: '20', slide: '{theme.pagelayout.{pagelayout}.colPos.20.slide}'}"
+                  />
+               </div>
+               <div class="section-column section-column-third">
+                  <f:cObject
+                     typoscriptObjectPath="lib.dynamicContent"
+                     data="{pageUid: '{data.uid}', colPos: '22', slide: '{theme.pagelayout.{pagelayout}.colPos.22.slide}'}"
+                  />
+               </div>
+            </div>
+         </div>
+      </div>
    </f:section>
    <f:section name="Footer">
       <f:render partial="Structure/FooterContent" arguments="{_all}" />
