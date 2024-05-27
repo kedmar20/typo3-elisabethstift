@@ -14,7 +14,7 @@
 /*****************************************/
 /*1-Hero Section*/
 @media (min-width: 768px) {
-   #page-content > div:nth-child(1) {
+   #p1 #page-content > div:nth-child(1) {
       position: relative;
       z-index: 1;
       min-height: 100vh;
@@ -37,33 +37,33 @@
    }
 
    /*1-HeroS. - Carousel-HomePage*/
-   .carousel-item-layout-secondary {
+   #p1 .custom-hero-section .carousel-item-layout-secondary {
       background: none !important;
    }
-   .carousel-item-type-image .carousel-image img {
+   #p1 .custom-hero-section .carousel-item-type-image .carousel-image img {
       margin: 0 0 auto auto !important;
       width: 100% !important;
    }
-   .carousel .carousel-content-inner {
+   #p1 .custom-hero-section .carousel .carousel-content-inner {
       align-items: start !important;
    }
    #c89 {
       padding-top: 0 !important;
    }
-   .carousel .item {
+   #p1 .carousel .item {
       height: auto !important ;
    }
-   #page-content > div:nth-child(1) > div > div > div:nth-child(2) {
+   #p1 #page-content > div:nth-child(1) > div > div > div:nth-child(2) {
       width: 50% !important;
    }
    /*1-HeroS. - Left Section*/
-   #page-content > div:nth-child(1) {
+   #p1 #page-content > div:nth-child(1) {
       padding-left: 7vw !important;
    }
-   #page-content > div:nth-child(1) > div > div {
+   #p1 #page-content > div:nth-child(1) > div > div {
       gap: 0 !important;
    }
-   #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
+   #p1 #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
       width: 50% !important;
       display: flex !important;
       flex-direction: column;
@@ -74,12 +74,12 @@
 }
 @media (min-width: 768px) and (max-width: 900px) {
    /*Ipad-Hoch Ansicht - Hero Section*/
-   #page-content > div:nth-child(1) {
+   #p1 #page-content > div:nth-child(1) {
       padding-left: 0 !important;
       min-height: 90vh !important;
       border: solid yellow 3px;
    }
-   #page-content > div.section.section-default.custom-hero-section > div {
+   #p1 #page-content > div.section.section-default.custom-hero-section > div {
       position: relative;
       border: solid green 13px;
       background-color: var(--bs-default);
@@ -99,10 +99,10 @@
    #c89 > div > div > div {
       margin-right: 0 !important;
    }
-   #carousel-89 > div > div > div > div {
+   #p1 .custom-hero-section #carousel-89 > div > div > div > div {
       margin-right: 0 !important;
    }
-   #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
+   #p1 #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
       padding-left: 7vw !important;
       padding-right: 7vw !important;
       padding-top: 15vh;
@@ -126,13 +126,13 @@
    }
 }
 @media (min-width: 1150px) {
-   #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
+   #p1 #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
       /***herosection-leftcolumn*/
       width: 45% !important;
    }
 }
 @media (min-width: 1240px) {
-   #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
+   #p1 #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
       /***herosection-leftcolumn*/
       width: 40% !important;
    }
@@ -141,7 +141,7 @@
 /*****************************************/
 /*2-Sticky Section*/
 @media (min-width: 768px) {
-   #page-content > div.section.section-light {
+   #p1 #page-content > div.section.section-light {
       min-height: 50vh;
       position: relative;
       z-index: -1;
@@ -214,7 +214,7 @@
 /*****************************************/
 /*3-ThreeColumns-Section*/
 @media (min-width: 768px) {
-   .custom-3columns-section .section-row {
+   #p1 .custom-3columns-section .section-row {
       width: 100vw;
       background-color: blueviolet;
       min-height: 500px;
@@ -222,30 +222,30 @@
       display: flex;
       flex-direction: column;
    }
-   .custom-3columns-section .section-column.section-column-third {
+   #p1 .custom-3columns-section .section-column.section-column-third {
       width: 100% !important;
       padding: 50px 7vw;
       min-height: 30vh !important;
    }
-   .custom-3columns-section .section-column.section-column-third h5 {
+   #p1 .custom-3columns-section .section-column.section-column-third h5 {
       line-height: 1.6;
    }
-   .custom-3columns-section .section-row > div:nth-child(1) {
+   #p1 .custom-3columns-section .section-row > div:nth-child(1) {
       background-color: var(--bs-secondary);
    }
-   .custom-3columns-section .section-row > div:nth-child(2) {
+   #p1 .custom-3columns-section .section-row > div:nth-child(2) {
       background-color: var(--bs-success);
    }
-   .custom-3columns-section .section-row > div:nth-child(3) {
+   #p1 .custom-3columns-section .section-row > div:nth-child(3) {
       background-color: var(--bs-quaternary);
    }
 }
 @media (min-width: 1240px) {
    /*3-Column-Section*/
-   .custom-3columns-section .section-row {
+   #p1 .custom-3columns-section .section-row {
       flex-direction: row;
    }
-   .custom-3columns-section .section-column.section-column-third {
+   #p1 .custom-3columns-section .section-column.section-column-third {
       width: 33.33% !important;
       padding: 50px 5.5vw;
       min-height: none !important;
@@ -255,17 +255,17 @@
 /*****************************************/
 /*4-Aktuelle Nachrichten*/
 @media (min-width: 768px) {
-   .list-group-item h3 a {
+   #p1 .custom-news-section .list-group-item h3 a {
       text-decoration: none !important;
    }
-   .news-list-view li.list-group-item,
-   .news-list-view .row.news-list-item.mb-3,
-   .news-list-view .col-md-3,
-   .news-list-view .col-md-9.articletype-0 {
+   #p1 .custom-news-section .news-list-view li.list-group-item,
+   #p1 .custom-news-section .news-list-view .row.news-list-item.mb-3,
+   #p1 .custom-news-section .news-list-view .col-md-3,
+   #p1 .custom-news-section .news-list-view .col-md-9.articletype-0 {
       margin: 0 !important;
       padding: 0 !important;
    }
-   .news-list-view .col-md-3 img {
+   #p1 .custom-news-section .news-list-view .col-md-3 img {
       width: 80%;
       object-fit: cover;
       object-position: left top;
@@ -286,15 +286,15 @@
    .news-list-view .col-md-3 {
       width: 35% !important;
    }
-   .news-list-view .col-md-9.articletype-0 {
+   #p1 .custom-news-section .news-list-view .col-md-9.articletype-0 {
       width: 65% !important;
       padding: 5% !important;
    }
-   .news-list-view ul.list-group.mb-3 {
+   #p1 .custom-news-section .news-list-view ul.list-group.mb-3 {
       gap: 25px !important;
    }
-   .news-list-view ul.list-group.mb-3 li,
-   .news-list-view .col-md-3 img {
+   #p1 .custom-news-section .news-list-view ul.list-group.mb-3 li,
+   #p1 .custom-news-section .news-list-view .col-md-3 img {
       border-radius: 20px 0 0 20px;
    }
 }
@@ -315,18 +315,19 @@
 /*****************************************/
 /*5-Arbeiten*/
 @media (min-width: 768px) {
-   .custom-arbeiten-section {
+   #p1 .custom-arbeiten-section {
       background-color: #ffeee2;
       padding: 100px 7vw !important;
    }
-   .custom-arbeiten-section > div > div > div:nth-child(1) {
-      width: 45% !important;
+   #p1 .custom-arbeiten-section > div > div > div:nth-child(1) {
+      width: 100% !important;
    }
-   .custom-arbeiten-section > div > div > div:nth-child(2) {
-      width: 55% !important;
+   #p1 .custom-arbeiten-section > div > div > div:nth-child(2) {
+      width: 100% !important;
    }
-   .custom-arbeiten-section .section-row {
+   #p1 .custom-arbeiten-section .section-row {
       gap: 0 !important;
+      flex-direction: column;
    }
    /*5-Arbeiten-Carousel*/
    #carousel-22 > div > div {
@@ -337,20 +338,20 @@
       position: absolute;
       color: var(--bs-primary);
       top: 20%;
-      left: 5%;
-      padding-right: 70%;
+      left: 9%;
+      padding-right: 61%;
       color: red;
    }
    #carousel-22 > div > div .carousel-image img {
-      min-height: 555px !important;
+      min-height: 400px !important;
       max-width: none !important;
       width: auto !important;
    }
    .custom-carousel-button {
       height: 100px;
-      width: 100px;
-      background-color: black;
-      border: red 1px solid;
+      width: 60px;
+      background-color: transparent;
+      border: none;
    }
    #carousel-22 .carousel-control {
       width: 100px;
@@ -358,9 +359,12 @@
    #carousel-22 .carousel-indicators {
       display: none !important;
    }
+   #carousel-22 > div.carousel-inner > div.item.active.carousel-item.carousel-item-layout-primary.carousel-item-type-text_and_image > div {
+      display: flex;
+   }
    /*5-Arbeiten-RightColumn*/
    .custom-arbeiten-section > div > div > div:nth-child(2) {
-      padding-left: 5vw !important;
+      padding-left: 0vw !important;
       display: flex !important;
       flex-direction: column;
       align-items: start;
@@ -378,45 +382,119 @@
       margin-left: 155px !important;
       color: white !important;
    }
+   /*5-Arbeiten-custom-button-1*/
+   .custom-a-button {
+      text-decoration: none;
+   }
+   .custom-button-1 {
+      align-items: center;
+      background-color: var(--bs-secondary);
+      border: none;
+      border-radius: 100px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      max-width: 650px;
+      min-height: 70px;
+      padding: 20px 45px;
+   }
+   .custom-button-1 h4 {
+      margin-bottom: 0 !important;
+   }
+   .custom-button-1-icon {
+      height: 45px;
+      fill: white;
+      margin-left: 145px;
+      transition: all 0.5s ease-out;
+   }
+   .custom-button-1-span {
+      margin-bottom: 0 !important;
+      text-decoration: none;
+      color: white;
+   }
+   .custom-button-1:hover .custom-button-1-icon {
+      transform: translateX(15px);
+   }
 }
-/*5-Arbeiten-custom-button-1*/
-.custom-a-button {
-   text-decoration: none;
+@media (min-width: 1300px) {
+   .custom-arbeiten-section .section-row {
+      flex-direction: row;
+   }
+   .custom-arbeiten-section > div > div > div:nth-child(1) {
+      width: 48% !important;
+   }
+   .custom-arbeiten-section > div > div > div:nth-child(2) {
+      width: 52% !important;
+      padding-left: 2vw !important;
+   }
 }
-.custom-button-1 {
-   align-items: center;
-   background-color: var(--bs-secondary);
-   border: none;
-   border-radius: 100px;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: center;
-   max-width: 650px;
-   min-height: 70px;
-   padding: 20px 45px;
+@media (min-width: 1500px) {
+   #carousel-22 > div > div .carousel-image img {
+      min-height: 490px !important;
+   }
 }
-.custom-button-1 h4 {
-   margin-bottom: 0 !important;
-}
-.custom-button-1-icon {
-   height: 45px;
-   fill: white;
-   margin-left: 145px;
-   transition: all 0.5s ease-out;
-}
-.custom-button-1-span {
-   margin-bottom: 0 !important;
-   text-decoration: none;
-   color: white;
-}
-.custom-button-1:hover .custom-button-1-icon {
-   transform: translateX(15px);
-}
+
 /*****************************************/
-/*-InstaFeef*/
+/*6-InstaFeef*/
 @media (min-width: 768px) {
    .custom-instafeed-section {
-      background-color: rgb(209, 163, 252);
+      background-color: var(--bs-primary);
+      padding: 7vw !important;
+   }
+   .custom-instafeed-section .section-row {
+      gap: 5% !important;
+      flex-direction: column;
+   }
+   .custom-instafeed-section > div > div > div:nth-child(1) {
+      width: 100% !important;
+   }
+   .custom-instafeed-section > div > div > div:nth-child(2) {
+      width: 100% !important;
+      border: white 2px dotted;
+      margin-top: 100px !important;
+   }
+   /*6-InstaFeed-LinksColumn */
+   #c100,
+   #c101 {
+      padding: 0 !important;
+      margin: 0 !important;
+   }
+   #c100 > div > div > div > div > h4 > span > span {
+      line-height: 2 !important;
+   }
+   #c99 {
+      padding-top: 0 !important;
+   }
+
+   #c101 > div > div > div > div > div > div.texticon-content > h4 > a {
+      color: white !important;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+   }
+   #c101 > div > div > div > div > div > div.texticon-icon.texticon-size-default.texticon-type-default {
+      padding-left: 0 !important;
+      margin-left: 0 !important;
+   }
+   #c101 > div > div > div > div > div > div.texticon-icon.texticon-size-default.texticon-type-default svg {
+      fill: white;
+      width: 20px;
+   }
+   #c101 .texticon {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+   }
+}
+@media (min-width: 1200px) {
+   .custom-instafeed-section .section-row {
+      flex-direction: row;
+   }
+   .custom-instafeed-section > div > div > div:nth-child(1) {
+      width: 30% !important;
+   }
+   .custom-instafeed-section > div > div > div:nth-child(2) {
+      width: 65% !important;
+      margin-top: 0px !important;
    }
 }
