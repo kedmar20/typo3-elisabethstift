@@ -157,25 +157,25 @@
    }
    #c21 > div > div > div > div > h2:nth-child(1) > span::after {
       /*2-StickyS.-h2span1-after*/
-      content: "''";
-      width: 30px;
-      height: 30px;
-      color: yellow;
-      background-color: black;
-      position: absolute;
-      top: -30px;
-      right: -30px;
+    content: url(../../../fileadmin/user_upload/images/anfuerungszeichen-oben2.png);
+    width: 70px;   
+    height: 60px;    
+    position: absolute;
+    top: -20px;
+    right: -53px;
+    overflow: hidden;
+    transform: scale(0.65);
    }
    #c21 > div > div > div > div > h2:nth-child(3) > span::before {
       /*2-StickyS.-h2span3-after*/
-      content: "''";
-      width: 30px;
-      height: 30px;
-      color: yellow;
-      background-color: black;
+      content: url('../../user_upload/images/anfuerungszeichen-unten2.png');
+      width: 70px;   
+      height: 60px;    
       position: absolute;
-      bottom: -30px;
-      left: -50px;
+      bottom: -20px;
+      left: -58px;
+      overflow: hidden;
+      transform: scale(0.65);
    }
    #c21 > div > div > div > div > h2:nth-child(1) > span,
    #c21 > div > div > div > div > h2:nth-child(3) > span {
@@ -208,6 +208,16 @@
       min-height: 100dvh;
       min-width: 100%;
       max-width: none;
+   }
+      #c21 > div > div > div > div > h2:nth-child(1) > span::after {
+      /*2-StickyS.-h2span1-after*/   
+    transform: scale(0.8);
+    right: -60px;
+   }
+   #c21 > div > div > div > div > h2:nth-child(3) > span::before {
+      /*2-StickyS.-h2span3-after*/  
+    transform: scale(0.8);
+     left: -70px;
    }
 }
 
@@ -277,7 +287,7 @@
    }
    #c51 {
       padding: 145px 0%;
-      background-color: #fef8f5;
+      background-color: transparent;
       margin-top: -30px !important;
    }
    #c51 h2 {
@@ -297,6 +307,41 @@
    #p1 .custom-news-section .news-list-view .col-md-3 img {
       border-radius: 20px 0 0 20px;
    }
+   /*4-background*/
+    #c51 {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+   }
+   #c109 {
+      position: static;
+      top: 0;
+      left: 0;
+      z-index: -2;
+      width: 100%;
+      margin: 0 !important;
+      padding: 0 !important;
+   }
+   #c109 img {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: auto !important;
+      max-width: none !important;
+      min-width: 100% !important;
+      height: auto !important;
+      max-height: none !important;
+      min-height: calc(100% + 100px) !important;
+   }
+   #p1 #c109 > div > div > div{
+      padding: 0 !important;
+      margin: 0 !important;
+      position: static !important;
+   }
+      #p1 .custom-news-section {
+      position: relative;
+      z-index: 2;
+   }   
 }
 @media (min-width: 1240px) {
    #c51 {
@@ -317,7 +362,7 @@
 @media (min-width: 768px) {
    #p1 .custom-arbeiten-section {
       background-color: #ffeee2;
-      padding: 100px 7vw !important;
+      padding: 13vw 7vw 100px !important;
    }
    #p1 .custom-arbeiten-section > div > div > div:nth-child(1) {
       width: 100% !important;
@@ -340,16 +385,21 @@
       top: 20%;
       left: 9%;
       padding-right: 61%;
-      color: red;
+      color: var(--bs-primary);
    }
+     #carousel-22 > div > div .carousel-text h4{
+      text-align: start !important;
+      line-height: 1.5 !important;
+     }
    #carousel-22 > div > div .carousel-image img {
       min-height: 400px !important;
       max-width: none !important;
       width: auto !important;
+      margin-left: 17vw !important;
    }
    .custom-carousel-button {
       height: 100px;
-      width: 60px;
+      width: 30px;
       background-color: transparent;
       border: none;
    }
@@ -359,9 +409,12 @@
    #carousel-22 .carousel-indicators {
       display: none !important;
    }
-   #carousel-22 > div.carousel-inner > div.item.active.carousel-item.carousel-item-layout-primary.carousel-item-type-text_and_image > div {
-      display: flex;
+   #carousel-22 .carousel-control-prev-icon{
+      background-image: url(../../user_upload/icons/carousel22-nav-left.svg);
    }
+    #carousel-22 .carousel-control-next-icon{
+      background-image: url(../../user_upload/icons/carousel22-nav-right.svg);
+   }  
    /*5-Arbeiten-RightColumn*/
    .custom-arbeiten-section > div > div > div:nth-child(2) {
       padding-left: 0vw !important;
@@ -417,29 +470,45 @@
       transform: translateX(15px);
    }
 }
+@media (min-width: 1150px) {
+    #carousel-22 > div > div .carousel-image img {    
+      margin-left: 20vw !important;
+   }
+}
 @media (min-width: 1300px) {
-   .custom-arbeiten-section .section-row {
+   #p1 .custom-arbeiten-section .section-row {
       flex-direction: row;
    }
-   .custom-arbeiten-section > div > div > div:nth-child(1) {
+   #p1 .custom-arbeiten-section > div > div > div:nth-child(1) {
       width: 48% !important;
    }
-   .custom-arbeiten-section > div > div > div:nth-child(2) {
+   #p1 .custom-arbeiten-section > div > div > div:nth-child(2) {
       width: 52% !important;
       padding-left: 2vw !important;
+   }
+    #carousel-22 > div > div .carousel-image img {
+      min-height: 390px !important;
+      height: 390px !important;
+      margin-left: 7vw !important;
    }
 }
 @media (min-width: 1500px) {
    #carousel-22 > div > div .carousel-image img {
-      min-height: 490px !important;
+      min-height: 470px !important;
+      height: 470px !important;      
    }
 }
-
+@media (min-width: 1670px) {
+   #carousel-22 > div > div .carousel-image img {
+      min-height: 490px !important;
+      height: 490px !important;
+   }
+}
 /*****************************************/
 /*6-InstaFeef*/
 @media (min-width: 768px) {
    .custom-instafeed-section {
-      background-color: var(--bs-primary);
+      background-color: transparent;
       padding: 7vw !important;
    }
    .custom-instafeed-section .section-row {
@@ -474,17 +543,53 @@
    }
    #c101 > div > div > div > div > div > div.texticon-icon.texticon-size-default.texticon-type-default {
       padding-left: 0 !important;
-      margin-left: 0 !important;
+      margin-left: 5px !important;
    }
    #c101 > div > div > div > div > div > div.texticon-icon.texticon-size-default.texticon-type-default svg {
       fill: white;
-      width: 20px;
+      width: 16px;
    }
    #c101 .texticon {
       display: flex;
       flex-direction: row-reverse;
       justify-content: flex-end;
    }
+   /*6-InstaFeed-BACKGROUND*/
+
+
+
+ #p1 .custom-instafeed-section {
+      position: relative;
+      z-index: 2;          
+      margin-bottom: 100px !important;
+   }
+   #c110 {
+      position: static;      
+      width: 100%;
+      margin: 0 !important;
+      padding: 0 !important;
+   }
+   #c110 img {
+      position: absolute !important;
+      top: -50px !important;
+      left: 0 !important;
+      width: auto !important;
+      max-width: none !important;
+      min-width: 100% !important;
+      height: auto !important;
+      max-height: none !important;
+      min-height: calc(100% + 100px) !important;
+      z-index: -2;
+   }
+   #p1 #c110 > div > div > div{
+      padding: 0 !important;
+      margin: 0 !important;
+      position: static !important;
+   }
+    
+
+
+
 }
 @media (min-width: 1200px) {
    .custom-instafeed-section .section-row {
@@ -498,3 +603,5 @@
       margin-top: 0px !important;
    }
 }
+
+

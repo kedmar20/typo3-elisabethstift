@@ -247,4 +247,7 @@ a:hover {
       margin-right: 0 !important;
    }
 }
+.section{
+   overflow: visible !important;
+}
 /**************************************************/
