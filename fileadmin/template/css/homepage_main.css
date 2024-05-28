@@ -157,20 +157,20 @@
    }
    #c21 > div > div > div > div > h2:nth-child(1) > span::after {
       /*2-StickyS.-h2span1-after*/
-    content: url(../../../fileadmin/user_upload/images/anfuerungszeichen-oben2.png);
-    width: 70px;   
-    height: 60px;    
-    position: absolute;
-    top: -20px;
-    right: -53px;
-    overflow: hidden;
-    transform: scale(0.65);
+      content: url(../../../fileadmin/user_upload/images/anfuerungszeichen-oben2.png);
+      width: 70px;
+      height: 60px;
+      position: absolute;
+      top: -20px;
+      right: -53px;
+      overflow: hidden;
+      transform: scale(0.65);
    }
    #c21 > div > div > div > div > h2:nth-child(3) > span::before {
       /*2-StickyS.-h2span3-after*/
-      content: url('../../user_upload/images/anfuerungszeichen-unten2.png');
-      width: 70px;   
-      height: 60px;    
+      content: url("../../user_upload/images/anfuerungszeichen-unten2.png");
+      width: 70px;
+      height: 60px;
       position: absolute;
       bottom: -20px;
       left: -58px;
@@ -209,15 +209,15 @@
       min-width: 100%;
       max-width: none;
    }
-      #c21 > div > div > div > div > h2:nth-child(1) > span::after {
-      /*2-StickyS.-h2span1-after*/   
-    transform: scale(0.8);
-    right: -60px;
+   #c21 > div > div > div > div > h2:nth-child(1) > span::after {
+      /*2-StickyS.-h2span1-after*/
+      transform: scale(0.8);
+      right: -60px;
    }
    #c21 > div > div > div > div > h2:nth-child(3) > span::before {
-      /*2-StickyS.-h2span3-after*/  
-    transform: scale(0.8);
-     left: -70px;
+      /*2-StickyS.-h2span3-after*/
+      transform: scale(0.8);
+      left: -70px;
    }
 }
 
@@ -250,7 +250,7 @@
       background-color: var(--bs-quaternary);
    }
 }
-@media (min-width: 1240px) {
+@media (min-width: 1340px) {
    /*3-Column-Section*/
    #p1 .custom-3columns-section .section-row {
       flex-direction: row;
@@ -288,7 +288,7 @@
    #c51 {
       padding: 145px 0%;
       background-color: transparent;
-      margin-top: -30px !important;
+      margin-top: -40px !important;
    }
    #c51 h2 {
       padding-bottom: 25px !important;
@@ -308,7 +308,7 @@
       border-radius: 20px 0 0 20px;
    }
    /*4-background*/
-    #c51 {
+   #c51 {
       position: relative;
       z-index: 1;
       min-height: 100vh;
@@ -333,17 +333,19 @@
       max-height: none !important;
       min-height: calc(100% + 100px) !important;
    }
-   #p1 #c109 > div > div > div{
+   #p1 #c109 > div > div > div {
       padding: 0 !important;
       margin: 0 !important;
       position: static !important;
    }
-      #p1 .custom-news-section {
+   #p1 .custom-news-section {
       position: relative;
       z-index: 2;
-   }   
+      overflow-x: clip !important;
+      overflow-y: visible !important;
+   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 1340px) {
    #c51 {
       /*4-Aktuelle Nachrichten*/
       margin-top: -150px !important;
@@ -387,10 +389,10 @@
       padding-right: 61%;
       color: var(--bs-primary);
    }
-     #carousel-22 > div > div .carousel-text h4{
+   #carousel-22 > div > div .carousel-text h4 {
       text-align: start !important;
       line-height: 1.5 !important;
-     }
+   }
    #carousel-22 > div > div .carousel-image img {
       min-height: 400px !important;
       max-width: none !important;
@@ -409,12 +411,12 @@
    #carousel-22 .carousel-indicators {
       display: none !important;
    }
-   #carousel-22 .carousel-control-prev-icon{
+   #carousel-22 .carousel-control-prev-icon {
       background-image: url(../../user_upload/icons/carousel22-nav-left.svg);
    }
-    #carousel-22 .carousel-control-next-icon{
+   #carousel-22 .carousel-control-next-icon {
       background-image: url(../../user_upload/icons/carousel22-nav-right.svg);
-   }  
+   }
    /*5-Arbeiten-RightColumn*/
    .custom-arbeiten-section > div > div > div:nth-child(2) {
       padding-left: 0vw !important;
@@ -471,7 +473,7 @@
    }
 }
 @media (min-width: 1150px) {
-    #carousel-22 > div > div .carousel-image img {    
+   #carousel-22 > div > div .carousel-image img {
       margin-left: 20vw !important;
    }
 }
@@ -486,7 +488,7 @@
       width: 52% !important;
       padding-left: 2vw !important;
    }
-    #carousel-22 > div > div .carousel-image img {
+   #carousel-22 > div > div .carousel-image img {
       min-height: 390px !important;
       height: 390px !important;
       margin-left: 7vw !important;
@@ -495,7 +497,7 @@
 @media (min-width: 1500px) {
    #carousel-22 > div > div .carousel-image img {
       min-height: 470px !important;
-      height: 470px !important;      
+      height: 470px !important;
    }
 }
 @media (min-width: 1670px) {
@@ -509,7 +511,7 @@
 @media (min-width: 768px) {
    .custom-instafeed-section {
       background-color: transparent;
-      padding: 7vw !important;
+      padding: 135px 7vw !important;
    }
    .custom-instafeed-section .section-row {
       gap: 5% !important;
@@ -555,16 +557,15 @@
       justify-content: flex-end;
    }
    /*6-InstaFeed-BACKGROUND*/
-
-
-
- #p1 .custom-instafeed-section {
+   #p1 .custom-instafeed-section {
       position: relative;
-      z-index: 2;          
-      margin-bottom: 100px !important;
+      z-index: 2;
+      margin-bottom: 0px !important;
+      overflow-x: clip !important;
+      overflow-y: visible !important;
    }
    #c110 {
-      position: static;      
+      position: static;
       width: 100%;
       margin: 0 !important;
       padding: 0 !important;
@@ -581,17 +582,19 @@
       min-height: calc(100% + 100px) !important;
       z-index: -2;
    }
-   #p1 #c110 > div > div > div{
+   #p1 #c110 > div > div > div {
       padding: 0 !important;
       margin: 0 !important;
       position: static !important;
    }
-    
-
-
-
 }
 @media (min-width: 1200px) {
+   #p1 .custom-instafeed-section {
+      margin-bottom: 100px !important;
+   }
+   #c110 img {
+      min-height: calc(100% + 200px) !important;
+   }
    .custom-instafeed-section .section-row {
       flex-direction: row;
    }
@@ -604,4 +607,12 @@
    }
 }
 
-
+@media (min-width: 1800px) {
+   #p1 .custom-instafeed-section {
+      margin-bottom: 100px !important;
+      padding: 135px 7vw !important;
+   }
+   #c110 img {
+      min-height: calc(100% + 100px) !important;
+   }
+}
