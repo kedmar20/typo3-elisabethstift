@@ -141,16 +141,18 @@
 /*****************************************/
 /*2-Sticky Section*/
 @media (min-width: 768px) {
-   #p1 #page-content > div.section.section-light {
+   /*#p1 #page-content > div.section.section-light {
       min-height: 50vh;
       position: relative;
       z-index: -1;
-   }
+      border: blue 3px solid;
+   }*/
    #c21 > div > div > div {
       /*2-StickyS.-Text Wrapper*/
       padding-top: 155px;
       padding-left: 7vw;
-      margin: 0;
+      padding-bottom: 5vw !important;
+      margin: 0;      
    }
    #c21 > div > div > div h2 {
       text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.6);
@@ -187,7 +189,7 @@
       padding: 0 !important;
    }
    #c67 > div > div > div img {
-      height: 100dvh;
+      /*height: 100dvh;*/
       width: auto;
       max-width: none;
    }
@@ -196,16 +198,15 @@
       min-height: 100vh !important;
       z-index: -1;
       width: 100vw;
-      max-width: 100vw !important;
+      min-width: 100vw !important;
       left: 0;
       top: 0;
-      position: fixed;
+      position: fixed;     
    }
 }
 @media (min-width: 1150px) {
    #c67 > div > div > div img {
-      /*StickySection*/
-      min-height: 100dvh;
+      /*StickySection*/      
       min-width: 100%;
       max-width: none;
    }
@@ -244,7 +245,7 @@
       background-color: var(--bs-secondary);
    }
    #p1 .custom-3columns-section .section-row > div:nth-child(2) {
-      background-color: var(--bs-success);
+      background-color: var(--bs-light);
    }
    #p1 .custom-3columns-section .section-row > div:nth-child(3) {
       background-color: var(--bs-quaternary);
@@ -308,7 +309,7 @@
       border-radius: 20px 0 0 20px;
    }
    /*4-background*/
-   #c51 {
+   /*#c51 {
       position: relative;
       z-index: 1;
       min-height: 100vh;
@@ -343,7 +344,7 @@
       z-index: 2;
       overflow-x: clip !important;
       overflow-y: visible !important;
-   }
+   }*/
 }
 @media (min-width: 1340px) {
    #c51 {
@@ -362,9 +363,16 @@
 /*****************************************/
 /*5-Arbeiten*/
 @media (min-width: 768px) {
-   #p1 .custom-arbeiten-section {
-      background-color: #ffeee2;
+   #p1 .custom-arbeiten-section {      
       padding: 13vw 7vw 100px !important;
+      background-image: url("../../user_upload/images/Gruppe564b.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: visible;
+      /*position: relative;
+      z-index: 5;*/
+      background-color: transparent;
+      border: pink 8px solid;
    }
    #p1 .custom-arbeiten-section > div > div > div:nth-child(1) {
       width: 100% !important;
@@ -459,6 +467,7 @@
    }
    .custom-button-1-icon {
       height: 45px;
+      width: 45px;
       fill: white;
       margin-left: 145px;
       transition: all 0.5s ease-out;
@@ -556,8 +565,9 @@
       flex-direction: row-reverse;
       justify-content: flex-end;
    }
+}
    /*6-InstaFeed-BACKGROUND*/
-   #p1 .custom-instafeed-section {
+   /*#p1 .custom-instafeed-section {
       position: relative;
       z-index: 2;
       margin-bottom: 0px !important;
@@ -590,10 +600,11 @@
 }
 @media (min-width: 1200px) {
    #p1 .custom-instafeed-section {
-      margin-bottom: 100px !important;
+      margin-bottom: 2.5vw !important;
+      margin-top: -1vw !important;
    }
    #c110 img {
-      min-height: calc(100% + 200px) !important;
+      min-height: calc(100% + 120px) !important;
    }
    .custom-instafeed-section .section-row {
       flex-direction: row;
@@ -608,11 +619,16 @@
 }
 
 @media (min-width: 1800px) {
-   #p1 .custom-instafeed-section {
-      margin-bottom: 100px !important;
-      padding: 135px 7vw !important;
+   #p1 .custom-instafeed-section {      
+      margin-bottom: 2.5vw !important;
+      padding: 145px 7vw !important;
    }
    #c110 img {
       min-height: calc(100% + 100px) !important;
    }
+}*/
+
+
+#c110, #c109{
+   display: none !important;
 }
