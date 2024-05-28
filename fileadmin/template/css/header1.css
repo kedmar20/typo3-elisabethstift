@@ -71,7 +71,7 @@ header {
       left: 0 !important;
       width: 100vw !important;
       height: 12vw !important;
-      z-index: 2 !important;
+      z-index: 20 !important;
    }
    header:has(.collapsing) {
       height: 18vw !important;
@@ -265,7 +265,7 @@ header .frame {
       border: none;
       outline: none !important;
       border-radius: 0 !important;
-      z-index: 2 !important;
+      z-index: 20 !important;
    }
    #mainnavigation ul.dropdown-nav {
       grid-column-gap: 5vw !important;
