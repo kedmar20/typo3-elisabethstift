@@ -4,6 +4,9 @@ footer,
 .footer-section-content {
    background-color: var(--bs-info);
 }
+footer{
+   padding-top: 2vw !important;
+}
 #c56 > div > div > div > div > ul {
    list-style-type: none;
    margin: 0 !important;
