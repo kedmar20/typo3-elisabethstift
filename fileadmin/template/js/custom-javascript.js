@@ -8,7 +8,6 @@ if (screen.width > 1150) {
    const hauptmenuItemAll = [...document.querySelectorAll("#mainnavigation > ul > li")];
    const header1 = document.querySelector("header");
    const dropdownContainer = document.querySelectorAll(".dropdown-menu");
-   console.log(dropdownContainer);
 
    hauptmenuItemAll.forEach((elemHauptMenuItem) => {
       const megaMenuContainer = elemHauptMenuItem.querySelector(".dropdown-menu.dropdown-menu-simple");
@@ -69,11 +68,13 @@ if (screen.width > 1150) {
       }
    });
 
+   /*********************************************************************************************/
    /*homepage>section-3columns, clip-Path border*/
    const parentOf3columnsWrapper = document.querySelector("#page-content > div:nth-child(3) > div");
    //const newSvgElement = document.createElement("svg");
    //newSvgElement.innerHTML = `
-   parentOf3columnsWrapper.innerHTML += `
+   parentOf3columnsWrapper
+      ? (parentOf3columnsWrapper.innerHTML += `
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" viewBox="0 0 1920 361.156">
 <defs>
 <clipPath id="wave">
@@ -81,10 +82,21 @@ if (screen.width > 1150) {
   </clipPath>
   </defs>
 </svg>
-`;
+`)
+      : "";
    //parentOf3columnsWrapper.appendChild(newSvgElement);
    /*setTimeout(() => {
    const sectionRow = parentOf3columnsWrapper.querySelector(".section-row");
    sectionRow.style.clipPath = "url(#wave)";   
 }, 100);*/
 }
+
+/*********************************************************************************************/
+/*Footer - Active Link*/
+const footerLinks = [...document.querySelectorAll("footer li a, footer h5 a")];
+const docsUrl = document.URL;
+footerLinks.forEach((elLink) => {
+   if (!!(elLink.href.toString() === docsUrl)) {
+      elLink.classList.add("custom-active");
+   }
+});
