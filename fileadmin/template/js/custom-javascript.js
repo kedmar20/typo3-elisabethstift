@@ -100,3 +100,20 @@ footerLinks.forEach((elLink) => {
       elLink.classList.add("custom-active");
    }
 });
+
+
+/*********************************************************************************************/
+/*3-Columns-Spalte HREF to a-element*/
+const url3columnsSpalteOrange = document.querySelector("#c112");
+const url3columnsSpalteBlue = document.querySelector("#c113");
+const url3columnsSpalteViolet = document.querySelector("#c114");
+
+const firstColumnOrange = document.querySelector("#page-content > div.section.section-default.custom-3columns-section > div > div > a:nth-child(1)");
+firstColumnOrange.href = url3columnsSpalteOrange.innerText;
+
+const firstColumnBlue = document.querySelector("#page-content > div.section.section-default.custom-3columns-section > div > div > a:nth-child(2)");
+firstColumnBlue.href = url3columnsSpalteBlue.innerText;
+
+const firstColumnViolet = document.querySelector("#page-content > div.section.section-default.custom-3columns-section > div > div > a:nth-child(3)");
+firstColumnViolet.href = url3columnsSpalteViolet.innerText;
+/*********************************************************************************************/

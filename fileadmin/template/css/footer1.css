@@ -210,3 +210,7 @@ a.scroll-top.scroll-top-visible:hover span::before {
 a.scroll-top.scroll-top-visible:hover {
    background-color: var(--bs-primary);
 }
+.scroll-top .scroll-top-icon::before{
+   border: none !important;
+   border-color: transparent !important;
+}
