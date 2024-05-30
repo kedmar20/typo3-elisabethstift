@@ -93,6 +93,9 @@ return [
             'storageUidImporter' => '1',
             'tagPid' => '1',
         ],
+        'vhs' => [
+            'disableAssetHandling' => '0',
+        ],
     ],
     'FE' => [
         'cacheHash' => [
