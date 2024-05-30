@@ -1,11 +1,16 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html
+   xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+   xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+   xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+   data-namespace-typo3-fluid="true"
+>
    <f:layout name="Default" />
 
    <f:section name="Main">
-      <!--<f:debug inline="true">{_all}</f:debug>-->
+      <!-- <f:debug inline="true">{_all}</f:debug>-->
       <div class="section section-default custom-hero-section">
          <div class="container">
-            <div class="section-row">
+            <div class="section-row">           
                <div class="section-column section-column-third">
                   <f:cObject
                      typoscriptObjectPath="lib.dynamicContent"
@@ -31,25 +36,25 @@
 
       <div class="section section-default custom-3columns-section">
          <div class="container">
-            <div class="section-row">
-               <div class="section-column section-column-third">
+            <div class="section-row">               
+               <a href="" class="section-column section-column-third">               
                   <f:cObject
                      typoscriptObjectPath="lib.dynamicContent"
                      data="{pageUid: '{data.uid}', colPos: '120', slide: '{theme.pagelayout.{pagelayout}.colPos.120.slide}'}"
-                  />
-               </div>
-               <div class="section-column section-column-third">
+                  />               
+            </a>
+            <a href="" class="section-column section-column-third">
                   <f:cObject
                      typoscriptObjectPath="lib.dynamicContent"
                      data="{pageUid: '{data.uid}', colPos: '121', slide: '{theme.pagelayout.{pagelayout}.colPos.121.slide}'}"
                   />
-               </div>
-               <div class="section-column section-column-third">
+               </a>
+               <a href="" class="section-column section-column-third">
                   <f:cObject
                      typoscriptObjectPath="lib.dynamicContent"
                      data="{pageUid: '{data.uid}', colPos: '122', slide: '{theme.pagelayout.{pagelayout}.colPos.122.slide}'}"
                   />
-               </div>
+               </a>
             </div>
          </div>
       </div>
