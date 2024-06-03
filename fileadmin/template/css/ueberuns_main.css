@@ -1,148 +1,46 @@
-/*****************************************/
-/*5-Arbeiten*/
+
+/*1-Hero Section*/
 @media (min-width: 768px) {
-   #p6 .custom-arbeiten-section {
-      background-color: #ffeee2;
-      padding: 13vw 7vw 100px !important;
-   }
-   #p6 .custom-arbeiten-section > div > div > div:nth-child(1) {
-      width: 100% !important;
-   }
-   #p6 .custom-arbeiten-section > div > div > div:nth-child(2) {
-      width: 100% !important;
-   }
-   #p6 .custom-arbeiten-section .section-row {
-      gap: 0 !important;
+   .custom-3columns-hero-section .section-row{
       flex-direction: column;
    }
-   /*5-Arbeiten-Carousel*/
-   #carousel-111 > div > div {
+   /*1- Bild - first row */
+   .custom-3columns-hero-section .section-row > div:nth-child(1)>div > div > div > div, .custom-3columns-hero-section .section-row > div:nth-child(1), .custom-3columns-hero-section .section-row > div:nth-child(1)>div{
+      max-width: 100%;   
+    padding: 0;
+    margin: 0;
+    width: 100%;
+   }
+ 
+   /*1-second row */
+   .custom-3columns-hero-section .section-row > div:nth-child(2) {
       position: relative;
-      background-color: transparent !important;
-   }
-   #carousel-111 > div > div .carousel-text {
-      position: absolute;
-      color: var(--bs-primary);
-      top: 20%;
-      left: 9%;
-      padding-right: 61%;
-      color: var(--bs-primary);
-   }
-   #carousel-111 > div > div .carousel-text h4 {
-      text-align: start !important;
-      line-height: 1.5 !important;
-   }
-   #carousel-111 > div > div .carousel-image img {
-      min-height: 400px !important;
-      max-width: none !important;
-      width: auto !important;
-      margin-left: 17vw !important;
-   }
-   .custom-carousel-button {
-      height: 100px;
-      width: 30px;
+      z-index: 2;
+      min-height: 300px;
+      width: 100%;
       background-color: transparent;
-      border: none;
    }
-   #carousel-111 .carousel-control {
-      width: 100px;
-   }
-   #carousel-111 .carousel-indicators {
-      display: none !important;
-   }
-   #carousel-111 .carousel-control-prev-icon {
-      background-image: url(../../user_upload/icons/carousel22-nav-left.svg);
-   }
-   #carousel-111 .carousel-control-next-icon {
-      background-image: url(../../user_upload/icons/carousel22-nav-right.svg);
-   }
-   /*5-Arbeiten-RightColumn*/
-   .custom-arbeiten-section > div > div > div:nth-child(2) {
-      padding-left: 0vw !important;
-      display: flex !important;
-      flex-direction: column;
-      align-items: start;
-      justify-content: center;
-      gap: 15px;
-   }
-   .custom-arbeiten-section > div > div > div:nth-child(2) #c93 {
-      padding-right: 10vw !important;
-   }
-   .custom-arbeiten-section #c94 {
-      padding: 20px 45px;
-      border-radius: 100px;
-   }
-   .custom-arbeiten-section #c94 .texticon-icon {
-      margin-left: 155px !important;
-      color: white !important;
-   }
-   /*5-Arbeiten-custom-button-1*/
-   .custom-a-button {
-      text-decoration: none;
-   }
-   .custom-button-1 {
-      align-items: center;
-      background-color: var(--bs-secondary);
-      border: none;
-      border-radius: 100px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      max-width: 650px;
-      min-height: 70px;
-      padding: 20px 45px;
-   }
-   .custom-button-1 h4 {
-      margin-bottom: 0 !important;
-   }
-   .custom-button-1-icon {
-      height: 45px;
-      fill: white;
-      margin-left: 145px;
-      transition: all 0.5s ease-out;
-   }
-   .custom-button-1-span {
-      margin-bottom: 0 !important;
-      text-decoration: none;
-      color: white;
-   }
-   .custom-button-1:hover .custom-button-1-icon {
-      transform: translateX(15px);
+   .custom-3columns-hero-section .section-row > div:nth-child(2)::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 90%;
+      background-image: url("../../user_upload/images/Ueber-Uns/wave-blue-header.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: visible;
+      z-index: 1;
+      background-color: transparent;
+      transform: rotate(180deg);
+   } 
+   .custom-3columns-hero-section .section-row > div:nth-child(2)>div{
+      z-index: 2;
    }
 }
-@media (min-width: 1150px) {
-   #carousel-111 > div > div .carousel-image img {
-      margin-left: 20vw !important;
-   }
-}
-@media (min-width: 1300px) {
-   #p6 .custom-arbeiten-section .section-row {
-      flex-direction: row;
-   }
-   #p6 .custom-arbeiten-section > div > div > div:nth-child(1) {
-      width: 48% !important;
-   }
-   #p6 .custom-arbeiten-section > div > div > div:nth-child(2) {
-      width: 52% !important;
-      padding-left: 2vw !important;
-   }
-   #carousel-111 > div > div .carousel-image img {
-      min-height: 390px !important;
-      height: 390px !important;
-      margin-left: 7vw !important;
-   }
-}
-@media (min-width: 1500px) {
-   #carousel-111 > div > div .carousel-image img {
-      min-height: 470px !important;
-      height: 470px !important;
-   }
-}
-@media (min-width: 1670px) {
-   #carousel-111 > div > div .carousel-image img {
-      min-height: 490px !important;
-      height: 490px !important;
-   }
-}
+
+
+
 /*****************************************/
+/*2- */
