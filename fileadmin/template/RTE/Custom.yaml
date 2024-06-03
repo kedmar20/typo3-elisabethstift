@@ -12,7 +12,7 @@ imports:
 # For complete documentation see https://ckeditor.com/docs/ckeditor5/latest/features/index.html
 editor:
    config:
-      contentsCss: "EXT:bootstrap_package/Resources/Public/Css/rte.css"
+      contentsCss: "EXT:bootstrap_package/Resources/Public/Css/rte-custom.css"
       heading:
          options:
             - { model: "paragraph", title: "Paragraph" }
@@ -59,7 +59,7 @@ editor:
 
             # Inline styles
             - { name: "Yellow marker", element: "span", classes: [], styles: { background-color: "yellow" } }
-            - { name: "Button", element: "span", classes: ["custom-button-1"] }
+            - { name: "Button", element: "span", classes: ["custom-rte-button-1"] }
 
       toolbar:
          items:
