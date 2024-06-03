@@ -517,7 +517,7 @@
       transform: translateY(100%);
       opacity: 0;
       transition: all 900ms;
-      border-radius: 25px;
+      border-radius: 6px;
    }
    #news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a:hover::before {
       transform: translateY(0%);
@@ -548,7 +548,7 @@
 /*****************************************/
 /*5-Arbeiten*/
 @media (min-width: 768px) {
-   #p1 .custom-arbeiten-section {
+   .custom-arbeiten-section {
       padding: 13vw 7vw 100px !important;
       background-image: url("../../user_upload/images/Gruppe564b.png");
       background-repeat: no-repeat;
@@ -558,13 +558,13 @@
       z-index: 5;*/
       background-color: transparent;
    }
-   #p1 .custom-arbeiten-section > div > div > div:nth-child(1) {
+   .custom-arbeiten-section > div > div > div:nth-child(1) {
       width: 100% !important;
    }
-   #p1 .custom-arbeiten-section > div > div > div:nth-child(2) {
+   .custom-arbeiten-section > div > div > div:nth-child(2) {
       width: 100% !important;
    }
-   #p1 .custom-arbeiten-section .section-row {
+   .custom-arbeiten-section .section-row {
       gap: 0 !important;
       flex-direction: column;
    }
@@ -684,13 +684,13 @@
    }
 }
 @media (min-width: 1300px) {
-   #p1 .custom-arbeiten-section .section-row {
+   .custom-arbeiten-section .section-row {
       flex-direction: row;
    }
-   #p1 .custom-arbeiten-section > div > div > div:nth-child(1) {
+   .custom-arbeiten-section > div > div > div:nth-child(1) {
       width: 48% !important;
    }
-   #p1 .custom-arbeiten-section > div > div > div:nth-child(2) {
+   .custom-arbeiten-section > div > div > div:nth-child(2) {
       width: 52% !important;
       padding-left: 2vw !important;
    }
