@@ -1,0 +1,13 @@
+.custom-button-1 {
+   align-items: center;
+   background-color: var(--bs-secondary);
+   border: none;
+   border-radius: 100px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   max-width: 650px;
+   min-height: 70px;
+   padding: 20px 45px;
+}
