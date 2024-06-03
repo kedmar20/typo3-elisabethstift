@@ -4,137 +4,164 @@
 
 # Load default processing options
 imports:
-    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Processing.yaml' }
-    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml' }
-    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml' }
+   - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+   - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+   - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
 
 # Add configuration for the editor
 # For complete documentation see https://ckeditor.com/docs/ckeditor5/latest/features/index.html
 editor:
-  config:    
-    heading:
-      options:
-        - { model: 'paragraph', title: 'Paragraph' }
-        - { model: 'heading1', view: 'h1', title: 'H1' }
-        - { model: 'heading2', view: 'h2', title: 'H2' }
-        - { model: 'heading3', view: 'h3', title: 'H3' }
-        - { model: 'heading4', view: 'h4', title: 'H4' }
-        - { model: 'heading5', view: 'h5', title: 'H5' }
-        - { model: 'formatted', view: 'pre', title: 'Pre-Formatted Text' }
+   config:
+      contentsCss: "EXT:bootstrap_package/Resources/Public/Css/rte.css"
+      heading:
+         options:
+            - { model: "paragraph", title: "Paragraph" }
+            - { model: "heading1", view: "h1", title: "H1" }
+            - { model: "heading2", view: "h2", title: "H2" }
+            - { model: "heading3", view: "h3", title: "H3" }
+            - { model: "heading4", view: "h4", title: "H4" }
+            - { model: "heading5", view: "h5", title: "H5" }
+            - { model: "formatted", view: "pre", title: "Pre-Formatted Text" }
 
-    style:
-      definitions:
-        # block level styles
-        - { name: 'Gelica50regular', element: 'h2', classes: ['gelica-50-regular', 'custom-blue'], styles: { color: '', background: 'transparent' } }
-        - { name: 'Gelica40regular', element: 'h2', classes: ['gelica-40-regular', 'custom-blue'], styles: { color: '', background: 'transparent' } }
-        - { name: 'Catamaran24bold', element: 'h4', classes: ['catamaran-24-bold', 'custom-blue'], styles: { color: '', background: 'transparent' } }
-        - { name: 'Catamaran25semiBold', element: 'h4', classes: ['catamaran-25-semibold', 'custom-blue'], styles: { color: '', background: 'transparent' } }
-        - { name: 'Catamaran22regular', element: 'h5', classes: ['catamaran-22-medium', 'custom-blue'], styles: { color: '', background: 'transparent' } }
-        
-        # Inline styles
-        - { name: 'Yellow marker', element: 'span', classes: [], styles: { background-color: 'yellow' } }
+      style:
+         definitions:
+            # block level styles
+            - {
+                 name: "Gelica50regular",
+                 element: "h2",
+                 classes: ["gelica-50-regular", "custom-blue"],
+                 styles: { color: "", background: "transparent" },
+              }
+            - {
+                 name: "Gelica40regular",
+                 element: "h2",
+                 classes: ["gelica-40-regular", "custom-blue"],
+                 styles: { color: "", background: "transparent" },
+              }
+            - {
+                 name: "Catamaran24bold",
+                 element: "h4",
+                 classes: ["catamaran-24-bold", "custom-blue"],
+                 styles: { color: "", background: "transparent" },
+              }
+            - {
+                 name: "Catamaran25semiBold",
+                 element: "h4",
+                 classes: ["catamaran-25-semibold", "custom-blue"],
+                 styles: { color: "", background: "transparent" },
+              }
+            - {
+                 name: "Catamaran22regular",
+                 element: "h5",
+                 classes: ["catamaran-22-medium", "custom-blue"],
+                 styles: { color: "", background: "transparent" },
+              }
 
-    toolbar:
-      items:
-        - removeFormat
-        - undo
-        - redo
-        # grouping separator
-        - '|'
-        - findAndReplace
-        - link
-        - '|'
-        - insertTable
-        - tableColumn
-        - tableRow
-        - mergeTableCells
-        - TableProperties
-        - TableCellProperties
-        - '|'
-        - selectAll
-        - '|'
-        - sourceEditing
-        - showBlocks
-        - horizontalLine
-        # line break
-        - '-'
-        - bold
-        - italic
-        - underline
-        - strikethrough
-        - subscript
-        - superscript
-        - softhyphen
-        - '|'
-        - bulletedList
-        - numberedList
-        - blockQuote
-        - indent
-        - outdent
-        - alignment
-        - '|'
-        - specialCharacters
-        - '-'
-        - heading
-        - style        
-        - fontFamily
-        - fontBackgroundColor
-        - fontColor
-        - fontSize
+            # Inline styles
+            - { name: "Yellow marker", element: "span", classes: [], styles: { background-color: "yellow" } }
+            - { name: "Button", element: "span", classes: ["custom-button-1"] }
 
-    alignment:
-      options:
-        - { name: 'left', className: 'text-start' }
-        - { name: 'center', className: 'text-center' }
-        - { name: 'right', className: 'text-end' }
-        - { name: 'justify', className: 'text-justify' }
+      toolbar:
+         items:
+            - removeFormat
+            - undo
+            - redo
+            # grouping separator
+            - "|"
+            - findAndReplace
+            - link
+            - "|"
+            - insertTable
+            - tableColumn
+            - tableRow
+            - mergeTableCells
+            - TableProperties
+            - TableCellProperties
+            - "|"
+            - selectAll
+            - "|"
+            - sourceEditing
+            - showBlocks
+            - horizontalLine
+            # line break
+            - "-"
+            - bold
+            - italic
+            - underline
+            - strikethrough
+            - subscript
+            - superscript
+            - softhyphen
+            - "|"
+            - bulletedList
+            - numberedList
+            - blockQuote
+            - indent
+            - outdent
+            - alignment
+            - "|"
+            - specialCharacters
+            - "-"
+            - heading
+            - style
+            - fontFamily
+            - fontBackgroundColor
+            - fontColor
+            - fontSize
 
-    table:
-      defaultHeadings: { rows: 1 }
-      contentToolbar:
-        - tableColumn
-        - tableRow
-        - mergeTableCells
-        - tableProperties
-        - tableCellProperties
-        - toggleTableCaption
+      alignment:
+         options:
+            - { name: "left", className: "text-start" }
+            - { name: "center", className: "text-center" }
+            - { name: "right", className: "text-end" }
+            - { name: "justify", className: "text-justify" }
 
-    fontColor:
-      colors:
-        - { label: 'Blau', color: '#003087' }
-        - { label: 'Orange', color: '#FF6900' }
-        - { label: 'Weiß', color: '#ffffff' }
-        - { label: 'Violett', color: '#8246af' }
-        - { label: 'Hellblau', color: '#00a7b5' }
-      documentColors:
+      table:
+         defaultHeadings: { rows: 1 }
+         contentToolbar:
+            - tableColumn
+            - tableRow
+            - mergeTableCells
+            - tableProperties
+            - tableCellProperties
+            - toggleTableCaption
 
-    fontFamily:
-      options:
-        - 'default'
-        - 'Arial, sans-serif'
-        - 'Catamaran, sans-serif'
-        - 'Gelica, sans-serif'
+      fontColor:
+         colors:
+            - { label: "Blau", color: "#003087" }
+            - { label: "Orange", color: "#FF6900" }
+            - { label: "Weiß", color: "#ffffff" }
+            - { label: "Violett", color: "#8246af" }
+            - { label: "Hellblau", color: "#00a7b5" }
+         documentColors:
 
-    fontSize:
-      options:
-        - 14
-        - 15
-        - 16
-        - 17
-        - 18
-        - 19
-        - 20
-        - 22
-        - 23
-        - 24
-        - 25
-        - 30
-        - 35
-        - 40
-        - 45
-        - 50
+      fontFamily:
+         options:
+            - "default"
+            - "Arial, sans-serif"
+            - "Catamaran, sans-serif"
+            - "Gelica, sans-serif"
 
-    importModules:
-      - { 'module': '@ckeditor/ckeditor5-font', 'exports': ['Font'] }
-      - { 'module': '@ckeditor/ckeditor5-show-blocks', 'exports': ['ShowBlocks'] }
-      - { 'module': '@ckeditor/ckeditor5-word-count', 'exports': ['WordCount'] }
+      fontSize:
+         options:
+            - 14
+            - 15
+            - 16
+            - 17
+            - 18
+            - 19
+            - 20
+            - 22
+            - 23
+            - 24
+            - 25
+            - 30
+            - 35
+            - 40
+            - 45
+            - 50
+
+      importModules:
+         - { "module": "@ckeditor/ckeditor5-font", "exports": ["Font"] }
+         - { "module": "@ckeditor/ckeditor5-show-blocks", "exports": ["ShowBlocks"] }
+         - { "module": "@ckeditor/ckeditor5-word-count", "exports": ["WordCount"] }

@@ -1,5 +1,5 @@
 RTE {
     default {
         preset = custom
-    }  
+    }    
 }
