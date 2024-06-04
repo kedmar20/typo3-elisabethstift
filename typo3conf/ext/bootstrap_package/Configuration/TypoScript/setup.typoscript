@@ -110,7 +110,8 @@ page {
             }
             10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
             10 {
-                levels = 3
+                expandAll = 1
+                levels = 5
                 includeSpacer = 1
                 as = mainnavigation
                 dataProcessing {

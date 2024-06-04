@@ -12,14 +12,14 @@
       </a>
 
       <f:render partial="Navigation/Main" arguments="{_all}" />
-      <f:render partial="Navigation/Breadcrumb" arguments="{_all}" />
+      <!--<f:render partial="Navigation/Breadcrumb" arguments="{_all}" />-->
 
       <main id="page-content" class="bp-page-content main-section">
          <!--TYPO3SEARCH_begin-->
          <f:render section="Main" />
          <!--TYPO3SEARCH_end-->
       </main>
-      
+
       <footer id="page-footer" class="bp-page-footer">
          <f:render partial="DropIn/Structure/FooterBefore" arguments="{_all}" />
          <f:render section="Footer" optional="true" />
