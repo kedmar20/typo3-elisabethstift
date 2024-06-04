@@ -77,6 +77,9 @@ return [
         'info' => [
             'packagePath' => 'typo3/sysext/info/',
         ],
+        'recycler' => [
+            'packagePath' => 'typo3/sysext/recycler/',
+        ],
         'seo' => [
             'packagePath' => 'typo3/sysext/seo/',
         ],
