@@ -1,26 +1,26 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
    <f:layout name="Default" />
 
-   <f:section name="Main">  
-         <!-- <f:debug inline="true">{_all}</f:debug>-->
-         <div class="section section-default custom-3columns-hero-section">
-            <div class="container">
-               <div class="section-row">           
-                  <div class="section-column section-column-third">
-                     <f:cObject
+   <f:section name="Main">
+      <!-- <f:debug inline="true">{_all}</f:debug>-->
+      <div class="section section-default custom-3columns-hero-section">
+         <div class="container">
+            <div class="section-row">
+               <div class="section-column section-column-third">
+                  <f:cObject
                      typoscriptObjectPath="lib.dynamicContent"
                      data="{pageUid: '{data.uid}', colPos: '3', slide: '{theme.pagelayout.{pagelayout}.colPos.3.slide}'}"
                   />
-                  </div>
-                  <div class="section-column section-column-third">
-                     <f:cObject
+               </div>
+               <div class="section-column section-column-third">
+                  <f:cObject
                      typoscriptObjectPath="lib.dynamicContent"
                      data="{pageUid: '{data.uid}', colPos: '8', slide: '{theme.pagelayout.{pagelayout}.colPos.8.slide}'}"
                   />
-                  </div>
                </div>
             </div>
-         </div>    
+         </div>
+      </div>
 
       <div class="section section-default">
          <div class="container">
@@ -47,8 +47,7 @@
          </div>
       </div>
 
-      <f:render partial="Custom/SectionArbeiten" arguments="{_all}" />   
-   
+      <f:render partial="Custom/SectionArbeiten" arguments="{_all}" />
    </f:section>
    <f:section name="Footer">
       <f:render partial="Structure/FooterContent" arguments="{_all}" />
