@@ -1,20 +1,39 @@
+@media (min-width: 768px) {
+   .backendlayout-3_columns .subcontent-wrap {
+      order: 3;
+      --section-gaps: 2;
+      --section-colspan: 3;
+   }
+}
 
+/*****************************************/
+/*0-Header */
+@media (min-width: 768px) {
+   .backendlayout-3_columns header {
+      z-index: 5;
+      position: relative;
+   }
+}
+
+/*****************************************/
 /*1-Hero Section*/
 @media (min-width: 768px) {
-   .custom-3columns-hero-section{
+   .custom-3columns-hero-section {
       z-index: 1;
       position: relative;
    }
-   .custom-3columns-hero-section .section-row{
+   .custom-3columns-hero-section .section-row {
       flex-direction: column;
    }
    /*1- Bild - first row */
-   .custom-3columns-hero-section .section-row > div:nth-child(1)>div > div > div > div, .custom-3columns-hero-section .section-row > div:nth-child(1), .custom-3columns-hero-section .section-row > div:nth-child(1)>div{
-      max-width: 100%;   
-    padding: 0;
-    margin: 0;
-    width: 100%;
-   } 
+   .custom-3columns-hero-section .section-row > div:nth-child(1) > div > div > div > div,
+   .custom-3columns-hero-section .section-row > div:nth-child(1),
+   .custom-3columns-hero-section .section-row > div:nth-child(1) > div {
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+   }
    /*1-second row */
    .custom-3columns-hero-section .section-row > div:nth-child(2) {
       position: relative;
@@ -24,8 +43,8 @@
       background-color: transparent;
       margin-top: -15px !important;
       align-items: center;
-    display: flex;
-    padding-left: 17vw !important;
+      display: flex;
+      padding-left: 17vw !important;
    }
    .custom-3columns-hero-section .section-row > div:nth-child(2)::before {
       position: absolute;
@@ -39,34 +58,42 @@
       background-size: cover;
       overflow: visible;
       z-index: 1;
-      background-color: transparent;     
-   } 
-   .custom-3columns-hero-section .section-row > div:nth-child(2)>div{
+      background-color: transparent;
+   }
+   .custom-3columns-hero-section .section-row > div:nth-child(2) > div {
       z-index: 2;
       color: white !important;
    }
 }
 
-
-
 /*****************************************/
 /*2-Haupt-section */
 @media (min-width: 768px) {
+   .custom-3columns-haupt-section {
+      margin-top: -25px;
+      z-index: 0;
+      position: relative;
+   }
    .custom-3columns-haupt-section .section-row {
       gap: 0 !important;
       flex-wrap: nowrap;
    }
-    /*2-HauptS-left column with dottsImage*/
-    .custom-3columns-haupt-section .section-row > div:nth-child(2) {
-      min-width: 17vw;
-      border: blue 4px solid;
-      width: 17vw;
+   /*2-HauptS-left column with dottsImage*/
+   .custom-3columns-haupt-section .section-row > div:nth-child(2) {
+      min-width: 7vw;
+      width: 7vw;
+      min-height: 100vh;
+      left: 0;
+      top: 0;
+      position: fixed;
+      z-index: 3;
    }
+
    .custom-3columns-haupt-section .section-row > div:nth-child(2) .gallery-row .gallery-item {
       width: auto !important;
-      position: fixed;
-    top: 420px;
-    padding-left: 37px !important;
+      position: absolute;
+      top: 30vh;
+      padding-left: 2vh !important;
    }
    /*2-HauptS-middle column with main content */
    .custom-3columns-haupt-section .section-row > div:nth-child(1) {
@@ -74,23 +101,17 @@
       width: auto;
       min-width: auto;
       max-width: none;
-      border: red 3px solid;
+      border: rgb(136, 255, 0) 13px solid;
    }
    /*2-HauptS-right column with sticky menu */
-   .custom-3columns-haupt-section{
-      margin-top: -25px;
-      border: yellow 4px solid;
-      z-index: 0;
-      position: relative;
-   }
    .custom-3columns-haupt-section .section-row > div:nth-child(3) {
-      position: relative;
+      position: fixed;
       z-index: 2;
-      /*min-height: 300px;
-      width: 100%;*/
       background-color: transparent;
-      border: red dotted 5px;   
-      min-width: 24vw !important; 
+      min-width: 24vw !important;
+      min-height: 100vh;
+      right: 0;
+      top: 0;
    }
    .custom-3columns-haupt-section .section-row > div:nth-child(3)::before {
       position: absolute;
@@ -104,29 +125,33 @@
       background-size: cover;
       overflow: visible;
       z-index: 0;
-      background-color: transparent;  
-      border: blue solid 5px;    
-   } 
-   .custom-3columns-haupt-section .section-row > div:nth-child(3) .custom-menu-sidebar{
-      z-index: 5;
-      position: fixed;
-    top: 420px;
-    padding-left: 8vw;
-    min-width: inherit;
-    right: 00px;
-    border: black 4px dotted;
-   
+      background-color: transparent;
    }
-   .custom-3columns-haupt-section .section-row > div:nth-child(3) .custom-menu-sidebar>div>div>div>div{
-   margin: 0 !important;
+   .custom-3columns-haupt-section .section-row > div:nth-child(3) .custom-menu-sidebar {
+      z-index: 5;
+      position: absolute;
+      top: 30vh;
+      padding-left: 8vw;
+      min-width: inherit;
+      right: 00px;
+   }
+   .custom-3columns-haupt-section .section-row > div:nth-child(3) .custom-menu-sidebar > div > div > div > div {
+      margin: 0 !important;
+   }
+   .custom-3columns-haupt-section .section-row > div:nth-child(3) .custom-menu-sidebar .texticon-inner-icon svg {
+      width: 15px !important;
+      max-width: 30px !important;
+      height: 16px !important;
+   }
+   .custom-3columns-haupt-section .section-row > div:nth-child(3) .custom-menu-sidebar .texticon-icon {
+      padding: 0 !important;
    }
 }
-
 
 /*****************************************/
 /*3-Arbeiten-section */
 @media (min-width: 768px) {
-   .backendlayout-3_columns .custom-arbeiten-section{      
+   .backendlayout-3_columns .custom-arbeiten-section {
       padding: 5vw 7vw 70px !important;
       margin-bottom: -55px;
       margin-top: -55px;
@@ -135,11 +160,10 @@
    }
 }
 
-
 /*****************************************/
 /*4-Footer */
 @media (min-width: 768px) {
-   .backendlayout-3_columns footer{
+   .backendlayout-3_columns footer {
       z-index: 0;
       position: relative;
    }
