@@ -224,7 +224,7 @@
 /*****************************************/
 /*3-ThreeColumns-Section*/
 @media (min-width: 768px) {
-   #p1 .custom-3columns-section .section-row {
+   .custom-3columns-section .section-row {
       width: 100vw;
       background-color: blueviolet;
       min-height: 500px;
@@ -232,34 +232,34 @@
       display: flex;
       flex-direction: column;
    }
-   #p1 .custom-3columns-section .section-column.section-column-third {
+   .custom-3columns-section .section-column.section-column-third {
       width: 100% !important;
       padding: 50px 7vw;
       min-height: 30vh !important;
    }
-   #p1 .custom-3columns-section .section-column.section-column-third h5 {
+   .custom-3columns-section .section-column.section-column-third h5 {
       line-height: 1.6;
    }
-   #p1 .custom-3columns-section .section-row > a:nth-child(1) {
+   .custom-3columns-section .section-row > a:nth-child(1) {
       background-color: var(--bs-secondary);
       position: relative;
       cursor: pointer;
       text-decoration: none;
    }
-   #p1 .custom-3columns-section .section-row > a:nth-child(2) {
+   .custom-3columns-section .section-row > a:nth-child(2) {
       background-color: var(--bs-light);
       position: relative;
       cursor: pointer;
       text-decoration: none;
    }
-   #p1 .custom-3columns-section .section-row > a:nth-child(3) {
+   .custom-3columns-section .section-row > a:nth-child(3) {
       background-color: var(--bs-quaternary);
       position: relative;
       cursor: pointer;
       text-decoration: none;
    }
    /*3-3ColSect-HoverOverlay on column-container*/
-   #p1 .custom-3columns-section > div > div > a:nth-child(1)::before {
+   .custom-3columns-section > div > div > a:nth-child(1)::before {
       content: "";
       background-image: url(../../user_upload/images/3col-hover-orange.png);
       background-repeat: no-repeat;
@@ -274,10 +274,10 @@
       opacity: 0;
       transition: opacity 0.8s ease-out;
    }
-   #p1 .custom-3columns-section > div > div > a:nth-child(1):hover::before {
+   .custom-3columns-section > div > div > a:nth-child(1):hover::before {
       opacity: 1;
    }
-   #p1 .custom-3columns-section > div > div > a:nth-child(1)::after {
+   .custom-3columns-section > div > div > a:nth-child(1)::after {
       content: "";
       background-image: url(../../user_upload/images/Gruppe352.png);
       background-repeat: no-repeat;
@@ -292,10 +292,10 @@
       opacity: 0;
       transition: opacity 0.8s ease-out;
    }
-   #p1 .custom-3columns-section > div > div > a:nth-child(1):hover::after {
+   .custom-3columns-section > div > div > a:nth-child(1):hover::after {
       opacity: 1;
    }
-   #p1 .custom-3columns-section > div > div > a:nth-child(2)::before {
+   .custom-3columns-section > div > div > a:nth-child(2)::before {
       content: "";
       background-image: url(../../user_upload/images/3col-hover-blue.png);
       background-repeat: no-repeat;
@@ -310,10 +310,10 @@
       opacity: 0;
       transition: opacity 0.8s ease-out;
    }
-   #p1 .custom-3columns-section > div > div > a:nth-child(2):hover::before {
+   .custom-3columns-section > div > div > a:nth-child(2):hover::before {
       opacity: 1;
    }
-   #p1 .custom-3columns-section > div > div > a:nth-child(2)::after {
+   .custom-3columns-section > div > div > a:nth-child(2)::after {
       content: "";
       background-image: url(../../user_upload/images/Gruppe354.png);
       background-repeat: no-repeat;
@@ -328,10 +328,10 @@
       opacity: 0;
       transition: opacity 0.8s ease-out;
    }
-   #p1 .custom-3columns-section > div > div > a:nth-child(2):hover::after {
+   .custom-3columns-section > div > div > a:nth-child(2):hover::after {
       opacity: 1;
    }
-   #p1 .custom-3columns-section > div > div > a:nth-child(3)::before {
+   .custom-3columns-section > div > div > a:nth-child(3)::before {
       content: "";
       background-image: url(../../user_upload/images/3col-hover-violet.png);
       background-repeat: no-repeat;
@@ -346,10 +346,10 @@
       opacity: 0;
       transition: opacity 0.8s ease-out;
    }
-   #p1 .custom-3columns-section > div > div > a:nth-child(3):hover::before {
+   .custom-3columns-section > div > div > a:nth-child(3):hover::before {
       opacity: 1;
    }
-   #p1 .custom-3columns-section > div > div > a:nth-child(3)::after {
+   .custom-3columns-section > div > div > a:nth-child(3)::after {
       content: "";
       background-image: url(../../user_upload/images/Gruppe354.png);
       background-repeat: no-repeat;
@@ -364,7 +364,7 @@
       opacity: 0;
       transition: opacity 0.8s ease-out;
    }
-   #p1 .custom-3columns-section > div > div > a:nth-child(3):hover::after {
+   .custom-3columns-section > div > div > a:nth-child(3):hover::after {
       opacity: 1;
    }
    /*3-links for single-column*/
@@ -376,10 +376,10 @@
 }
 @media (min-width: 1340px) {
    /*3-Column-Section*/
-   #p1 .custom-3columns-section .section-row {
+   .custom-3columns-section .section-row {
       flex-direction: row;
    }
-   #p1 .custom-3columns-section .section-column.section-column-third {
+   .custom-3columns-section .section-column.section-column-third {
       width: 33.33% !important;
       padding: 50px 5.5vw;
       min-height: none !important;
@@ -445,7 +445,7 @@
       border-radius: 20px 0 0 20px;
       border: none;
    }
-   /*3-NewsSect-HeoherEffect on Articel-Image*/
+   /*4-NewsSect-HoverEffect on Articel-Image*/
    #p1 .custom-news-section .news-list-view .col-md-3::before {
       border-radius: 20px 0 0 20px;
       content: "";
@@ -478,7 +478,7 @@
       -webkit-transition: all 500ms;
       border-radius: 20px 0 0 20px;
    }
-   /*3-NewsSect-Hover on Links 'Weiterlesen'*/
+   /*4-NewsSect-Hover on Links 'Weiterlesen'*/
    #news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a {
       justify-content: center;
       align-items: end;
@@ -492,7 +492,7 @@
       transition: all 800ms;
    }
    #news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a:hover {
-      text-decoration:var(--bs-info) underline !important;
+      text-decoration: var(--bs-info) underline !important;
    }
    #news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a span {
       z-index: 6 !important;

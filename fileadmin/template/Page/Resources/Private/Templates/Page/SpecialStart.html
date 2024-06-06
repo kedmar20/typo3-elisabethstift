@@ -10,7 +10,7 @@
       <!-- <f:debug inline="true">{_all}</f:debug>-->
       <div class="section section-default custom-hero-section">
          <div class="container">
-            <div class="section-row">           
+            <div class="section-row">
                <div class="section-column section-column-third">
                   <f:cObject
                      typoscriptObjectPath="lib.dynamicContent"
@@ -34,7 +34,7 @@
          />
       </div>
 
-      <div class="section section-default custom-3columns-section">
+      <!-- <div class="section section-default custom-3columns-section">
          <div class="container">
             <div class="section-row">               
                <a href="" class="section-column section-column-third">               
@@ -57,15 +57,17 @@
                </a>
             </div>
          </div>
-      </div>
+      </div>-->
+      <f:render partial="Custom/Section3Columns" arguments="{_all}" />
+
       <div class="custom-news-section">
          <f:cObject
             typoscriptObjectPath="lib.dynamicContent"
             data="{pageUid: '{data.uid}', colPos: '9', slide: '{theme.pagelayout.{pagelayout}.colPos.9.slide}'}"
          />
       </div>
-      
-         <f:render partial="Custom/SectionArbeiten" arguments="{_all}" />       
+
+      <f:render partial="Custom/SectionArbeiten" arguments="{_all}" />
 
       <div class="section section-default custom-instafeed-section">
          <div class="container">

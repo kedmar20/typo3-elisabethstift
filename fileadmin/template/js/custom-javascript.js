@@ -70,9 +70,8 @@ if (screen.width > 1150) {
 
    /*********************************************************************************************/
    /*homepage>section-3columns, clip-Path border*/
-   const parentOf3columnsWrapper = document.querySelector("#page-content > div:nth-child(3) > div");
-   //const newSvgElement = document.createElement("svg");
-   //newSvgElement.innerHTML = `
+   const parentOf3columnsWrapper = document.querySelector(".custom-parent-of-sectionrow-3columnssection");
+
    parentOf3columnsWrapper
       ? (parentOf3columnsWrapper.innerHTML += `
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" viewBox="0 0 1920 361.156">
@@ -84,11 +83,11 @@ if (screen.width > 1150) {
 </svg>
 `)
       : "";
-   //parentOf3columnsWrapper.appendChild(newSvgElement);
-   /*setTimeout(() => {
-   const sectionRow = parentOf3columnsWrapper.querySelector(".section-row");
-   sectionRow.style.clipPath = "url(#wave)";   
-}, 100);*/
+
+   setTimeout(() => {
+      const sectionRow = parentOf3columnsWrapper.querySelector(".section-row");
+      sectionRow.style.clipPath = "url(#wave)";
+   }, 100);
 }
 
 /*********************************************************************************************/
@@ -101,7 +100,6 @@ footerLinks.forEach((elLink) => {
    }
 });
 
-
 /*********************************************************************************************/
 /*3-Columns-Spalte HREF to a-element*/
 const url3columnsSpalteOrange = document.querySelector("#c112");
@@ -109,11 +107,28 @@ const url3columnsSpalteBlue = document.querySelector("#c113");
 const url3columnsSpalteViolet = document.querySelector("#c114");
 
 const firstColumnOrange = document.querySelector("#page-content > div.section.section-default.custom-3columns-section > div > div > a:nth-child(1)");
-firstColumnOrange.href = url3columnsSpalteOrange.innerText;
+firstColumnOrange ? (firstColumnOrange.href = url3columnsSpalteOrange.innerText) : "";
 
 const firstColumnBlue = document.querySelector("#page-content > div.section.section-default.custom-3columns-section > div > div > a:nth-child(2)");
-firstColumnBlue.href = url3columnsSpalteBlue.innerText;
+firstColumnBlue ? (firstColumnBlue.href = url3columnsSpalteBlue.innerText) : "";
 
 const firstColumnViolet = document.querySelector("#page-content > div.section.section-default.custom-3columns-section > div > div > a:nth-child(3)");
-firstColumnViolet.href = url3columnsSpalteViolet.innerText;
+firstColumnViolet ? (firstColumnViolet.href = url3columnsSpalteViolet.innerText) : "";
+
+/*********************************************************************************************/
+const linkRowAll = document.querySelectorAll(".custom-3columns-haupt-section .custom-menu-sidebar>div");
+
+if (!!linkRowAll) {
+   linkRowAll.forEach((rowLink) => {
+      const whereAppend = rowLink.querySelector(".texticon-content>p>a");
+      const whatAppendIcon = rowLink.querySelector(".texticon span.texticon-inner-icon");
+      const newElementToCopyIcon = document.createElement("span");
+
+      newElementToCopyIcon.innerHTML = whatAppendIcon.innerHTML;
+      newElementToCopyIcon.classList = whatAppendIcon.classList;
+      newElementToCopyIcon.classList.add("custom-new-span-icon-copy");
+      whereAppend ? whereAppend.appendChild(newElementToCopyIcon) : "";
+   });
+}
+
 /*********************************************************************************************/

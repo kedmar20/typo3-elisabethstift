@@ -1,0 +1,34 @@
+/*Template: 3Columns.html*/
+/*all css setup apply also from ueberuns_main.css */
+/*always make all changes with the specific ID from this page*/
+
+@media (min-width: 768px) {
+   #p30 .custom-3columns-haupt-section {
+      padding-left: 6vw !important;
+   }
+   #p30 .custom-3columns-haupt-section .section-row > div:nth-child(1) .textpic.textpic-left .textpic-item:nth-child(1) {
+      width: 15vw !important;
+   }
+   #p30 .custom-3columns-haupt-section .section-row > div:nth-child(1) .textpic.textpic-left .textpic-item:nth-child(2) {
+      width: 49vw !important;
+   }
+   #p30 .custom-3columns-haupt-section .section-row > div:nth-child(1) > div {
+      margin-bottom: 0 !important;
+      padding-top: 45px !important;
+   }
+   #p30 .custom-3columns-haupt-section .section-row > div:nth-child(1) {
+      padding-top: 70px;
+   }
+   /*section 3columnsSection*/
+   #p30 .custom-3columns-section {
+      display: block;
+      margin-bottom: -100px;
+      max-height: 400px;
+      z-index: 1;
+      position: relative;
+   }
+   /*Section Arbeiten*/
+   #p30 .custom-arbeiten-section {
+      display: none;
+   }
+}
