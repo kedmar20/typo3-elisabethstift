@@ -22,13 +22,18 @@
    /*section 3columnsSection*/
    #p30 .custom-3columns-section {
       display: block;
-      margin-bottom: -100px;
-      max-height: 400px;
-      z-index: 1;
-      position: relative;
    }
    /*Section Arbeiten*/
    #p30 .custom-arbeiten-section {
       display: none;
+   }
+}
+@media (min-width: 1340px) {
+   /*section 3columnsSection*/
+   #p30 .custom-3columns-section {
+      margin-bottom: -100px;
+      max-height: 400px;
+      z-index: 1;
+      position: relative;
    }
 }
