@@ -14,7 +14,7 @@ return [
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
-        'cruser_id' => 'cruser_id',
+        'cruser_id' => 'cruser_id', 
         'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item',
         'delete' => 'deleted',
         'versioningWS' => true,
@@ -39,13 +39,14 @@ return [
             'showitem' => '
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
                 header,
-                bodytext,
+                bodytext,                
                 media,
+                bodytext2,
                 --palette--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.mediaposition;mediaposition,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
-                --palette--;;hiddenLanguagePalette,
+                --palette--;;hiddenLanguagePalette,                                
             '
         ],
     ],
@@ -182,6 +183,18 @@ return [
                 'softref' => 'typolink_tag,email[subst],url',
                 'enableRichtext' => true
             ],
+        ],       
+        'bodytext2' => [
+            'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.bodytext2',
+            'l10n_mode' => 'prefixLangTitle',
+            'l10n_cat' => 'text',
+            'config' => [
+                'type' => 'text',
+                'cols' => '80',
+                'rows' => '15',
+                'softref' => 'typolink_tag,email[subst],url',
+                'enableRichtext' => true
+            ],
         ],
         'media' => [
             'exclude' => true,
@@ -306,6 +319,6 @@ return [
                     ]
                 ],
             ]
-        ]
+        ]       
     ]
 ];

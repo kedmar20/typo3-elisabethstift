@@ -99,11 +99,12 @@ CREATE TABLE tx_bootstrappackage_carousel_item (
 CREATE TABLE tx_bootstrappackage_accordion_item (
     tt_content int(11) unsigned DEFAULT '0',
     header varchar(255) DEFAULT '' NOT NULL,
-    bodytext text,
+    bodytext text, 
+    bodytext2 text,
     media int(11) unsigned DEFAULT '0',
     mediaorient varchar(60) DEFAULT 'left' NOT NULL,
     imagecols tinyint(4) unsigned DEFAULT '1' NOT NULL,
-    image_zoom tinyint(3) unsigned DEFAULT '0' NOT NULL,
+    image_zoom tinyint(3) unsigned DEFAULT '0' NOT NULL,    
 );
 
 

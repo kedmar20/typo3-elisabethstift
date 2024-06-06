@@ -620,7 +620,10 @@
             <trans-unit id="accordion_item.header">
                 <source>Header</source>
             </trans-unit>
-            <trans-unit id="accordion_item.bodytext">
+            <trans-unit id="accordion_item.bodytext"> 
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="accordion_item.bodytext2"> 
                 <source>Text</source>
             </trans-unit>
             <trans-unit id="accordion_item.media">

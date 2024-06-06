@@ -39,17 +39,39 @@
                </div>
                <div class="section-column subcontent-wrap">
                   <div class="custom-menu-sidebar">
-                  <f:cObject
-                     typoscriptObjectPath="lib.dynamicContent"
-                     data="{pageUid: '{data.uid}', colPos: '2', slide: '{theme.pagelayout.{pagelayout}.colPos.2.slide}'}"
-                  />
-               </div>
+                     <f:cObject
+                        typoscriptObjectPath="lib.dynamicContent"
+                        data="{pageUid: '{data.uid}', colPos: '2', slide: '{theme.pagelayout.{pagelayout}.colPos.2.slide}'}"
+                     />
+                  </div>
                </div>
             </div>
          </div>
       </div>
 
+      <div class="custom-setion-penultimate">
+         <div class="custom-1column-ofthree">
+            <f:cObject
+               typoscriptObjectPath="lib.dynamicContent"
+               data="{pageUid: '{data.uid}', colPos: '21', slide: '{theme.pagelayout.{pagelayout}.colPos.21.slide}'}"
+            />
+         </div>
+         <div class="custom-2column-ofthree">
+            <f:cObject
+               typoscriptObjectPath="lib.dynamicContent"
+               data="{pageUid: '{data.uid}', colPos: '20', slide: '{theme.pagelayout.{pagelayout}.colPos.20.slide}'}"
+            />
+         </div>
+         <div class="custom-3column-ofthree">
+            <f:cObject
+               typoscriptObjectPath="lib.dynamicContent"
+               data="{pageUid: '{data.uid}', colPos: '22', slide: '{theme.pagelayout.{pagelayout}.colPos.22.slide}'}"
+            />
+         </div>
+      </div>
+
       <f:render partial="Custom/SectionArbeiten" arguments="{_all}" />
+      <f:render partial="Custom/Section3Columns" arguments="{_all}" />
    </f:section>
    <f:section name="Footer">
       <f:render partial="Structure/FooterContent" arguments="{_all}" />
