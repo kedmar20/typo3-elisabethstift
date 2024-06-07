@@ -17,7 +17,7 @@
 
 /*****************************************/
 /*1-Hero Section*/
-@media (min-width: 768px) {
+@media (min-width: 117px) {
    .custom-3columns-hero-section {
       z-index: 1;
       position: relative;
@@ -33,6 +33,13 @@
       padding: 0;
       margin: 0;
       width: 100%;
+   }
+   /*Hero-Bild desktop vs mobile*/
+   .custom-3columns-hero-section .section-row > div:nth-child(1) > div:nth-child(2) .gallery-row {
+      display: none;
+   }
+   .custom-3columns-hero-section .section-row > div:nth-child(1) > div:nth-child(1) .gallery-row {
+      display: block;
    }
    /*1-second row */
    .custom-3columns-hero-section .section-row > div:nth-child(2) {
@@ -68,7 +75,15 @@
       line-height: 65px;
    }
 }
-
+@media (max-width: 767px) {
+   /*Hero-Bild desktop vs mobile*/
+   .custom-3columns-hero-section .section-row > div:nth-child(1) > div:nth-child(2) .gallery-row {
+      display: block;
+   }
+   .custom-3columns-hero-section .section-row > div:nth-child(1) > div:nth-child(1) .gallery-row {
+      display: none;
+   }
+}
 /*****************************************/
 /*2-Haupt-section */
 @media (min-width: 768px) {

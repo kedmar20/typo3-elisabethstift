@@ -67,15 +67,17 @@ if (screen.width > 1150) {
             : "";
       }
    });
+}
 
-   /*********************************************************************************************/
-   /*homepage>section-3columns, clip-Path border*/
-   const parentOf3columnsWrapper = document.querySelector(".custom-parent-of-sectionrow-3columnssection");
+/*********************************************************************************************/
+/*homepage>section-3columns, clip-Path border*/
+const parentOf3columnsWrapper = document.querySelector(".custom-parent-of-sectionrow-3columnssection");
 
-   if (screen.width > 1339) {
-      if (!(window.location.pathname === "/") && !(window.location.pathname === "")) {
-         parentOf3columnsWrapper
-            ? (parentOf3columnsWrapper.innerHTML += `
+if (screen.width > 1339) {
+   if (!(window.location.pathname === "/") && !(window.location.pathname === "") && !(window.location.pathname === "/elisabethstift/app/")) {
+      console.log("yes");
+      parentOf3columnsWrapper
+         ? (parentOf3columnsWrapper.innerHTML += `
             <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" viewBox="0 0 1920 361.156">
             <defs>
             <clipPath id="wave">
@@ -84,13 +86,14 @@ if (screen.width > 1150) {
             </defs>
             </svg>
             `)
-            : "";
+         : "";
 
-         setTimeout(() => {
-            const sectionRow = parentOf3columnsWrapper.querySelector(".section-row");
-            sectionRow.style.clipPath = "url(#wave)";
-         }, 100);
-      }
+      setTimeout(() => {
+         const sectionRow = parentOf3columnsWrapper.querySelector(".section-row");
+         sectionRow.style.clipPath = "url(#wave)";
+      }, 100);
+   } else {
+      console.log("no");
    }
 }
 
