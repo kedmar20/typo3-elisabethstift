@@ -320,6 +320,45 @@ header .frame {
    }
 }
 
-/***********************************************************/
-/****************************************/
-/************************/
+/*********************************************/
+/*Logo*/
+#c45 > div > div > div > div > div > div:nth-child(2) {
+   display: block !important;
+   width: 80px;
+}
+#c45 > div > div > div > div > div > div:nth-child(1) {
+   display: none !important;
+}
+@media (min-width: 768px) {
+   #c45 > div > div > div > div > div > div:nth-child(2) {
+      display: none !important;
+   }
+   #c45 > div > div > div > div > div > div:nth-child(1) {
+      display: block !important;
+   }
+}
+/*Hamburger
+#page-header > div.container.container-mainnavigation > button > span::after {
+   border-radius: 5px;
+   height: 4px;
+   width: 40px;
+}
+#page-header > div.container.container-mainnavigation > button > span::before {
+   border-radius: 5px;
+   height: 4px;
+   width: 40px;
+   top: -12px;
+}*/
+@media (max-width: 767px) {
+   #page-header > div.container.container-mainnavigation > button > span {
+      transform: scale(2);
+   }
+   header .navbar-toggler:focus {
+      border: none !important;
+      box-shadow: none !important;
+      outline: none !important;
+   }
+   #page-header > div.container.container-mainnavigation > button {
+      margin-right: 7px !important;
+   }
+}
