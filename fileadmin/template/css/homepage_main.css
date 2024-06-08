@@ -3,7 +3,7 @@
 }
 /*MAIN*/
 /*0 - <main>*/
-@media (min-width: 768px) {
+@media (min-width: 117px) {
    main {
       padding-top: 0vw !important;
    }
@@ -16,7 +16,7 @@
 
 /*****************************************/
 /*1-Hero Section*/
-@media (min-width: 768px) {
+@media (min-width: 117px) {
    #p1 #page-content > div:nth-child(1) {
       position: relative;
       z-index: 2;
@@ -79,7 +79,7 @@
       padding-bottom: 50px !important;
    }
 }
-@media (min-width: 768px) and (max-width: 900px) {
+@media (min-width: 117px) and (max-width: 900px) {
    /*Ipad-Hoch Ansicht - Hero Section*/
    #p1 #page-content > div:nth-child(1) {
       padding-left: 0 !important;
@@ -143,7 +143,7 @@
 
 /*****************************************/
 /*2-Sticky Section*/
-@media (min-width: 768px) {
+@media (min-width: 117px) {
    #c21 > div > div > div {
       /*2-StickyS.-Text Wrapper*/
       padding-top: 155px;
@@ -223,7 +223,7 @@
 
 /*****************************************/
 /*3-ThreeColumns-Section*/
-@media (min-width: 768px) {
+@media (min-width: 117px) {
    .custom-3columns-section .section-row {
       width: 100vw;
       background-color: blueviolet;
@@ -388,7 +388,7 @@
 
 /*****************************************/
 /*4-Aktuelle Nachrichten*/
-@media (min-width: 768px) {
+@media (min-width: 117px) {
    #p1 .custom-news-section {
       margin-top: -4vw !important;
       margin-bottom: -10vw !important;
@@ -547,7 +547,7 @@
 
 /*****************************************/
 /*5-Arbeiten*/
-@media (min-width: 768px) {
+@media (min-width: 117px) {
    .custom-arbeiten-section {
       padding: 13vw 7vw 100px !important;
       background-image: url("../../user_upload/images/Gruppe564b.png");
@@ -714,7 +714,7 @@
 }
 /*****************************************/
 /*6-InstaFeed*/
-@media (min-width: 768px) {
+@media (min-width: 117px) {
    .custom-instafeed-section {
       background-color: transparent;
       padding: 145px 7vw !important;
