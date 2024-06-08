@@ -203,6 +203,18 @@ h5,
       font-size: 35px;
    }
 }
+@media (max-width: 767px) {
+   h1,
+   .h1-custom,
+   h2.h1 {
+      font-size: 30px !important;
+   }
+   h2,
+   .h2-custom {
+      font-size: 26px;
+      line-height: 32px !important;
+   }
+}
 /*Colors*/
 .custom-blue {
    color: var(--bs-primary) !important;
