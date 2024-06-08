@@ -151,3 +151,8 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1687516916] = [
     'priority' => 40,
     'class' => \BK2K\BootstrapPackage\Form\FieldWizard\IconWizard::class
 ];
+
+//login limits
+$GLOBALS['TYPO3_CONF_VARS']['BE']['loginRateLimit'] = 15;
+$GLOBALS['TYPO3_CONF_VARS']['BE']['loginRateLimitInterval'] = '15 minutes';
+$GLOBALS['TYPO3_CONF_VARS']['BE']['loginRateLimitIpExcludeList'] = '';

@@ -337,28 +337,37 @@ header .frame {
       display: block !important;
    }
 }
-/*Hamburger
-#page-header > div.container.container-mainnavigation > button > span::after {
+/*Hamburger Icon*/
+#page-header > div.container.container-mainnavigation > button {
+   transform: scale(3);
+}
+/*#page-header > div.container.container-mainnavigation > button > span::after {
    border-radius: 5px;
-   height: 4px;
-   width: 40px;
+   height: 1px;
+   width: 16px;
 }
 #page-header > div.container.container-mainnavigation > button > span::before {
    border-radius: 5px;
-   height: 4px;
-   width: 40px;
-   top: -12px;
+   height: 1px;
+   width: 16px;
+}
+#page-header > div.container.container-mainnavigation > button > span {
+   border-radius: 150px;
+   height: 1.3px;
+   width: 16px;
 }*/
-@media (max-width: 767px) {
-   #page-header > div.container.container-mainnavigation > button > span {
-      transform: scale(2);
-   }
-   header .navbar-toggler:focus {
-      border: none !important;
-      box-shadow: none !important;
-      outline: none !important;
-   }
-   #page-header > div.container.container-mainnavigation > button {
-      margin-right: 7px !important;
-   }
+#page-header > div.container.container-mainnavigation > button.collapsed > span,
+#page-header > div.container.container-mainnavigation > button > span::before,
+#page-header > div.container.container-mainnavigation > button > span::after {
+   border-radius: 150px;
+   height: 1.4px;
+   width: 14px;
+}
+header .navbar-toggler:focus {
+   border: none !important;
+   box-shadow: none !important;
+   outline: none !important;
+}
+#page-header > div.container.container-mainnavigation > button {
+   margin-right: 7px !important;
 }

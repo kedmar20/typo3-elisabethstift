@@ -37,3 +37,9 @@
       position: relative;
    }
 }
+
+@media (max-width: 767px) {
+   #p30 .custom-3columns-haupt-section .section-row > div:nth-child(1) > div {
+      padding-top: 65px !important;
+   }
+}
