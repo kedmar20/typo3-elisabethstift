@@ -80,7 +80,7 @@
    }
 }
 @media (min-width: 117px) and (max-width: 900px) {
-   /*Ipad-Hoch Ansicht - Hero Section*/
+   /*1-Ipad-Hoch Ansicht - Hero Section*/
    #p1 #page-content > div:nth-child(1) {
       padding-left: 0 !important;
       min-height: 90vh !important;
@@ -88,7 +88,6 @@
    #p1 #page-content > div.section.section-default.custom-hero-section > div {
       background-color: var(--bs-default);
    }
-
    #c89 {
       width: 60%;
       z-index: 100;
@@ -105,7 +104,7 @@
       margin-right: 0 !important;
    }
    #p1 #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
-      /***herosection-leftcolumn*/
+      /***1-herosection-leftcolumn*/
       padding-left: 7vw !important;
       padding-right: 7vw !important;
       padding-top: 15vh;
@@ -130,14 +129,41 @@
 }
 @media (min-width: 1150px) {
    #p1 #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
-      /***herosection-leftcolumn*/
+      /***1-herosection-leftcolumn*/
       width: 45% !important;
    }
 }
 @media (min-width: 1240px) {
    #p1 #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
-      /***herosection-leftcolumn*/
+      /***1-herosection-leftcolumn*/
       width: 40% !important;
+   }
+}
+@media (max-width: 767px) {
+   #p1 #carousel-89 > div > div {
+      padding-right: 0 !important;
+   }
+   #p1 #c89 {
+      width: 85% !important;
+   }
+   #c28 > div > div > div > div > h1 > span > span {
+      font-size: 30px !important;
+      line-height: 40px !important;
+   }
+   #p1 #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
+      padding-top: 70vw !important;
+   }
+   #p1 #c28 {
+      padding-right: 0%;
+      padding-bottom: 25px;
+   }
+   #p1 #c32 {
+      width: 70%;
+      padding-bottom: 25px;
+   }
+   #p1 #c89 > div > div > div {
+      right: 0 !important;
+      position: absolute !important;
    }
 }
 
@@ -220,7 +246,26 @@
       left: -70px;
    }
 }
-
+@media (max-width: 767px) {
+   #c21 > div > div > div > div > h2:nth-child(1) > span::after,
+   #c21 > div > div > div > div > h2:nth-child(3) > span::before {
+      transform: scale(0.5);
+   }
+   #p1 #c38 > div > div > div > div > h4 > span > span {
+      font-size: 20px !important;
+      line-height: 30px !important;
+   }
+   #p1 #c21 > div > div > div {
+      padding-top: 55vw !important;
+      padding-left: 17vw !important;
+      padding-bottom: 15vw !important;
+   }
+   @media (max-width: 450px) {
+      #p1 #c67 {
+         left: -40vw !important;
+      }
+   }
+}
 /*****************************************/
 /*3-ThreeColumns-Section*/
 @media (min-width: 117px) {
@@ -385,9 +430,19 @@
       min-height: none !important;
    }
 }
-
+@media (max-width: 767px) {
+   .custom-3columns-section > div > div > a:nth-child(1)::after,
+   .custom-3columns-section > div > div > a:nth-child(2)::after,
+   .custom-3columns-section > div > div > a:nth-child(3)::after {
+      opacity: 1 !important;
+      top: 77%;
+      right: 10%;
+      width: 15%;
+      height: 17%;
+   }
+}
 /*****************************************/
-/*4-Aktuelle Nachrichten*/
+/*4-Aktuelle Nachrichten, News Section*/
 @media (min-width: 117px) {
    #p1 .custom-news-section {
       margin-top: -4vw !important;
@@ -542,6 +597,32 @@
    }
    #p1 .custom-news-section {
       margin-top: -8vw !important;
+   }
+}
+@media (max-width: 767px) {
+   #p1 .custom-news-section {
+      margin-top: -8vw !important;
+      margin-bottom: -35vw !important;
+      z-index: -1 !important;
+      padding-left: 7vw !important;
+      padding-right: 7vw !important;
+   }
+   #p1 #c51 > div > div > div {
+      padding: 0 !important;
+   }
+   #p1 #news-container-51 > ul > li > div {
+      flex-direction: column !important;
+   }
+   #p1 .custom-news-section .news-list-view .col-md-3 {
+      border-radius: 20px 20px 20px 20px !important;
+      width: 100% !important;
+   }
+   #p1 .custom-news-section .news-list-view .col-md-9.articletype-0 {
+      width: 100% !important;
+      padding: 15% 5% !important;
+   }
+   #p1 #news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a {
+      display: none !important;
    }
 }
 
@@ -712,6 +793,75 @@
       height: 490px !important;
    }
 }
+@media (max-width: 767px) {
+   /*5-Carousel*/
+   #carousel-22 {
+      height: auto !important;
+   }
+   #carousel-22 .carousel-inner {
+      height: auto !important;
+   }
+   #carousel-22 .carousel-content-inner {
+      flex-direction: column !important;
+   }
+   #carousel-22 .carousel-inner .carousel-item-type-text_and_image .carousel-image {
+      display: block !important;
+   }
+   /***5-Carousel-Text*/
+   #carousel-22 > div > div .carousel-text {
+      position: relative !important;
+   }
+   #carousel-22
+      > div.carousel-inner
+      > div.item.active.carousel-item.carousel-item-layout-primary.carousel-item-type-text_and_image
+      > div
+      > div
+      > div.carousel-text
+      > h4 {
+      font-size: 22px !important;
+      line-height: 35px !important;
+      padding: 0 !important;
+   }
+   #carousel-22 > div.carousel-inner > div.item.active.carousel-item.carousel-item-layout-primary.carousel-item-type-text_and_image {
+      padding: 0 !important;
+   }
+   #carousel-22 > div > div .carousel-text {
+      padding: 0 !important;
+      left: 0 !important;
+   }
+   /***5-Carousel-Image*/
+   #carousel-22
+      > div.carousel-inner
+      > div.item.active.carousel-item.carousel-item-layout-primary.carousel-item-type-text_and_image
+      > div
+      > div
+      > div.carousel-image
+      > picture
+      > img {
+      min-height: auto !important;
+      margin-left: auto !important;
+      width: 80% !important;
+   }
+   /***5-Carousel-Arrows*/
+   #carousel-22 .carousel-control-prev,
+   .carousel-control-next {
+      top: -10px !important;
+   }
+   /***5-Carousel-Texts below*/
+   .custom-arbeiten-section > div > div > div:nth-child(2) #c93 {
+      padding-right: 0 !important;
+   }
+   /*5-Carousel-Button Stellenangebote*/
+   .custom-arbeiten-section .custom-button-1 {
+      padding: 2vw 10vw;
+   }
+   .custom-arbeiten-section .custom-button-1-icon {
+      margin-left: 11vw;
+      height: 8vw;
+      width: 8vw;
+   }
+}
+
 /*****************************************/
 /*6-InstaFeed*/
 @media (min-width: 117px) {
@@ -775,5 +925,11 @@
 @media (min-width: 1050px) {
    .custom-instafeed-section {
       margin-top: -6vw !important;
+   }
+}
+@media (max-width: 767px) {
+   .custom-instafeed-section {
+      margin-top: -15vw !important;
+      margin-bottom: -10vw !important;
    }
 }

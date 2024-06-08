@@ -100,6 +100,10 @@ footer a:hover {
    }
 }
 @media screen and (max-width: 767px) {
+   footer {
+      z-index: 7 !important;
+      position: relative !important;
+   }
    #page-footer > section > div:nth-child(2) > div {
       padding-top: 35px;
    }

@@ -369,5 +369,5 @@ header .navbar-toggler:focus {
    outline: none !important;
 }
 #page-header > div.container.container-mainnavigation > button {
-   margin-right: 7px !important;
+   margin-right: 4vw !important;
 }
