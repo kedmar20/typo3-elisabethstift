@@ -6,6 +6,7 @@ header {
    background-position: bottom;
    background-size: 10px 2px;
    background-repeat: repeat-x;
+   z-index: 20 !important;
 }
 
 #mainnavigation > ul > li:nth-child(1) > div {
@@ -71,7 +72,6 @@ header {
       left: 0 !important;
       width: 100vw !important;
       height: 12vw !important;
-      z-index: 20 !important;
    }
    header:has(.collapsing) {
       height: 18vw !important;
@@ -132,8 +132,8 @@ header {
       gap: 8px !important;
       margin-top: 28px !important;
       margin-bottom: 28px !important;
-      padding-left: 30vw;
-      padding-right: 30vw;
+      padding-left: 30%;
+      padding-right: 30%;
    }
    #mainnavigation {
       /***dropdown-section*/
@@ -172,8 +172,8 @@ header {
    }
    ul.navbar-nav {
       margin-top: 18px !important;
-      padding-left: 20vw;
-      padding-right: 20vw;
+      padding-left: 20%;
+      padding-right: 20%;
    }
 }
 
@@ -297,8 +297,6 @@ header .frame {
       transition: all 500ms;
    }
    .header-scroll-null {
-      padding-top: -10px;
-      padding-bottom: -10px;
       transform: translateY(0vw);
       transition: all 500ms;
    }
@@ -341,21 +339,6 @@ header .frame {
 #page-header > div.container.container-mainnavigation > button {
    transform: scale(3);
 }
-/*#page-header > div.container.container-mainnavigation > button > span::after {
-   border-radius: 5px;
-   height: 1px;
-   width: 16px;
-}
-#page-header > div.container.container-mainnavigation > button > span::before {
-   border-radius: 5px;
-   height: 1px;
-   width: 16px;
-}
-#page-header > div.container.container-mainnavigation > button > span {
-   border-radius: 150px;
-   height: 1.3px;
-   width: 16px;
-}*/
 #page-header > div.container.container-mainnavigation > button.collapsed > span,
 #page-header > div.container.container-mainnavigation > button > span::before,
 #page-header > div.container.container-mainnavigation > button > span::after {
@@ -371,3 +354,13 @@ header .navbar-toggler:focus {
 #page-header > div.container.container-mainnavigation > button {
    margin-right: 4vw !important;
 }
+
+/*DropdownMenu as Popup - start*/
+header .custom-dropdown-container {
+   position: absolute;
+   top: 0;
+   right: 0;
+   background-color: white;
+   border: 3px red solid;
+}
+/*end -DropdownMenu as Popup*/

@@ -3,10 +3,9 @@
 }
 /*MAIN*/
 /*0 - <main>*/
-@media (min-width: 117px) {
-   main {
-      padding-top: 0vw !important;
-   }
+main {
+   padding-top: 0vw !important;
+   z-index: 0;
 }
 @media (min-width: 1150px) {
    main {
@@ -16,70 +15,69 @@
 
 /*****************************************/
 /*1-Hero Section*/
-@media (min-width: 117px) {
-   #p1 #page-content > div:nth-child(1) {
-      position: relative;
-      z-index: 2;
-      min-height: 100vh;
-      background-color: transparent;
-   }
-   #p1 .custom-hero-section::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 90%;
-      background-image: url("../../user_upload/images/Gruppe5555.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: visible;
-      z-index: 1;
-      background-color: transparent;
-      transform: rotate(180deg);
-   }
-   #page-content > div.section.section-default.custom-hero-section > div {
-      position: relative;
-      z-index: 2;
-   }
-
-   /*1-HeroS. - Carousel-HomePage*/
-   #p1 .custom-hero-section .carousel-item-layout-secondary {
-      background: none !important;
-   }
-   #p1 .custom-hero-section .carousel-item-type-image .carousel-image img {
-      margin: 0 0 auto auto !important;
-      width: 100% !important;
-   }
-   #p1 .custom-hero-section .carousel .carousel-content-inner {
-      align-items: start !important;
-   }
-   #c89 {
-      padding-top: 0 !important;
-   }
-   #p1 .carousel .item {
-      height: auto !important ;
-   }
-   #p1 #page-content > div:nth-child(1) > div > div > div:nth-child(2) {
-      width: 50% !important;
-   }
-   /*1-HeroS. - Left Section*/
-   #p1 #page-content > div:nth-child(1) {
-      padding-left: 7vw !important;
-   }
-   #p1 #page-content > div:nth-child(1) > div > div {
-      gap: 0 !important;
-   }
-   #p1 #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
-      width: 50% !important;
-      display: flex !important;
-      flex-direction: column;
-      align-items: start;
-      justify-content: end;
-      padding-bottom: 50px !important;
-   }
+#p1 #page-content > div:nth-child(1) {
+   position: relative;
+   z-index: 2;
+   min-height: 57vw;
+   background-color: transparent;
 }
-@media (min-width: 117px) and (max-width: 900px) {
+#p1 .custom-hero-section::before {
+   position: absolute;
+   content: "";
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 90%;
+   background-image: url("../../user_upload/images/Gruppe5555.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: visible;
+   z-index: 1;
+   background-color: transparent;
+   transform: rotate(180deg);
+}
+#page-content > div.section.section-default.custom-hero-section > div {
+   position: relative;
+   z-index: 2;
+}
+
+/*1-HeroS. - Carousel-HomePage*/
+#p1 .custom-hero-section .carousel-item-layout-secondary {
+   background: none !important;
+}
+#p1 .custom-hero-section .carousel-item-type-image .carousel-image img {
+   margin: 0 0 auto auto !important;
+   width: 100% !important;
+}
+#p1 .custom-hero-section .carousel .carousel-content-inner {
+   align-items: start !important;
+}
+#c89 {
+   padding-top: 0 !important;
+}
+#p1 .carousel .item {
+   height: auto !important ;
+}
+#p1 #page-content > div:nth-child(1) > div > div > div:nth-child(2) {
+   width: 50% !important;
+}
+/*1-HeroS. - Left Section*/
+#p1 #page-content > div:nth-child(1) {
+   padding-left: 7vw !important;
+}
+#p1 #page-content > div:nth-child(1) > div > div {
+   gap: 0 !important;
+}
+#p1 #page-content > div:nth-child(1) > div > div > div:nth-child(1) {
+   width: 50% !important;
+   display: flex !important;
+   flex-direction: column;
+   align-items: start;
+   justify-content: end;
+   padding-bottom: 50px !important;
+}
+
+@media (max-width: 900px) {
    /*1-Ipad-Hoch Ansicht - Hero Section*/
    #p1 #page-content > div:nth-child(1) {
       padding-left: 0 !important;
@@ -169,65 +167,63 @@
 
 /*****************************************/
 /*2-Sticky Section*/
-@media (min-width: 117px) {
-   #c21 > div > div > div {
-      /*2-StickyS.-Text Wrapper*/
-      padding-top: 155px;
-      padding-left: 7vw;
-      padding-bottom: 5vw !important;
-      margin: 0;
-   }
-   #c21 > div > div > div h2 {
-      text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.6);
-   }
-   #c21 > div > div > div > div > h2:nth-child(1) > span::after {
-      /*2-StickyS.-h2span1-after*/
-      content: url(../../../fileadmin/user_upload/images/anfuerungszeichen-oben2.png);
-      width: 70px;
-      height: 60px;
-      position: absolute;
-      top: -20px;
-      right: -53px;
-      overflow: hidden;
-      transform: scale(0.65);
-   }
-   #c21 > div > div > div > div > h2:nth-child(3) > span::before {
-      /*2-StickyS.-h2span3-after*/
-      content: url("../../user_upload/images/anfuerungszeichen-unten2.png");
-      width: 70px;
-      height: 60px;
-      position: absolute;
-      bottom: -20px;
-      left: -58px;
-      overflow: hidden;
-      transform: scale(0.65);
-   }
-   #c21 > div > div > div > div > h2:nth-child(1) > span,
-   #c21 > div > div > div > div > h2:nth-child(3) > span {
-      position: relative;
-   }
-   #c67 > div > div > div {
-      /*2-StickyS.-BildWrapper*/
-      max-width: 1920px;
-      padding: 0 !important;
-   }
-   #c67 > div > div > div img {
-      min-width: 100%;
-      width: auto;
-      max-width: none;
-      min-height: 100vh;
-      transform: translateX(-31vw);
-   }
-   #c67 {
-      /*2-StickyS.-SectionWithBildFixed*/
-      min-height: 100vh !important;
-      z-index: -1;
-      width: 100vw;
-      min-width: 100vw !important;
-      left: 0;
-      top: 0;
-      position: fixed;
-   }
+#c21 > div > div > div {
+   /*2-StickyS.-Text Wrapper*/
+   padding-top: 155px;
+   padding-left: 7vw;
+   padding-bottom: 5vw !important;
+   margin: 0;
+}
+#c21 > div > div > div h2 {
+   text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.6);
+}
+#c21 > div > div > div > div > h2:nth-child(1) > span::after {
+   /*2-StickyS.-h2span1-after*/
+   content: url(../../../fileadmin/user_upload/images/anfuerungszeichen-oben2.png);
+   width: 70px;
+   height: 60px;
+   position: absolute;
+   top: -20px;
+   right: -53px;
+   overflow: hidden;
+   transform: scale(0.65);
+}
+#c21 > div > div > div > div > h2:nth-child(3) > span::before {
+   /*2-StickyS.-h2span3-after*/
+   content: url("../../user_upload/images/anfuerungszeichen-unten2.png");
+   width: 70px;
+   height: 60px;
+   position: absolute;
+   bottom: -20px;
+   left: -58px;
+   overflow: hidden;
+   transform: scale(0.65);
+}
+#c21 > div > div > div > div > h2:nth-child(1) > span,
+#c21 > div > div > div > div > h2:nth-child(3) > span {
+   position: relative;
+}
+#c67 > div > div > div {
+   /*2-StickyS.-BildWrapper*/
+   max-width: 1920px;
+   padding: 0 !important;
+}
+#c67 > div > div > div img {
+   min-width: 100%;
+   width: auto;
+   max-width: none;
+   min-height: 100vh;
+   transform: translateX(-31vw);
+}
+#c67 {
+   /*2-StickyS.-SectionWithBildFixed*/
+   min-height: 100vh !important;
+   z-index: -1;
+   width: 100vw;
+   min-width: 100vw !important;
+   left: 0;
+   top: 0;
+   position: fixed;
 }
 @media (min-width: 850px) {
    #c67 > div > div > div img {
@@ -268,156 +264,154 @@
 }
 /*****************************************/
 /*3-ThreeColumns-Section*/
-@media (min-width: 117px) {
-   .custom-3columns-section .section-row {
-      width: 100vw;
-      background-color: blueviolet;
-      min-height: 500px;
-      gap: 0 !important;
-      display: flex;
-      flex-direction: column;
-   }
-   .custom-3columns-section .section-column.section-column-third {
-      width: 100% !important;
-      padding: 50px 7vw;
-      min-height: 30vh !important;
-   }
-   .custom-3columns-section .section-column.section-column-third h5 {
-      line-height: 1.6;
-   }
-   .custom-3columns-section .section-row > a:nth-child(1) {
-      background-color: var(--bs-secondary);
-      position: relative;
-      cursor: pointer;
-      text-decoration: none;
-   }
-   .custom-3columns-section .section-row > a:nth-child(2) {
-      background-color: var(--bs-light);
-      position: relative;
-      cursor: pointer;
-      text-decoration: none;
-   }
-   .custom-3columns-section .section-row > a:nth-child(3) {
-      background-color: var(--bs-quaternary);
-      position: relative;
-      cursor: pointer;
-      text-decoration: none;
-   }
-   /*3-3ColSect-HoverOverlay on column-container*/
-   .custom-3columns-section > div > div > a:nth-child(1)::before {
-      content: "";
-      background-image: url(../../user_upload/images/3col-hover-orange.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: visible;
-      z-index: 1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 0.8s ease-out;
-   }
-   .custom-3columns-section > div > div > a:nth-child(1):hover::before {
-      opacity: 1;
-   }
-   .custom-3columns-section > div > div > a:nth-child(1)::after {
-      content: "";
-      background-image: url(../../user_upload/images/Gruppe352.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      overflow: visible;
-      z-index: 1;
-      position: absolute;
-      top: 57%;
-      right: 5%;
-      width: 12%;
-      height: 13%;
-      opacity: 0;
-      transition: opacity 0.8s ease-out;
-   }
-   .custom-3columns-section > div > div > a:nth-child(1):hover::after {
-      opacity: 1;
-   }
-   .custom-3columns-section > div > div > a:nth-child(2)::before {
-      content: "";
-      background-image: url(../../user_upload/images/3col-hover-blue.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: visible;
-      z-index: 1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 0.8s ease-out;
-   }
-   .custom-3columns-section > div > div > a:nth-child(2):hover::before {
-      opacity: 1;
-   }
-   .custom-3columns-section > div > div > a:nth-child(2)::after {
-      content: "";
-      background-image: url(../../user_upload/images/Gruppe354.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      overflow: visible;
-      z-index: 1;
-      position: absolute;
-      top: 57%;
-      right: 5%;
-      width: 12%;
-      height: 13%;
-      opacity: 0;
-      transition: opacity 0.8s ease-out;
-   }
-   .custom-3columns-section > div > div > a:nth-child(2):hover::after {
-      opacity: 1;
-   }
-   .custom-3columns-section > div > div > a:nth-child(3)::before {
-      content: "";
-      background-image: url(../../user_upload/images/3col-hover-violet.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: visible;
-      z-index: 1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 0.8s ease-out;
-   }
-   .custom-3columns-section > div > div > a:nth-child(3):hover::before {
-      opacity: 1;
-   }
-   .custom-3columns-section > div > div > a:nth-child(3)::after {
-      content: "";
-      background-image: url(../../user_upload/images/Gruppe354.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      overflow: visible;
-      z-index: 1;
-      position: absolute;
-      top: 57%;
-      right: 5%;
-      width: 12%;
-      height: 13%;
-      opacity: 0;
-      transition: opacity 0.8s ease-out;
-   }
-   .custom-3columns-section > div > div > a:nth-child(3):hover::after {
-      opacity: 1;
-   }
-   /*3-links for single-column*/
-   #c112,
-   #c113,
-   #c114 {
-      display: none;
-   }
+.custom-3columns-section .section-row {
+   width: 100vw;
+   background-color: blueviolet;
+   min-height: 500px;
+   gap: 0 !important;
+   display: flex;
+   flex-direction: column;
+}
+.custom-3columns-section .section-column.section-column-third {
+   width: 100% !important;
+   padding: 50px 7vw;
+   min-height: 30vh !important;
+}
+.custom-3columns-section .section-column.section-column-third h5 {
+   line-height: 1.6;
+}
+.custom-3columns-section .section-row > a:nth-child(1) {
+   background-color: var(--bs-secondary);
+   position: relative;
+   cursor: pointer;
+   text-decoration: none;
+}
+.custom-3columns-section .section-row > a:nth-child(2) {
+   background-color: var(--bs-light);
+   position: relative;
+   cursor: pointer;
+   text-decoration: none;
+}
+.custom-3columns-section .section-row > a:nth-child(3) {
+   background-color: var(--bs-quaternary);
+   position: relative;
+   cursor: pointer;
+   text-decoration: none;
+}
+/*3-3ColSect-HoverOverlay on column-container*/
+.custom-3columns-section > div > div > a:nth-child(1)::before {
+   content: "";
+   background-image: url(../../user_upload/images/3col-hover-orange.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: visible;
+   z-index: 1;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   transition: opacity 0.8s ease-out;
+}
+.custom-3columns-section > div > div > a:nth-child(1):hover::before {
+   opacity: 1;
+}
+.custom-3columns-section > div > div > a:nth-child(1)::after {
+   content: "";
+   background-image: url(../../user_upload/images/Gruppe352.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   overflow: visible;
+   z-index: 1;
+   position: absolute;
+   top: 57%;
+   right: 5%;
+   width: 12%;
+   height: 13%;
+   opacity: 0;
+   transition: opacity 0.8s ease-out;
+}
+.custom-3columns-section > div > div > a:nth-child(1):hover::after {
+   opacity: 1;
+}
+.custom-3columns-section > div > div > a:nth-child(2)::before {
+   content: "";
+   background-image: url(../../user_upload/images/3col-hover-blue.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: visible;
+   z-index: 1;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   transition: opacity 0.8s ease-out;
+}
+.custom-3columns-section > div > div > a:nth-child(2):hover::before {
+   opacity: 1;
+}
+.custom-3columns-section > div > div > a:nth-child(2)::after {
+   content: "";
+   background-image: url(../../user_upload/images/Gruppe354.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   overflow: visible;
+   z-index: 1;
+   position: absolute;
+   top: 57%;
+   right: 5%;
+   width: 12%;
+   height: 13%;
+   opacity: 0;
+   transition: opacity 0.8s ease-out;
+}
+.custom-3columns-section > div > div > a:nth-child(2):hover::after {
+   opacity: 1;
+}
+.custom-3columns-section > div > div > a:nth-child(3)::before {
+   content: "";
+   background-image: url(../../user_upload/images/3col-hover-violet.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: visible;
+   z-index: 1;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   transition: opacity 0.8s ease-out;
+}
+.custom-3columns-section > div > div > a:nth-child(3):hover::before {
+   opacity: 1;
+}
+.custom-3columns-section > div > div > a:nth-child(3)::after {
+   content: "";
+   background-image: url(../../user_upload/images/Gruppe354.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   overflow: visible;
+   z-index: 1;
+   position: absolute;
+   top: 57%;
+   right: 5%;
+   width: 12%;
+   height: 13%;
+   opacity: 0;
+   transition: opacity 0.8s ease-out;
+}
+.custom-3columns-section > div > div > a:nth-child(3):hover::after {
+   opacity: 1;
+}
+/*3-links for single-column*/
+#c112,
+#c113,
+#c114 {
+   display: none;
 }
 @media (min-width: 1340px) {
    /*3-Column-Section*/
@@ -443,141 +437,139 @@
 }
 /*****************************************/
 /*4-Aktuelle Nachrichten, News Section*/
-@media (min-width: 117px) {
-   #p1 .custom-news-section {
-      margin-top: -4vw !important;
-      margin-bottom: -10vw !important;
-      padding: 5vw 7vw 6vw !important;
-      background-image: url("../../user_upload/images/Gruppe5555.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: visible;
-      position: relative;
-      z-index: 5;
-      background-color: transparent;
-   }
-   #p1 .custom-news-section .list-group-item h3 a {
-      text-decoration: none !important;
-   }
-   #p1 .custom-news-section .news-list-view li.list-group-item,
-   #p1 .custom-news-section .news-list-view .row.news-list-item.mb-3,
-   #p1 .custom-news-section .news-list-view .col-md-3,
-   #p1 .custom-news-section .news-list-view .col-md-9.articletype-0 {
-      margin: 0 !important;
-      padding: 0 !important;
-   }
-   #p1 .custom-news-section .news-list-view .col-md-3 img {
-      width: 100%;
-      object-fit: cover;
-      object-position: left top;
-      display: block;
-      max-width: none;
-      object-fit: cover;
-      max-height: none;
-      min-height: 100% !important;
-      height: 100%;
-   }
-   #c51 {
-      padding: 145px 0%;
-      background-color: transparent;
-      margin-top: -40px !important;
-   }
-   #c51 h2 {
-      padding-bottom: 25px !important;
-   }
-   .news-list-view .col-md-3 {
-      width: 30% !important;
-   }
-   #p1 .custom-news-section .news-list-view .col-md-9.articletype-0 {
-      width: 65% !important;
-      padding: 5% !important;
-   }
-   #p1 .custom-news-section .news-list-view ul.list-group.mb-3 {
-      gap: 25px !important;
-   }
-   #p1 .custom-news-section .news-list-view ul.list-group.mb-3 li,
-   #p1 .custom-news-section .news-list-view .col-md-3 img {
-      border-radius: 20px 0 0 20px;
-      border: none;
-   }
-   /*4-NewsSect-HoverEffect on Articel-Image*/
-   #p1 .custom-news-section .news-list-view .col-md-3::before {
-      border-radius: 20px 0 0 20px;
-      content: "";
-      width: 100%;
-      height: 100%;
-      z-index: 999;
-      opacity: 0;
-      background-color: #083ea082 !important;
-      position: absolute;
-      transition: all 500ms;
-   }
-   #p1 .custom-news-section .news-list-view .col-md-3 {
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-      transition: all 500ms;
-      border-radius: 20px 0 0 20px;
-   }
-   #p1 .custom-news-section .news-list-view .col-md-3:hover::before {
-      opacity: 1;
-   }
-   #p1 .custom-news-section .news-list-view .col-md-3:hover img {
-      border-radius: 20px 0 0 20px;
-      -webkit-border-radius: 20px 0 0 20px;
-      transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-   }
-   #p1 .custom-news-section .news-list-view .col-md-3 img {
-      transition: all 500ms;
-      -webkit-transition: all 500ms;
-      border-radius: 20px 0 0 20px;
-   }
-   /*4-NewsSect-Hover on Links 'Weiterlesen'*/
-   #news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a {
-      justify-content: center;
-      align-items: end;
-      height: 35px;
-      width: 130px;
-      text-decoration: var(--bs-primary) underline;
-      text-underline-offset: 6px;
-      display: flex;
-      overflow: hidden;
-      position: relative;
-      transition: all 800ms;
-   }
-   #news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a:hover {
-      text-decoration: var(--bs-info) underline !important;
-   }
-   #news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a span {
-      z-index: 6 !important;
-      transition: all 1800ms 350ms;
-      display: block;
-      height: fit-content;
-      position: relative;
-      line-height: 1.3;
-   }
-   /*#news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a:hover span {
+#p1 .custom-news-section {
+   margin-top: -4vw !important;
+   margin-bottom: -10vw !important;
+   padding: 5vw 7vw 6vw !important;
+   background-image: url("../../user_upload/images/Gruppe5555.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: visible;
+   position: relative;
+   z-index: 5;
+   background-color: transparent;
+}
+#p1 .custom-news-section .list-group-item h3 a {
+   text-decoration: none !important;
+}
+#p1 .custom-news-section .news-list-view li.list-group-item,
+#p1 .custom-news-section .news-list-view .row.news-list-item.mb-3,
+#p1 .custom-news-section .news-list-view .col-md-3,
+#p1 .custom-news-section .news-list-view .col-md-9.articletype-0 {
+   margin: 0 !important;
+   padding: 0 !important;
+}
+#p1 .custom-news-section .news-list-view .col-md-3 img {
+   width: 100%;
+   object-fit: cover;
+   object-position: left top;
+   display: block;
+   max-width: none;
+   object-fit: cover;
+   max-height: none;
+   min-height: 100% !important;
+   height: 100%;
+}
+#c51 {
+   padding: 145px 0%;
+   background-color: transparent;
+   margin-top: -40px !important;
+}
+#c51 h2 {
+   padding-bottom: 25px !important;
+}
+.news-list-view .col-md-3 {
+   width: 30% !important;
+}
+#p1 .custom-news-section .news-list-view .col-md-9.articletype-0 {
+   width: 65% !important;
+   padding: 5% !important;
+}
+#p1 .custom-news-section .news-list-view ul.list-group.mb-3 {
+   gap: 25px !important;
+}
+#p1 .custom-news-section .news-list-view ul.list-group.mb-3 li,
+#p1 .custom-news-section .news-list-view .col-md-3 img {
+   border-radius: 20px 0 0 20px;
+   border: none;
+}
+/*4-NewsSect-HoverEffect on Articel-Image*/
+#p1 .custom-news-section .news-list-view .col-md-3::before {
+   border-radius: 20px 0 0 20px;
+   content: "";
+   width: 100%;
+   height: 100%;
+   z-index: 999;
+   opacity: 0;
+   background-color: #083ea082 !important;
+   position: absolute;
+   transition: all 500ms;
+}
+#p1 .custom-news-section .news-list-view .col-md-3 {
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+   transition: all 500ms;
+   border-radius: 20px 0 0 20px;
+}
+#p1 .custom-news-section .news-list-view .col-md-3:hover::before {
+   opacity: 1;
+}
+#p1 .custom-news-section .news-list-view .col-md-3:hover img {
+   border-radius: 20px 0 0 20px;
+   -webkit-border-radius: 20px 0 0 20px;
+   transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+}
+#p1 .custom-news-section .news-list-view .col-md-3 img {
+   transition: all 500ms;
+   -webkit-transition: all 500ms;
+   border-radius: 20px 0 0 20px;
+}
+/*4-NewsSect-Hover on Links 'Weiterlesen'*/
+#news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a {
+   justify-content: center;
+   align-items: end;
+   height: 35px;
+   width: 130px;
+   text-decoration: var(--bs-primary) underline;
+   text-underline-offset: 6px;
+   display: flex;
+   overflow: hidden;
+   position: relative;
+   transition: all 800ms;
+}
+#news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a:hover {
+   text-decoration: var(--bs-info) underline !important;
+}
+#news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a span {
+   z-index: 6 !important;
+   transition: all 1800ms 350ms;
+   display: block;
+   height: fit-content;
+   position: relative;
+   line-height: 1.3;
+}
+/*#news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a:hover span {
       color: white !important;
    }*/
-   #news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 115%;
-      background-color: var(--bs-info);
-      z-index: 5 !important;
-      transform: translateY(100%);
-      opacity: 0;
-      transition: all 900ms;
-      border-radius: 6px;
-   }
-   #news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a:hover::before {
-      transform: translateY(0%);
-      opacity: 1;
-   }
+#news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 115%;
+   background-color: var(--bs-info);
+   z-index: 5 !important;
+   transform: translateY(100%);
+   opacity: 0;
+   transition: all 900ms;
+   border-radius: 6px;
+}
+#news-container-51 > ul > li > div > div.col-md-9.articletype-0 > a:hover::before {
+   transform: translateY(0%);
+   opacity: 1;
 }
 @media (min-width: 1340px) {
    #c51 {
@@ -628,136 +620,119 @@
 
 /*****************************************/
 /*5-Arbeiten*/
-@media (min-width: 117px) {
-   .custom-arbeiten-section {
-      padding: 13vw 7vw 100px !important;
-      background-image: url("../../user_upload/images/Gruppe564b.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: visible;
-      /*position: relative;
-      z-index: 5;*/
-      background-color: transparent;
-   }
-   .custom-arbeiten-section > div > div > div:nth-child(1) {
-      width: 100% !important;
-   }
-   .custom-arbeiten-section > div > div > div:nth-child(2) {
-      width: 100% !important;
-   }
-   .custom-arbeiten-section .section-row {
-      gap: 0 !important;
-      flex-direction: column;
-   }
-   /*5-Arbeiten-Carousel*/
-   #carousel-22 > div > div {
-      position: relative;
-      background-color: transparent !important;
-   }
-   #carousel-22 > div > div .carousel-text {
-      position: absolute;
-      color: var(--bs-primary);
-      top: 20%;
-      left: 9%;
-      padding-right: 61%;
-      color: var(--bs-primary);
-   }
-   #carousel-22 > div > div .carousel-text h4 {
-      text-align: start !important;
-      line-height: 1.5 !important;
-   }
-   #carousel-22 > div > div .carousel-image img {
-      min-height: 400px !important;
-      max-width: none !important;
-      width: auto !important;
-      margin-left: 17vw !important;
-   }
-   .custom-carousel-button {
-      height: 100px;
-      width: 30px;
-      background-color: transparent;
-      border: none;
-   }
-   #carousel-22 .carousel-control {
-      width: 100px;
-   }
-   #carousel-22 .carousel-indicators {
-      display: none !important;
-   }
-   #carousel-22 .carousel-control-prev-icon {
-      background-image: url(../../user_upload/icons/carousel22-nav-left.svg);
-   }
-   #carousel-22 .carousel-control-next-icon {
-      background-image: url(../../user_upload/icons/carousel22-nav-right.svg);
-   }
-   /*5-Arbeiten-RightColumn*/
-   .custom-arbeiten-section > div > div > div:nth-child(2) {
-      padding-left: 0vw !important;
-      display: flex !important;
-      flex-direction: column;
-      align-items: start;
-      justify-content: center;
-      gap: 15px;
-   }
-   .custom-arbeiten-section > div > div > div:nth-child(2) #c93 {
-      padding-right: 10vw !important;
-   }
-   .custom-arbeiten-section #c94 {
-      padding: 20px 45px;
-      border-radius: 100px;
-   }
-   .custom-arbeiten-section #c94 .texticon-icon {
-      margin-left: 155px !important;
-      color: white !important;
-   }
-   /*5-Arbeiten-custom-button-1*/
-   .custom-a-button {
-      text-decoration: none;
-   }
-   .custom-button-1 {
-      align-items: center;
-      background-color: var(--bs-secondary);
-      border: none;
-      border-radius: 100px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      max-width: 650px;
-      min-height: 70px;
-      padding: 20px 45px;
-   }
-   /*h4.custom-a-button-h4 {
-      align-items: center !important;
-      background-color: var(--bs-secondary) !important;
-      border: none !important;
-      border-radius: 100px !important;
-      display: flex !important;
-      flex-direction: row !important;
-      flex-wrap: nowrap !important;
-      justify-content: center !important;
-      max-width: 650px !important;
-      min-height: 70px !important;
-      padding: 20px 45px !important;
-   }*/
-   .custom-button-1 h4 {
-      margin-bottom: 0 !important;
-   }
-   .custom-button-1-icon {
-      height: 45px;
-      width: 45px;
-      fill: white;
-      margin-left: 145px;
-      transition: all 0.5s ease-out;
-   }
-   .custom-button-1-span {
-      margin-bottom: 0 !important;
-      text-decoration: none;
-      color: white;
-   }
-   .custom-button-1:hover .custom-button-1-icon {
-      transform: translateX(15px);
-   }
+.custom-arbeiten-section {
+   padding: 13vw 7vw 100px !important;
+   background-image: url("../../user_upload/images/Gruppe564b.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: visible;
+   background-color: transparent;
+}
+.custom-arbeiten-section > div > div > div:nth-child(1) {
+   width: 100% !important;
+}
+.custom-arbeiten-section > div > div > div:nth-child(2) {
+   width: 100% !important;
+}
+.custom-arbeiten-section .section-row {
+   gap: 0 !important;
+   flex-direction: column;
+}
+/*5-Arbeiten-Carousel*/
+#carousel-22 > div > div {
+   position: relative;
+   background-color: transparent !important;
+}
+#carousel-22 > div > div .carousel-text {
+   position: absolute;
+   color: var(--bs-primary);
+   top: 20%;
+   left: 9%;
+   padding-right: 61%;
+   color: var(--bs-primary);
+}
+#carousel-22 > div > div .carousel-text h4 {
+   text-align: start !important;
+   line-height: 1.5 !important;
+}
+#carousel-22 > div > div .carousel-image img {
+   min-height: 400px !important;
+   max-width: none !important;
+   width: auto !important;
+   margin-left: 17vw !important;
+}
+.custom-carousel-button {
+   height: 100px;
+   width: 30px;
+   background-color: transparent;
+   border: none;
+}
+#carousel-22 .carousel-control {
+   width: 100px;
+}
+#carousel-22 .carousel-indicators {
+   display: none !important;
+}
+#carousel-22 .carousel-control-prev-icon {
+   background-image: url(../../user_upload/icons/carousel22-nav-left.svg);
+}
+#carousel-22 .carousel-control-next-icon {
+   background-image: url(../../user_upload/icons/carousel22-nav-right.svg);
+}
+/*5-Arbeiten-RightColumn*/
+.custom-arbeiten-section > div > div > div:nth-child(2) {
+   padding-left: 0vw !important;
+   display: flex !important;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+   gap: 15px;
+}
+.custom-arbeiten-section > div > div > div:nth-child(2) #c93 {
+   padding-right: 10vw !important;
+}
+.custom-arbeiten-section #c94 {
+   padding: 20px 45px;
+   border-radius: 100px;
+}
+.custom-arbeiten-section #c94 .texticon-icon {
+   margin-left: 155px !important;
+   color: white !important;
+}
+/*5-Arbeiten-custom-button-1*/
+.custom-a-button {
+   text-decoration: none;
+}
+.custom-button-1 {
+   align-items: center;
+   background-color: var(--bs-secondary);
+   border: none;
+   border-radius: 100px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   max-width: 650px;
+   min-height: 70px;
+   padding: 20px 45px;
+}
+.custom-button-1 h4 {
+   margin-bottom: 0 !important;
+}
+.custom-button-1-icon {
+   height: 45px;
+   width: 45px;
+   fill: white;
+   margin-left: 145px;
+   transition: all 0.5s ease-out;
+}
+.custom-button-1-span {
+   margin-bottom: 0 !important;
+   text-decoration: none;
+   color: white;
+}
+.custom-button-1:hover .custom-button-1-icon {
+   transform: translateX(15px);
 }
 @media (min-width: 1150px) {
    #carousel-22 > div > div .carousel-image img {
@@ -864,63 +839,61 @@
 
 /*****************************************/
 /*6-InstaFeed*/
-@media (min-width: 117px) {
-   .custom-instafeed-section {
-      background-color: transparent;
-      padding: 145px 7vw !important;
-      margin-top: -5vw !important;
-      margin-bottom: -5vw !important;
-      background-image: url("../../user_upload/images/Box_blau.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: visible;
-      position: relative;
-      z-index: 5;
-      background-color: transparent;
-   }
-   .custom-instafeed-section .section-row {
-      gap: 5% !important;
-      flex-direction: column;
-   }
-   .custom-instafeed-section > div > div > div:nth-child(1) {
-      width: 100% !important;
-   }
-   .custom-instafeed-section > div > div > div:nth-child(2) {
-      width: 100% !important;
-      border: white 2px dotted;
-      margin-top: 100px !important;
-   }
-   /*6-InstaFeed-LinksColumn */
-   #c100,
-   #c101 {
-      padding: 0 !important;
-      margin: 0 !important;
-   }
-   #c100 > div > div > div > div > h4 > span > span {
-      line-height: 2 !important;
-   }
-   #c99 {
-      padding-top: 0 !important;
-   }
+.custom-instafeed-section {
+   background-color: transparent;
+   padding: 145px 7vw !important;
+   margin-top: -5vw !important;
+   margin-bottom: -5vw !important;
+   background-image: url("../../user_upload/images/Box_blau.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: visible;
+   position: relative;
+   z-index: 5;
+   background-color: transparent;
+}
+.custom-instafeed-section .section-row {
+   gap: 5% !important;
+   flex-direction: column;
+}
+.custom-instafeed-section > div > div > div:nth-child(1) {
+   width: 100% !important;
+}
+.custom-instafeed-section > div > div > div:nth-child(2) {
+   width: 100% !important;
+   border: white 2px dotted;
+   margin-top: 100px !important;
+}
+/*6-InstaFeed-LinksColumn */
+#c100,
+#c101 {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+#c100 > div > div > div > div > h4 > span > span {
+   line-height: 2 !important;
+}
+#c99 {
+   padding-top: 0 !important;
+}
 
-   #c101 > div > div > div > div > div > div.texticon-content > h4 > a {
-      color: white !important;
-      text-underline-offset: 3px;
-      text-decoration-thickness: 1px;
-   }
-   #c101 > div > div > div > div > div > div.texticon-icon.texticon-size-default.texticon-type-default {
-      padding-left: 0 !important;
-      margin-left: 5px !important;
-   }
-   #c101 > div > div > div > div > div > div.texticon-icon.texticon-size-default.texticon-type-default svg {
-      fill: white;
-      width: 16px;
-   }
-   #c101 .texticon {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-end;
-   }
+#c101 > div > div > div > div > div > div.texticon-content > h4 > a {
+   color: white !important;
+   text-underline-offset: 3px;
+   text-decoration-thickness: 1px;
+}
+#c101 > div > div > div > div > div > div.texticon-icon.texticon-size-default.texticon-type-default {
+   padding-left: 0 !important;
+   margin-left: 5px !important;
+}
+#c101 > div > div > div > div > div > div.texticon-icon.texticon-size-default.texticon-type-default svg {
+   fill: white;
+   width: 16px;
+}
+#c101 .texticon {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: flex-end;
 }
 @media (min-width: 1050px) {
    .custom-instafeed-section {

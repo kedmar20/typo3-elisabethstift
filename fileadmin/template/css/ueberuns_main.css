@@ -316,6 +316,7 @@ span.texticon-inner-icon.custom-new-span-icon-copy svg {
    z-index: -1;
    position: relative;
    margin-top: -30px;
+   margin-bottom: -10vw !important;
 }
 #p6 .custom-1column-ofthree,
 #p6 .custom-3column-ofthree {
