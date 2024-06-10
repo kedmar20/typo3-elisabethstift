@@ -103,12 +103,11 @@ footer a:hover {
    footer {
       z-index: 7 !important;
       position: relative !important;
+      margin-top: 0 !important;
    }
    #page-footer > section > div:nth-child(2) > div {
-      padding-top: 35px;
-   }
-   #c17 > div > div > div > div > h5 {
-      text-align: left !important;
+      padding-top: 60px !important;
+      padding-bottom: 60px !important;
    }
    #c55,
    #c57 {
@@ -116,6 +115,16 @@ footer a:hover {
    }
    #c52 {
       padding-top: 0px !important;
+   }
+   #page-footer > section > div:nth-child(2) > div > div.section-column.footer-section-content-column.footer-section-content-column-left {
+      flex-direction: column !important;
+      row-gap: 15px;
+   }
+   #c17 > div > div > div > div > h5 {
+      text-align: center !important;
+   }
+   #c17 {
+      padding-top: 15px;
    }
 }
 
