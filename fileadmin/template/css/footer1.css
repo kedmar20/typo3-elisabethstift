@@ -126,6 +126,10 @@ footer a:hover {
    #c17 {
       padding-top: 15px;
    }
+   #c17 > div:nth-child(1) > div:nth-child(1){
+      display: flex;
+      justify-content: center;
+   }
 }
 
 /*footer hover and focus effect*/
