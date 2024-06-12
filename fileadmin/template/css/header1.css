@@ -336,12 +336,12 @@ header .frame {
    }
 }
 /*Hamburger Icon*/
-#page-header > div.container.container-mainnavigation > button {
+#page-header > div.container.container-mainnavigation > div > button {
    transform: scale(3);
 }
-#page-header > div.container.container-mainnavigation > button.collapsed > span,
-#page-header > div.container.container-mainnavigation > button > span::before,
-#page-header > div.container.container-mainnavigation > button > span::after {
+#page-header > div.container.container-mainnavigation > div > button.navbar-toggler.collapsed > span,
+#page-header > div.container.container-mainnavigation > div > button.navbar-toggler > span::before,
+#page-header > div.container.container-mainnavigation > div > button.navbar-toggler > span::after {
    border-radius: 150px;
    height: 1.4px;
    width: 14px;
@@ -351,16 +351,22 @@ header .navbar-toggler:focus {
    box-shadow: none !important;
    outline: none !important;
 }
-#page-header > div.container.container-mainnavigation > button {
+#page-header > div.container.container-mainnavigation > div > button {
    margin-right: 4vw !important;
 }
 
 /*DropdownMenu as Popup - start*/
-header .custom-dropdown-container {
-   position: absolute;
+.container-mainnavigation{
+   align-items: center !important;
+}
+@media (max-width: 1149px){
+header .custom-dropdown-container:has(nav.navbar-collapse.collapsing), header .custom-dropdown-container:has(nav.navbar-collapse.show) {
+   position: fixed;
    top: 0;
    right: 0;
    background-color: white;
    border: 3px red solid;
+}
+
 }
 /*end -DropdownMenu as Popup*/
