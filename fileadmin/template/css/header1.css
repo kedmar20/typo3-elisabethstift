@@ -15,54 +15,54 @@ header {
 }
 /*menu - hover+focus effects - Hauptmenu*/
 /*Header-Text-Underline-Hover*/
-.navbar-mainnavigation .nav-link:not(.nav-link-toggle):hover:before,
-.navbar-mainnavigation .nav-link:not(.nav-link-toggle):focus-visible:before {
-   opacity: 0 !important;
-}
-.navbar-mainnavigation .nav-link:not(.nav-link-toggle).active:before {
-   opacity: 0 !important;
-}
-.navbar-nav a:not(.nav-link-dropdown) .nav-link-text {
-   border-radius: 5px;
-   background-color: transparent !important;
-   padding: 6px 5px 4px !important;
-}
-.navbar-nav a:not(.nav-link-dropdown):hover .nav-link-text {
-   background-color: #e8f6fd !important;
-}
-.navbar-nav a:not(.nav-link-dropdown).active .nav-link-text {
-   background-color: #e8f6fd !important;
-}
+@media (min-width: 1150px){
+   .navbar-mainnavigation .nav-link:not(.nav-link-toggle):hover:before,
+   .navbar-mainnavigation .nav-link:not(.nav-link-toggle):focus-visible:before {
+      opacity: 0 !important;
+   }
+   .navbar-mainnavigation .nav-link:not(.nav-link-toggle).active:before {
+      opacity: 0 !important;
+   }
+   .navbar-nav a:not(.nav-link-dropdown) .nav-link-text {
+      border-radius: 5px;
+      background-color: transparent !important;
+      padding: 6px 5px 4px !important;
+   }
+   .navbar-nav a:not(.nav-link-dropdown):hover .nav-link-text {
+      background-color: #e8f6fd !important;
+   }
+   .navbar-nav a:not(.nav-link-dropdown).active .nav-link-text {
+      background-color: #e8f6fd !important;
+   }
 
-/*menu - hover+focus effects - Dropdowntmenu*/
-.navbar-nav a:not(.nav-link-toggle).nav-link-dropdown .nav-link-text {
-   position: relative;
-   overflow: hidden;
-}
-.navbar-nav a:not(.nav-link-toggle).nav-link-dropdown .nav-link-text::after {
-   background-image: radial-gradient(circle, #003087 1px, rgba(255, 255, 255, 0) 1.6px);
-   background-position: bottom;
-   background-size: 10px 2px;
-   background-repeat: repeat-x;
-   content: "";
-   position: absolute;
-   left: 0;
-   bottom: 0;
-   height: 100%;
-   width: 100%;
-   transform: translateX(-101%);
-   transition: all 0.3s ease-in-out;
-}
-
-.navbar-nav a:not(.active).nav-link-dropdown:hover .nav-link-text::after {
-   transform: translateX(0%);
-}
-
-.navbar-nav a:not(.nav-link-toggle).nav-link-dropdown.active .nav-link-text {
-   background-image: radial-gradient(circle, #003087 1px, rgba(255, 255, 255, 0) 1.6px);
-   background-position: bottom;
-   background-size: 10px 2px;
-   background-repeat: repeat-x;
+   /*menu - hover+focus effects - Dropdownmenu*/
+   .navbar-nav a:not(.nav-link-toggle).nav-link-dropdown .nav-link-text {
+      position: relative;
+      overflow: hidden;
+   }
+   .navbar-nav a:not(.nav-link-toggle).nav-link-dropdown .nav-link-text::after {
+      background-image: radial-gradient(circle, #003087 1px, rgba(255, 255, 255, 0) 1.6px);
+      background-position: bottom;
+      background-size: 10px 2px;
+      background-repeat: repeat-x;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      transform: translateX(-101%);
+      transition: all 0.3s ease-in-out;
+   }
+   .navbar-nav a:not(.active).nav-link-dropdown:hover .nav-link-text::after {
+      transform: translateX(0%);
+   }
+   .navbar-nav a:not(.nav-link-toggle).nav-link-dropdown.active .nav-link-text {
+      background-image: radial-gradient(circle, #003087 1px, rgba(255, 255, 255, 0) 1.6px);
+      background-position: bottom;
+      background-size: 10px 2px;
+      background-repeat: repeat-x;
+   }
 }
 
 @media (min-width: 1150px) {
@@ -88,6 +88,9 @@ header {
    }
    .nav-link-indicator {
       display: none !important;
+   }
+   #page-header .custom-dropdown-container{
+      display: flex;
    }
 }
 @media (min-width: 1440px) {
@@ -335,38 +338,94 @@ header .frame {
       display: block !important;
    }
 }
+
+/*MOBILE VIEW*/
 /*Hamburger Icon*/
-#page-header > div.container.container-mainnavigation > div > button {
-   transform: scale(3);
-}
-#page-header > div.container.container-mainnavigation > div > button.navbar-toggler.collapsed > span,
-#page-header > div.container.container-mainnavigation > div > button.navbar-toggler > span::before,
-#page-header > div.container.container-mainnavigation > div > button.navbar-toggler > span::after {
-   border-radius: 150px;
-   height: 1.4px;
-   width: 14px;
-}
-header .navbar-toggler:focus {
-   border: none !important;
-   box-shadow: none !important;
-   outline: none !important;
-}
-#page-header > div.container.container-mainnavigation > div > button {
-   margin-right: 4vw !important;
-}
-
-/*DropdownMenu as Popup - start*/
-.container-mainnavigation{
-   align-items: center !important;
-}
 @media (max-width: 1149px){
-header .custom-dropdown-container:has(nav.navbar-collapse.collapsing), header .custom-dropdown-container:has(nav.navbar-collapse.show) {
-   position: fixed;
-   top: 0;
-   right: 0;
-   background-color: white;
-   border: 3px red solid;
-}
+   #page-header > div.container.container-mainnavigation > div > button {
+      transform: scale(3);
+   }
+   #page-header > div.container.container-mainnavigation > div > button.navbar-toggler.collapsed > span,
+   #page-header > div.container.container-mainnavigation > div > button.navbar-toggler > span::before,
+   #page-header > div.container.container-mainnavigation > div > button.navbar-toggler > span::after {
+      border-radius: 150px;
+      height: 1.4px;
+      width: 14px;
+   }
+   header .navbar-toggler:focus {
+      border: none !important;
+      box-shadow: none !important;
+      outline: none !important;
+   }
+   #page-header > div.container.container-mainnavigation > div > button {
+      margin-right: 4vw !important;
+   }
 
+   /**DropdownMenu as Popup - start*/
+   .container-mainnavigation{
+      align-items: center !important;
+   }
+   #page-header .custom-dropdown-container ul.navbar-nav>li.nav-item.nav-style-simple a.nav-link.nav-link-main >span, #page-header .custom-dropdown-container ul.navbar-nav>li.nav-item.nav-style-simple a.nav-link.nav-link-main {
+      padding: 0 !important;
+   }
+   #page-header .custom-dropdown-container:has(nav.navbar-collapse.collapsing), #page-header .custom-dropdown-container:has(nav.navbar-collapse.show) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: white;
+      border: 3px red solid;
+      width: 78% !important;
+      display: flex;
+      flex-direction: column;
+   }
+   #page-header  .custom-dropdown-container:has(nav.navbar-collapse.collapsing) > button, #page-header .custom-dropdown-container:has(nav.navbar-collapse.show) > button{
+      align-self: end;
+      margin-top: 10vw;
+      margin-right: 6vw !important;
+   }
+   #page-header .custom-dropdown-container ul.navbar-nav:not(:has(>li.nav-item.nav-style-simple>button.show)){
+      border: blue solid 2px;
+      padding: 0 !important;
+   }
+   #page-header .custom-dropdown-container ul.navbar-nav>li.nav-item:not(:has(>button.show)){
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      border: green 1px solid;
+      height: 75px;
+      background-color: #ECF0F6;
+      padding: 0 8%;
+   }
+   #page-header .custom-dropdown-container ul.navbar-nav:has(>li.nav-item>button.show) >li.nav-item:not(:has(>button.show)){
+   display: none !important;
+   }
+   #page-header .custom-dropdown-container ul.navbar-nav span.nav-link-indicator::before{   
+      border-top: 4px solid currentColor;
+      border-left: 4px solid currentColor;
+      border-radius: 3px;
+   }
+   #page-header .custom-dropdown-container ul.navbar-nav:not(:has(>li.nav-item.nav-style-simple>button.show)) span.nav-link-indicator::before{
+      transform: rotate(135deg);  
+   }
+   #page-header .custom-dropdown-container ul.navbar-nav:has(>li.nav-item.nav-style-simple>button.show) span.nav-link-indicator::before{
+      transform: rotate(-45deg);  
+   }
+
+   /**bzgl. Javascript AppendChild: Elm.MitiText:"startseite"*/
+
+   /***Level-3 Dropdown-menu*/
+   #page-header .custom-dropdown-container ul.navbar-nav>li.nav-item.nav-style-simple:has(>button.show) a.nav-link.nav-link-main {
+   order: 2 !important;
+   }
+   #page-header .custom-dropdown-container ul.navbar-nav>li.nav-item.nav-style-simple:has(>button.show) button.show{
+      order: 1 !important;
+   }
+   #page-header .custom-dropdown-container ul.navbar-nav>li.nav-item.nav-style-simple:has(>button.show) div.dropdown-menu.dropdown-menu-simple.show{
+      order: 3 !important;
+   }
+   /***schnell Zurück von Level-3*/
+   #page-header > div.container.container-mainnavigation > div.custom-dropdown-container:has( > button.navbar-toggler.collapsed) > nav{
+      display: none !important;
+   }
 }
 /*end -DropdownMenu as Popup*/
