@@ -412,7 +412,17 @@ header .frame {
    }
 
    /**bzgl. Javascript AppendChild: Elm.MitiText:"startseite"*/
-
+   #page-header #mainnavigation > ul >a.custom-new-link-elm{
+      padding-left: 8%;
+       font-weight: 400;       
+       font-family: 'Catamaran';
+       font-size: 18px;
+       color: var(--bs-primary);  
+       text-decoration: none;          
+   }
+   #page-header #mainnavigation > ul:has(>li.nav-item>button.show)>a.custom-new-link-elm{
+      display: none;
+   }
    /***Level-3 Dropdown-menu*/
    #page-header .custom-dropdown-container ul.navbar-nav>li.nav-item.nav-style-simple:has(>button.show) a.nav-link.nav-link-main {
    order: 2 !important;
@@ -429,3 +439,7 @@ header .frame {
    }
 }
 /*end -DropdownMenu as Popup*/
+
+
+
+  
