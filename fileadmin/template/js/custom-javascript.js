@@ -143,7 +143,7 @@ if (!!linkRowAll) {
   if (!!(window.location.pathname === "/") || !!(window.location.pathname === "") || !!(window.location.pathname === "/elisabethstift/app/")) {
 const ulWhereToAppend=document.querySelector("#page-header #mainnavigation > ul");
 const beforeWhatToAppend = document.querySelector("#mainnavigation > ul > li:nth-child(1)");
-if(!!ulWhereToAppend){
+if((!!ulWhereToAppend) && (screen.width < 1150)){
    const newLinkElement = document.createElement("a");
    newLinkElement.setAttribute("href", "/");
    newLinkElement.textContent = "Startseite";
