@@ -431,15 +431,19 @@ header .frame {
     margin-top: 6vh;
     margin-right: 10vw !important;
   }
-  #page-header
-    .custom-dropdown-container
-    ul.navbar-nav:not(:has(> li.nav-item.nav-style-simple > button.show)) {
+  #page-header .custom-dropdown-container ul.navbar-nav {
     padding: 0 !important;
   }
   #page-header
     .custom-dropdown-container
     ul.navbar-nav
-    > li.nav-item:not(:has(> button.show)) {
+    > li.nav-item:not(:has(> button.show)),
+  #page-header
+    .custom-dropdown-container
+    ul.navbar-nav
+    > li.nav-item:has(> button.show)
+    ul.dropdown-nav
+    > li.nav-item {
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -511,6 +515,16 @@ header .frame {
     div.dropdown-menu.dropdown-menu-simple.show {
     order: 3 !important;
   }
+  #page-header
+    .custom-dropdown-container
+    ul.navbar-nav
+    li.nav-item.nav-style-simple
+    > div.dropdown-menu.dropdown-menu-simple.show {
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none;
+    border-radius: none;
+  }
   /***schnell Zurück von Level-3*/
   #page-header
     > div.container.container-mainnavigation
@@ -524,6 +538,7 @@ header .frame {
     width: 100%;
     height: 10vh;
     background-color: #fef8f5;
+    padding-left: 8%;
   }
   #mainnavigation > div.custom-icon-menu #c42 > div > div > div {
     max-width: none !important;
@@ -533,6 +548,7 @@ header .frame {
     height: 10vh;
     background-color: #fef8f5;
     margin-bottom: 4px;
+    padding-left: 8%;
   }
   #mainnavigation > nav.navbar #c44 > div > div > div > div > div.frame-header,
   #mainnavigation > div.custom-icon-menu #c42 div.frame-header,
@@ -543,10 +559,35 @@ header .frame {
     > div:nth-child(2) {
     display: block;
   }
-  #mainnavigation > nav.navbar #c44 > div > div > div > div > div.gallery-row {
+  #mainnavigation
+    > div.custom-icon-menu
+    #c42
+    div.gallery-row
+    > div:nth-child(2) {
+    transform: scale(0.8);
+    right: -27vw;
+    position: absolute;
+  }
+  #mainnavigation > nav.navbar #c44 > div > div > div > div > div.gallery-row,
+  #mainnavigation
+    > div.custom-icon-menu
+    #c42
+    > div
+    > div
+    > div
+    > div
+    > div.gallery-row {
     order: 1;
   }
-  #mainnavigation > nav.navbar #c44 > div > div > div > div > div.frame-header {
+  #mainnavigation > nav.navbar #c44 > div > div > div > div > div.frame-header,
+  #mainnavigation
+    > div.custom-icon-menu
+    #c42
+    > div
+    > div
+    > div
+    > div
+    > div.frame-header {
     order: 2;
   }
   #mainnavigation .frame-header {
@@ -557,6 +598,31 @@ header .frame {
     display: flex;
     align-items: center;
     height: 75px;
+    gap: 4vw !important;
+  }
+  #mainnavigation
+    > div.custom-icon-menu
+    #c42
+    > div
+    > div
+    > div
+    > div
+    > div.frame-header
+    > h5,
+  #mainnavigation
+    > nav.navbar
+    #c44
+    > div
+    > div
+    > div
+    > div
+    > div.frame-header
+    > h5,
+  #mainnavigation > div > a {
+    font-family: catamaran, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
   }
 }
 /*end -DropdownMenu as Popup*/
