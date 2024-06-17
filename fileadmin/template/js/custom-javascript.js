@@ -123,6 +123,7 @@ const firstColumnViolet = document.querySelector("#page-content > div.section.se
 firstColumnViolet ? (firstColumnViolet.href = url3columnsSpalteViolet.innerText) : "";
 
 /*********************************************************************************************/
+/*Template '3columns' - SideBarMenu - copy icon */
 const linkRowAll = document.querySelectorAll(".custom-3columns-haupt-section .custom-menu-sidebar>div");
 
 if (!!linkRowAll) {
@@ -139,16 +140,23 @@ if (!!linkRowAll) {
 }
 
 /*********************************************************************************************/
-  /**bzgl. Header Mobil, Elm. Mit Text:"startseite"*/
-  if (!!(window.location.pathname === "/") || !!(window.location.pathname === "") || !!(window.location.pathname === "/elisabethstift/app/")) {
-const ulWhereToAppend=document.querySelector("#page-header #mainnavigation > ul");
-const beforeWhatToAppend = document.querySelector("#mainnavigation > ul > li:nth-child(1)");
-if((!!ulWhereToAppend) && (screen.width < 1150)){
-   const newLinkElement = document.createElement("a");
-   newLinkElement.setAttribute("href", "/");
-   newLinkElement.textContent = "Startseite";
-   newLinkElement.classList.add("custom-new-link-elm")
-   ulWhereToAppend.insertBefore(newLinkElement, beforeWhatToAppend);
-};
-  }
-  /*********************************************************************************************/
+/**bzgl. Header Mobil, Elm. Mit Text:"startseite"*/
+if (!!(window.location.pathname === "/") || !!(window.location.pathname === "") || !!(window.location.pathname === "/elisabethstift/app/")) {
+   const ulWhereToAppend = document.querySelector("#page-header #mainnavigation > ul");
+   const beforeWhatToAppend = document.querySelector("#mainnavigation > ul > li:nth-child(1)");
+   if (!!ulWhereToAppend && screen.width < 1150) {
+      const newLinkElement = document.createElement("a");
+      newLinkElement.setAttribute("href", "/");
+      newLinkElement.textContent = "Startseite";
+      newLinkElement.classList.add("custom-new-link-elm");
+      ulWhereToAppend.insertBefore(newLinkElement, beforeWhatToAppend);
+   }
+}
+/*********************************************************************************************/
+/*Header - Link to 'Lupe' - open Subpage 'Suchenergebnisse'*/
+const dieLupeButton = document.querySelector("#mainnavigation > nav > div > button");
+dieLupeButton
+   ? dieLupeButton.addEventListener("click", (el) => {
+        document.location.href = "https://dev-typografix.de/elisabethstift/app/suchergebnis";
+     })
+   : "";

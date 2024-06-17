@@ -1,0 +1,76 @@
+/*Template: 3Columns.html*/
+/*all css setup apply also from ueberuns_main.css */
+/*always make all changes with the specific ID from this page*/
+
+/*****************************************/
+/*1-Hero Section*/
+/**1-second row */
+#p7 .custom-3columns-hero-section .section-row > div:nth-child(2) {
+   background-image: url(../../../fileadmin/user_upload/images/Tagesgruppen/header-tagesgruppen-wave.png);
+   background-repeat: no-repeat;
+   min-height: auto;
+   background-size: cover;
+}
+#p7 #c190 > div > div > div > div > h4 {
+   line-height: 35px;
+   padding-right: 28%;
+}
+#p7 .custom-3columns-hero-section .section-row > div:nth-child(2)::before {
+   background-image: none;
+   min-height: auto;
+}
+#p7 #c190 {
+   padding-top: 7vw;
+   padding-bottom: 7vw;
+}
+@media (max-width: 991px) {
+   #p7 #c190 > div > div > div > div > h4 {
+      padding-right: 12vw;
+   }
+}
+@media (max-width: 767px) {
+   #p7 #c190 > div > div > div > div > h4 {
+      padding-right: 7vw;
+      line-height: 30px;
+   }
+   #p7 #c190 {
+      padding-top: 10vw;
+      padding-bottom: 10vw;
+   }
+}
+@media (max-width: 450px) {
+   #p7 #c190 {
+      padding-top: 20vw;
+      padding-bottom: 20vw;
+   }
+}
+
+/*****************************************/
+/*2-HauptS-middle column with main content */
+#p7 .custom-3columns-haupt-section .section-row > div:nth-child(1) .textpic-item.textpic-gallery {
+   display: flex;
+   align-items: start;
+   justify-content: center;
+   order: 1 !important;
+}
+#p7 .custom-3columns-haupt-section .textpic {
+   flex-direction: column;
+}
+#p7 .custom-3columns-haupt-section .section-row > div:nth-child(1) .textpic-item {
+   width: 85vw !important;
+}
+@media (min-width: 768px) {
+   #p7 .custom-3columns-haupt-section .section-row > div:nth-child(1) .textpic-item {
+      width: calc(50% - (40px / 2)) !important;
+   }
+}
+@media (min-width: 1350px) {
+   #p7 .custom-3columns-haupt-section .textpic {
+      flex-direction: row;
+   }
+   #p7 .custom-3columns-haupt-section .section-row > div:nth-child(1) .textpic-item.textpic-gallery {
+      order: 1 !important;
+      width: 19% !important;
+   }
+}
+/*#c192 > div > div > div > div > div > div.textpic-item.textpic-gallery*/
