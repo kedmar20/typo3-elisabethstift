@@ -6,71 +6,302 @@
 /*1-Hero Section*/
 /**1-second row */
 #p7 .custom-3columns-hero-section .section-row > div:nth-child(2) {
-   background-image: url(../../../fileadmin/user_upload/images/Tagesgruppen/header-tagesgruppen-wave.png);
-   background-repeat: no-repeat;
-   min-height: auto;
-   background-size: cover;
+  background-image: url(../../../fileadmin/user_upload/images/Tagesgruppen/header-tagesgruppen-wave.png);
+  background-repeat: no-repeat;
+  min-height: auto;
+  background-size: cover;
 }
 #p7 #c190 > div > div > div > div > h4 {
-   line-height: 35px;
-   padding-right: 28%;
+  line-height: 35px;
+  padding-right: 28%;
 }
 #p7 .custom-3columns-hero-section .section-row > div:nth-child(2)::before {
-   background-image: none;
-   min-height: auto;
+  background-image: none;
+  min-height: auto;
 }
 #p7 #c190 {
-   padding-top: 7vw;
-   padding-bottom: 7vw;
+  padding-top: 7vw;
+  padding-bottom: 7vw;
 }
 @media (max-width: 991px) {
-   #p7 #c190 > div > div > div > div > h4 {
-      padding-right: 12vw;
-   }
+  #p7 #c190 > div > div > div > div > h4 {
+    padding-right: 12vw;
+  }
 }
 @media (max-width: 767px) {
-   #p7 #c190 > div > div > div > div > h4 {
-      padding-right: 7vw;
-      line-height: 30px;
-   }
-   #p7 #c190 {
-      padding-top: 10vw;
-      padding-bottom: 10vw;
-   }
+  #p7 #c190 > div > div > div > div > h4 {
+    padding-right: 7vw;
+    line-height: 30px;
+  }
+  #p7 #c190 {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
 }
 @media (max-width: 450px) {
-   #p7 #c190 {
-      padding-top: 20vw;
-      padding-bottom: 20vw;
-   }
+  #p7 #c190 {
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+  }
 }
 
 /*****************************************/
 /*2-HauptS-middle column with main content */
-#p7 .custom-3columns-haupt-section .section-row > div:nth-child(1) .textpic-item.textpic-gallery {
-   display: flex;
-   align-items: start;
-   justify-content: center;
-   order: 1 !important;
+#p7 .custom-3columns-haupt-section {
+  padding-left: 7vw !important;
+}
+#p7
+  .custom-3columns-haupt-section
+  .section-row
+  > div:nth-child(1)
+  .textpic-item.textpic-gallery {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  order: 1 !important;
 }
 #p7 .custom-3columns-haupt-section .textpic {
-   flex-direction: column;
+  flex-direction: column;
 }
-#p7 .custom-3columns-haupt-section .section-row > div:nth-child(1) .textpic-item {
-   width: 85vw !important;
+#p7
+  .custom-3columns-haupt-section
+  .section-row
+  > div:nth-child(1)
+  .textpic-item {
+  width: 85vw !important;
 }
 @media (min-width: 768px) {
-   #p7 .custom-3columns-haupt-section .section-row > div:nth-child(1) .textpic-item {
-      width: calc(50% - (40px / 2)) !important;
-   }
+  #p7
+    .custom-3columns-haupt-section
+    .section-row
+    > div:nth-child(1)
+    .textpic-item {
+    width: calc(75% - (40px / 2)) !important;
+  }
 }
 @media (min-width: 1350px) {
-   #p7 .custom-3columns-haupt-section .textpic {
-      flex-direction: row;
-   }
-   #p7 .custom-3columns-haupt-section .section-row > div:nth-child(1) .textpic-item.textpic-gallery {
-      order: 1 !important;
-      width: 19% !important;
-   }
+  #p7 .custom-3columns-haupt-section .textpic {
+    flex-direction: row;
+  }
+  #p7
+    .custom-3columns-haupt-section
+    .section-row
+    > div:nth-child(1)
+    .textpic-item.textpic-gallery {
+    order: 1 !important;
+    width: 19% !important;
+  }
 }
-/*#c192 > div > div > div > div > div > div.textpic-item.textpic-gallery*/
+/***2-Accordion*/
+#p7
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  > div
+  > div
+  > div.section-column.maincontent-wrap
+  > div.frame-type-accordion
+  div.accordion-item {
+  border: none;
+}
+
+#p7
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  > div
+  > div
+  > div.section-column.maincontent-wrap
+  > div.frame-type-accordion {
+  margin-left: auto !important;
+  width: 85vw !important;
+  margin-bottom: 0 !important;
+}
+
+#p7
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  > div
+  > div
+  > div.section-column.maincontent-wrap
+  > div.frame-type-accordion
+  button.accordion-button.collapsed::after {
+  background-image: url(../../user_upload/images/Tagesgruppen/accordion-closed.svg);
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  margin-left: -14%;
+}
+#p7
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  > div
+  > div
+  > div.section-column.maincontent-wrap
+  > div.frame-type-accordion
+  button.accordion-button[aria-expanded="true"]::after {
+  background-image: url(../../user_upload/images/Tagesgruppen/accordion-open.svg);
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  margin-left: -14%;
+}
+#p7
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  > div
+  > div
+  > div.section-column.maincontent-wrap
+  > div.frame-type-accordion
+  button.accordion-button {
+  padding-left: 14% !important;
+  border: none !important;
+  outline: none;
+  background: none;
+  box-shadow: none !important;
+  font-weight: 600;
+  color: var(--bs-primary);
+  font-size: 22px;
+  font-family: "Catamaran";
+}
+#p7
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  > div
+  > div
+  > div.section-column.maincontent-wrap
+  > div.frame-type-accordion
+  button.accordion-button:focus,
+#p7
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  > div
+  > div
+  > div.section-column.maincontent-wrap
+  > div.frame-type-accordion
+  button.accordion-button
+  + div.accordion-collapse {
+  border: none !important;
+  outline: none;
+  background: none;
+  box-shadow: none !important;
+}
+.custom-new-undertitle-accordion-image {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Catamaran";
+  color: var(--bs-primary);
+  padding-top: 7px;
+}
+#p7
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  > div
+  > div
+  > div.section-column.maincontent-wrap
+  > div.frame-type-accordion
+  div.accordion-collapse
+  > div
+  > div
+  > div:nth-child(3) {
+  order: 3 !important;
+}
+#p7
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  > div
+  > div
+  > div.section-column.maincontent-wrap
+  > div.frame-type-accordion
+  div.accordion-collapse
+  .accordion-body {
+  padding: 0 !important;
+}
+#p7
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  > div
+  > div
+  > div.section-column.maincontent-wrap
+  > div.frame-type-accordion
+  div.accordion-collapse {
+  margin-top: 55px !important;
+}
+#p7
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  div.frame-type-accordion
+  div.accordion-content-item.accordion-content-media
+  div.gallery-row
+  .gallery-item {
+  --gallery-columns: 1;
+  padding-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+  #p7
+    #page-content
+    > div.section.section-default.custom-3columns-haupt-section
+    > div
+    > div
+    > div.section-column.maincontent-wrap
+    > div.frame-type-accordion {
+    width: calc(75% - (40px / 2)) !important;
+    margin-left: 22% !important;
+    padding-top: 65px !important;
+  }
+  #p7
+    #page-content
+    > div.section.section-default.custom-3columns-haupt-section
+    > div
+    > div
+    > div.section-column.maincontent-wrap
+    > div.frame-type-accordion
+    button.accordion-button.collapsed::after {
+    margin-left: -7%;
+  }
+  #p7
+    #page-content
+    > div.section.section-default.custom-3columns-haupt-section
+    > div
+    > div
+    > div.section-column.maincontent-wrap
+    > div.frame-type-accordion
+    button.accordion-button[aria-expanded="true"]::after {
+    margin-left: -7%;
+  }
+  #p7
+    #page-content
+    > div.section.section-default.custom-3columns-haupt-section
+    > div
+    > div
+    > div.section-column.maincontent-wrap
+    > div.frame-type-accordion
+    button.accordion-button {
+    padding-left: 7% !important;
+  }
+  #p7
+    #page-content
+    > div.section.section-default.custom-3columns-haupt-section
+    div.frame-type-accordion
+    div.accordion-content-item.accordion-content-media
+    div.gallery-row {
+    flex-direction: row !important;
+  }
+  #p7
+    #page-content
+    > div.section.section-default.custom-3columns-haupt-section
+    div.frame-type-accordion
+    div.accordion-content-item.accordion-content-media
+    div.gallery-row
+    .gallery-item {
+    --gallery-columns: 2;
+  }
+}
+/***2-Carousel*/
+#p7 #c195 {
+  margin: 0 !important;
+  margin-bottom: 0px !important;
+  padding-bottom: 0;
+  padding-top: 0px !important;
+}
