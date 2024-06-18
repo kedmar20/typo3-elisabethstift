@@ -1,4 +1,6 @@
-.custom-rte-button-1 {
+.custom-rte-button-1,
+span.custom-rte-button-1,
+a span.custom-rte-button-1 {
   align-items: center;
   background-color: inherit;
   border: none;
@@ -7,7 +9,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  max-width: 10px;
+  max-width: 150px;
   min-height: 40px;
   padding: 10px 25px;
 }

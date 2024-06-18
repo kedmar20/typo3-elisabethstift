@@ -711,22 +711,21 @@ main {
 .custom-a-button {
   text-decoration: none;
 }
-.custom-button-1,
-.custom-rte-button-1 {
+.custom-button-1 {
   align-items: center;
-  /*background-color: var(--bs-secondary);*/
+  background-color: var(--bs-secondary);
   border: none;
   border-radius: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  max-width: 650px;
+  max-width: none;
+  min-width: 415px;
   min-height: 70px;
   padding: 20px 45px;
 }
-.custom-button-1 h4,
-.custom-rte-button-1 h4 {
+.custom-button-1 h4 {
   margin-bottom: 0 !important;
 }
 .custom-button-1-icon {
@@ -743,6 +742,9 @@ main {
 }
 .custom-button-1:hover .custom-button-1-icon {
   transform: translateX(15px);
+}
+a:has(> * > .custom-rte-button-1) {
+  text-decoration: none !important;
 }
 @media (min-width: 1150px) {
   #carousel-22 > div > div .carousel-image img {
