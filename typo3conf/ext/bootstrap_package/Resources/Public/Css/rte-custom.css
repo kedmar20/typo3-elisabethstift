@@ -1,14 +1,13 @@
 .custom-rte-button-1 {
-    align-items: center;   
-    background-color: #FF6900;
-    border: none;
-    border-radius: 100px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    max-width: 10px;
-    min-height: 40px;
-    padding: 10px 25px;
- } 
- 
+  align-items: center;
+  background-color: inherit;
+  border: none;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  max-width: 10px;
+  min-height: 40px;
+  padding: 10px 25px;
+}
