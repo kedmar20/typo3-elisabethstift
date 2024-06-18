@@ -225,3 +225,30 @@ rowsOfimagesByAccordions.forEach((row) => {
   });
 });
 /*********************************************************************************************/
+/*Kontakt-Button-von CKEditor-Automatisierung*/
+const parentElemOfButton = document.querySelectorAll(
+  "*:has(>.custom-rte-button-1)"
+);
+if (!!parentElemOfButton) {
+  console.log(parentElemOfButton);
+  parentElemOfButton.forEach((parentElement) => {
+    let textColor = parentElement.style.color;
+    let backgroundColor = parentElement.style.backgroundColor;
+    console.log(textColor, backgroundColor);
+    const elementToChangeHtml = parentElement.querySelector(
+      ".custom-rte-button-1"
+    );
+
+    elementToChangeHtml.innerHTML = `
+  <a href="" class="custom-a-button">
+   <button class="custom-button-1" style="background-color:${backgroundColor};">
+      <h4 class="catamaran-25-semibold"><span class="custom-button-1-span" style="color:${textColor};">${elementToChangeHtml.innerText}</span></h4>
+      <i class="custom-button-1-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="${textColor}" width="" height="" viewBox="0 0 512 512" class="" aria-hidden="true"><path d="M298.3 256L131.1 81.9c-4.2-4.3-4.1-11.4.2-15.8l29.9-30.6c4.3-4.4 11.3-4.5 15.5-.2L380.9 248c2.2 2.2 3.2 5.2 3 8.1.1 3-.9 5.9-3 8.1L176.7 476.8c-4.2 4.3-11.2 4.2-15.5-.2L131.3 446c-4.3-4.4-4.4-11.5-.2-15.8L298.3 256z"></path></svg>
+      </i>
+   </button>
+   </a>
+  `;
+  });
+}
+/*********************************************************************************************/
