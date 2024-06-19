@@ -225,7 +225,7 @@ rowsOfimagesByAccordions.forEach((row) => {
   });
 });
 /*********************************************************************************************/
-/*Kontakt-Button-von CKEditor-Automatisierung*/
+/*Button-von CKEditor-Automatisierung - subpages of Angebote*/
 const parentElemOfButton = document.querySelectorAll(
   "*:has(>.custom-rte-button-1)"
 );
@@ -250,5 +250,31 @@ if (!!parentElemOfButton) {
    </a>
   `;
   });
+}
+/*********************************************************************************************/
+/*Background-HeroImage2-Subpages of Angebote */
+if (screen.width >= 768) {
+  const whatImageSrc = document.querySelector(
+    ".custom-parent-angebote .custom-3columns-hero-section .section-row> div:nth-child(2)> div:nth-child(2).frame img"
+  ).src;
+  console.log(whatImageSrc);
+  if (!!whatImageSrc) {
+    const whereImage = document.querySelector(
+      ".custom-parent-angebote .custom-3columns-hero-section .section-row > div:nth-child(2)"
+    );
+    whereImage.style.backgroundImage = `url(${whatImageSrc})`;
+  }
+}
+if (screen.width < 768) {
+  const whatImageSrc = document.querySelector(
+    ".custom-parent-angebote .custom-3columns-hero-section .section-row> div:nth-child(2)> div:nth-child(3).frame img"
+  ).src;
+  console.log(whatImageSrc);
+  if (!!whatImageSrc) {
+    const whereImage = document.querySelector(
+      ".custom-parent-angebote .custom-3columns-hero-section .section-row > div:nth-child(2)"
+    );
+    whereImage.style.backgroundImage = `url(${whatImageSrc})`;
+  }
 }
 /*********************************************************************************************/

@@ -208,6 +208,10 @@ h5,
   h2.h1 {
     font-size: 35px;
   }
+  .gelica-40-regular {
+    font-size: 35px;
+    line-height: 43px !important;
+  }
 }
 @media (max-width: 767px) {
   h1,
@@ -219,6 +223,10 @@ h5,
   .h2-custom {
     font-size: 26px;
     line-height: 32px !important;
+  }
+  .gelica-40-regular {
+    font-size: 32px;
+    line-height: 41px !important;
   }
 }
 /*Colors*/
