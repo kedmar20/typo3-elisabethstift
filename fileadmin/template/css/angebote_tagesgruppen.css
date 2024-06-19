@@ -1,45 +1,103 @@
 /*Template: 3Columns.html*/
 /*all css setup apply also from ueberuns_main.css */
-/*always make all changes with the specific ID from this page*/
+/*for subpages from parent-page 'Angebote' crucial class-name is '.custom-parent-angebote'*/
+/*always make all changes with the specific ID from this subpage*/
 
 /*****************************************/
 /*1-Hero Section*/
 /**1-second row */
-#p7 .custom-3columns-hero-section .section-row > div:nth-child(2) {
-  background-image: url(../../../fileadmin/user_upload/images/Tagesgruppen/header-tagesgruppen-wave.png);
+.custom-parent-angebote
+  .custom-3columns-hero-section
+  .section-row
+  > div:nth-child(2) {
+  /*background-image: url(../../../fileadmin/user_upload/images/Tagesgruppen/header-tagesgruppen-wave.png);*/
   background-repeat: no-repeat;
   min-height: auto;
-  background-size: cover;
+  background-size: 100% 100%;
 }
-#p7 #c190 > div > div > div > div > h4 {
+.custom-parent-angebote
+  .custom-3columns-hero-section
+  .section-row
+  > div:nth-child(2)
+  > div:nth-child(2).frame,
+.custom-parent-angebote
+  .custom-3columns-hero-section
+  .section-row
+  > div:nth-child(2)
+  > div:nth-child(3).frame {
+  display: none !important;
+}
+.custom-parent-angebote
+  .custom-3columns-hero-section
+  .section-row
+  > div:nth-child(2)
+  > div.frame
+  > div
+  > div
+  > div
+  > div
+  > h4 {
   line-height: 35px;
   padding-right: 28%;
 }
-#p7 .custom-3columns-hero-section .section-row > div:nth-child(2)::before {
+.custom-parent-angebote
+  .custom-3columns-hero-section
+  .section-row
+  > div:nth-child(2)::before {
   background-image: none;
   min-height: auto;
 }
-#p7 #c190 {
+.custom-parent-angebote
+  .custom-3columns-hero-section
+  .section-row
+  > div:nth-child(2)
+  > div.frame {
   padding-top: 7vw;
   padding-bottom: 7vw;
 }
 @media (max-width: 991px) {
-  #p7 #c190 > div > div > div > div > h4 {
+  .custom-parent-angebote
+    .custom-3columns-hero-section
+    .section-row
+    > div:nth-child(2)
+    > div.frame
+    > div
+    > div
+    > div
+    > div
+    > h4 {
     padding-right: 12vw;
   }
 }
 @media (max-width: 767px) {
-  #p7 #c190 > div > div > div > div > h4 {
+  .custom-parent-angebote
+    .custom-3columns-hero-section
+    .section-row
+    > div:nth-child(2)
+    > div.frame
+    > div
+    > div
+    > div
+    > div
+    > h4 {
     padding-right: 7vw;
     line-height: 30px;
   }
-  #p7 #c190 {
+  .custom-parent-angebote
+    .custom-3columns-hero-section
+    .section-row
+    > div:nth-child(2)
+    > div.frame {
     padding-top: 10vw;
     padding-bottom: 10vw;
   }
 }
 @media (max-width: 450px) {
-  #p7 #c190 {
+  .custom-parent-angebote
+    .custom-3columns-hero-section
+    .section-row
+    > div:nth-child(2)
+    > div.frame {
     padding-top: 20vw;
     padding-bottom: 20vw;
   }
@@ -47,10 +105,10 @@
 
 /*****************************************/
 /*2-HauptS-middle column with main content */
-#p7 .custom-3columns-haupt-section {
+.custom-parent-angebote .custom-3columns-haupt-section {
   padding-left: 7vw !important;
 }
-#p7
+.custom-parent-angebote
   .custom-3columns-haupt-section
   .section-row
   > div:nth-child(1)
@@ -60,10 +118,10 @@
   justify-content: center;
   order: 1 !important;
 }
-#p7 .custom-3columns-haupt-section .textpic {
+.custom-parent-angebote .custom-3columns-haupt-section .textpic {
   flex-direction: column;
 }
-#p7
+.custom-parent-angebote
   .custom-3columns-haupt-section
   .section-row
   > div:nth-child(1)
@@ -71,7 +129,7 @@
   width: 85vw !important;
 }
 @media (min-width: 768px) {
-  #p7
+  .custom-parent-angebote
     .custom-3columns-haupt-section
     .section-row
     > div:nth-child(1)
@@ -80,10 +138,10 @@
   }
 }
 @media (min-width: 1350px) {
-  #p7 .custom-3columns-haupt-section .textpic {
+  .custom-parent-angebote .custom-3columns-haupt-section .textpic {
     flex-direction: row;
   }
-  #p7
+  .custom-parent-angebote
     .custom-3columns-haupt-section
     .section-row
     > div:nth-child(1)
@@ -93,7 +151,7 @@
   }
 }
 /***2-Accordion*/
-#p7
+.custom-parent-angebote
   #page-content
   > div.section.section-default.custom-3columns-haupt-section
   > div
@@ -104,7 +162,7 @@
   border: none;
 }
 
-#p7
+.custom-parent-angebote
   #page-content
   > div.section.section-default.custom-3columns-haupt-section
   > div
@@ -116,7 +174,7 @@
   margin-bottom: 0 !important;
 }
 
-#p7
+.custom-parent-angebote
   #page-content
   > div.section.section-default.custom-3columns-haupt-section
   > div
@@ -124,14 +182,14 @@
   > div.section-column.maincontent-wrap
   > div.frame-type-accordion
   button.accordion-button.collapsed::after {
-  background-image: url(../../user_upload/images/Tagesgruppen/accordion-closed.svg);
+  background-image: url(../../user_upload/images/Angebote/Tagesgruppen/accordion-closed.svg);
   background-size: contain;
   height: 40px;
   width: 40px;
   position: absolute;
   margin-left: -14%;
 }
-#p7
+.custom-parent-angebote
   #page-content
   > div.section.section-default.custom-3columns-haupt-section
   > div
@@ -139,14 +197,14 @@
   > div.section-column.maincontent-wrap
   > div.frame-type-accordion
   button.accordion-button[aria-expanded="true"]::after {
-  background-image: url(../../user_upload/images/Tagesgruppen/accordion-open.svg);
+  background-image: url(../../user_upload/images/Angebote/Tagesgruppen/accordion-open.svg);
   background-size: contain;
   height: 40px;
   width: 40px;
   position: absolute;
   margin-left: -14%;
 }
-#p7
+.custom-parent-angebote
   #page-content
   > div.section.section-default.custom-3columns-haupt-section
   > div
@@ -164,7 +222,7 @@
   font-size: 22px;
   font-family: "Catamaran";
 }
-#p7
+.custom-parent-angebote
   #page-content
   > div.section.section-default.custom-3columns-haupt-section
   > div
@@ -172,7 +230,7 @@
   > div.section-column.maincontent-wrap
   > div.frame-type-accordion
   button.accordion-button:focus,
-#p7
+.custom-parent-angebote
   #page-content
   > div.section.section-default.custom-3columns-haupt-section
   > div
@@ -193,7 +251,7 @@
   color: var(--bs-primary);
   padding-top: 7px;
 }
-#p7
+.custom-parent-angebote
   #page-content
   > div.section.section-default.custom-3columns-haupt-section
   > div
@@ -206,7 +264,7 @@
   > div:nth-child(3) {
   order: 3 !important;
 }
-#p7
+.custom-parent-angebote
   #page-content
   > div.section.section-default.custom-3columns-haupt-section
   > div
@@ -217,7 +275,7 @@
   .accordion-body {
   padding: 0 !important;
 }
-#p7
+.custom-parent-angebote
   #page-content
   > div.section.section-default.custom-3columns-haupt-section
   > div
@@ -227,7 +285,7 @@
   div.accordion-collapse {
   margin-top: 55px !important;
 }
-#p7
+.custom-parent-angebote
   #page-content
   > div.section.section-default.custom-3columns-haupt-section
   div.frame-type-accordion
@@ -237,9 +295,18 @@
   --gallery-columns: 1;
   padding-bottom: 45px;
 }
+/*2-Liste in RTE CKeditor*/
+#page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  div.frame-type-accordion
+  ul
+  > li::marker {
+  font-size: 25px !important;
+  color: var(--bs-primary) !important;
+}
 
 @media (min-width: 768px) {
-  #p7
+  .custom-parent-angebote
     #page-content
     > div.section.section-default.custom-3columns-haupt-section
     > div
@@ -251,7 +318,7 @@
     padding-top: 65px !important;
   }
 
-  #p7
+  .custom-parent-angebote
     #page-content
     > div.section.section-default.custom-3columns-haupt-section
     div.frame-type-accordion
@@ -259,7 +326,7 @@
     div.gallery-row {
     flex-direction: row !important;
   }
-  #p7
+  .custom-parent-angebote
     #page-content
     > div.section.section-default.custom-3columns-haupt-section
     div.frame-type-accordion
@@ -271,7 +338,7 @@
 }
 
 @media (min-width: 1350px) {
-  #p7
+  .custom-parent-angebote
     #page-content
     > div.section.section-default.custom-3columns-haupt-section
     > div
@@ -280,7 +347,7 @@
     > div.frame-type-accordion {
     margin-left: 22% !important;
   }
-  #p7
+  .custom-parent-angebote
     #page-content
     > div.section.section-default.custom-3columns-haupt-section
     > div
@@ -290,7 +357,7 @@
     button.accordion-button.collapsed::after {
     margin-left: -7%;
   }
-  #p7
+  .custom-parent-angebote
     #page-content
     > div.section.section-default.custom-3columns-haupt-section
     > div
@@ -300,7 +367,7 @@
     button.accordion-button[aria-expanded="true"]::after {
     margin-left: -7%;
   }
-  #p7
+  .custom-parent-angebote
     #page-content
     > div.section.section-default.custom-3columns-haupt-section
     > div
@@ -312,7 +379,7 @@
   }
 }
 /***2-Carousel*/
-#p7 #c195 {
+.custom-parent-angebote #c195 {
   margin: 0 !important;
   margin-bottom: 0px !important;
   padding-bottom: 0;

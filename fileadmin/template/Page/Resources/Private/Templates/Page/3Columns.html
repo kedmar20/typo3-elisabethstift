@@ -1,79 +1,82 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-   <f:layout name="Default" />
+<html
+  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  data-namespace-typo3-fluid="true"
+>
+  <f:layout name="Default" />
 
-   <f:section name="Main">
-      <!--<f:debug inline="true">{pageUid: '{data.uid}'}</f:debug>-->
-      <div class="section section-default custom-3columns-hero-section">
-         <div class="container">
-            <div class="section-row">
-               <div class="section-column section-column-third">
-                  <f:cObject
-                     typoscriptObjectPath="lib.dynamicContent"
-                     data="{pageUid: '{data.uid}', colPos: '3', slide: '{theme.pagelayout.{pagelayout}.colPos.3.slide}'}"
-                  />
-               </div>
-               <div class="section-column section-column-third">
-                  <f:cObject
-                     typoscriptObjectPath="lib.dynamicContent"
-                     data="{pageUid: '{data.uid}', colPos: '8', slide: '{theme.pagelayout.{pagelayout}.colPos.8.slide}'}"
-                  />
-               </div>
+  <f:section name="Main">
+    <!--<f:debug inline="true">{_all}</f:debug>-->
+    <div class="section section-default custom-3columns-hero-section">
+      <div class="container">
+        <div class="section-row">
+          <div class="section-column section-column-third">
+            <f:cObject
+              typoscriptObjectPath="lib.dynamicContent"
+              data="{pageUid: '{data.uid}', colPos: '3', slide: '{theme.pagelayout.{pagelayout}.colPos.3.slide}'}"
+            />
+          </div>
+          <div class="section-column section-column-third">
+            <f:cObject
+              typoscriptObjectPath="lib.dynamicContent"
+              data="{pageUid: '{data.uid}', colPos: '8', slide: '{theme.pagelayout.{pagelayout}.colPos.8.slide}'}"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-default custom-3columns-haupt-section">
+      <div class="container">
+        <div class="section-row">
+          <div class="section-column maincontent-wrap">
+            <f:cObject
+              typoscriptObjectPath="lib.dynamicContent"
+              data="{pageUid: '{data.uid}', colPos: '0', slide: '{theme.pagelayout.{pagelayout}.colPos.0.slide}'}"
+            />
+          </div>
+          <div class="section-column subcontent-wrap">
+            <f:cObject
+              typoscriptObjectPath="lib.dynamicContent"
+              data="{pageUid: '{data.uid}', colPos: '1', slide: '{theme.pagelayout.{pagelayout}.colPos.1.slide}'}"
+            />
+          </div>
+          <div class="section-column subcontent-wrap">
+            <div class="custom-menu-sidebar">
+              <f:cObject
+                typoscriptObjectPath="lib.dynamicContent"
+                data="{pageUid: '{data.uid}', colPos: '2', slide: '{theme.pagelayout.{pagelayout}.colPos.2.slide}'}"
+              />
             </div>
-         </div>
+          </div>
+        </div>
       </div>
+    </div>
 
-      <div class="section section-default custom-3columns-haupt-section">
-         <div class="container">
-            <div class="section-row">
-               <div class="section-column maincontent-wrap">
-                  <f:cObject
-                     typoscriptObjectPath="lib.dynamicContent"
-                     data="{pageUid: '{data.uid}', colPos: '0', slide: '{theme.pagelayout.{pagelayout}.colPos.0.slide}'}"
-                  />
-               </div>
-               <div class="section-column subcontent-wrap">
-                  <f:cObject
-                     typoscriptObjectPath="lib.dynamicContent"
-                     data="{pageUid: '{data.uid}', colPos: '1', slide: '{theme.pagelayout.{pagelayout}.colPos.1.slide}'}"
-                  />
-               </div>
-               <div class="section-column subcontent-wrap">
-                  <div class="custom-menu-sidebar">
-                     <f:cObject
-                        typoscriptObjectPath="lib.dynamicContent"
-                        data="{pageUid: '{data.uid}', colPos: '2', slide: '{theme.pagelayout.{pagelayout}.colPos.2.slide}'}"
-                     />
-                  </div>
-               </div>
-            </div>
-         </div>
+    <div class="custom-setion-penultimate">
+      <div class="custom-1column-ofthree">
+        <f:cObject
+          typoscriptObjectPath="lib.dynamicContent"
+          data="{pageUid: '{data.uid}', colPos: '21', slide: '{theme.pagelayout.{pagelayout}.colPos.21.slide}'}"
+        />
       </div>
-
-      <div class="custom-setion-penultimate">
-         <div class="custom-1column-ofthree">
-            <f:cObject
-               typoscriptObjectPath="lib.dynamicContent"
-               data="{pageUid: '{data.uid}', colPos: '21', slide: '{theme.pagelayout.{pagelayout}.colPos.21.slide}'}"
-            />
-         </div>
-         <div class="custom-2column-ofthree">
-            <f:cObject
-               typoscriptObjectPath="lib.dynamicContent"
-               data="{pageUid: '{data.uid}', colPos: '20', slide: '{theme.pagelayout.{pagelayout}.colPos.20.slide}'}"
-            />
-         </div>
-         <div class="custom-3column-ofthree">
-            <f:cObject
-               typoscriptObjectPath="lib.dynamicContent"
-               data="{pageUid: '{data.uid}', colPos: '22', slide: '{theme.pagelayout.{pagelayout}.colPos.22.slide}'}"
-            />
-         </div>
+      <div class="custom-2column-ofthree">
+        <f:cObject
+          typoscriptObjectPath="lib.dynamicContent"
+          data="{pageUid: '{data.uid}', colPos: '20', slide: '{theme.pagelayout.{pagelayout}.colPos.20.slide}'}"
+        />
       </div>
+      <div class="custom-3column-ofthree">
+        <f:cObject
+          typoscriptObjectPath="lib.dynamicContent"
+          data="{pageUid: '{data.uid}', colPos: '22', slide: '{theme.pagelayout.{pagelayout}.colPos.22.slide}'}"
+        />
+      </div>
+    </div>
 
-      <f:render partial="Custom/SectionArbeiten" arguments="{_all}" />
-      <f:render partial="Custom/Section3Columns" arguments="{_all}" />
-   </f:section>
-   <f:section name="Footer">
-      <f:render partial="Structure/FooterContent" arguments="{_all}" />
-   </f:section>
+    <f:render partial="Custom/SectionArbeiten" arguments="{_all}" />
+    <f:render partial="Custom/Section3Columns" arguments="{_all}" />
+  </f:section>
+  <f:section name="Footer">
+    <f:render partial="Structure/FooterContent" arguments="{_all}" />
+  </f:section>
 </html>
