@@ -721,18 +721,18 @@ main {
   flex-wrap: nowrap;
   justify-content: center;
   max-width: none;
-  min-width: 415px;
-  min-height: 70px;
-  padding: 20px 45px;
+  min-width: 215px;
+  min-height: 50px;
+  padding: 10px 25px;
 }
 .custom-button-1 h4 {
   margin-bottom: 0 !important;
 }
 .custom-button-1-icon {
-  height: 45px;
-  width: 45px;
+  height: 25px;
+  width: 25px;
   fill: white;
-  margin-left: 145px;
+  margin-left: 85px;
   transition: all 0.5s ease-out;
 }
 .custom-button-1-span {
@@ -749,6 +749,16 @@ a:has(> * > .custom-rte-button-1) {
 @media (min-width: 1150px) {
   #carousel-22 > div > div .carousel-image img {
     margin-left: 20vw !important;
+  }
+  .custom-button-1 {
+    min-width: 415px;
+    min-height: 70px;
+    padding: 20px 45px;
+  }
+  .custom-button-1-icon {
+    height: 45px;
+    width: 45px;
+    margin-left: 145px;
   }
 }
 @media (min-width: 1300px) {
