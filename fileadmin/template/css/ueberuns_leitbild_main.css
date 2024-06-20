@@ -3,9 +3,12 @@
 /*always make all changes with the specific ID from this page*/
 
 /*Bild nr 3 in MainSection*/
+#p29 div.section.custom-3columns-haupt-section {
+  padding-bottom: 4vw !important;
+}
 @media (min-width: 768px) {
-   #p29 #c162 .textpic-item {
-      margin-left: 25%;
-      width: 15vw !important;
-   }
+  #p29 #c162 .textpic-item {
+    margin-left: 25%;
+    width: 15vw !important;
+  }
 }

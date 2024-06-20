@@ -60,7 +60,7 @@ if (screen.width > 1150) {
 
   /*scroll event + smaller Header*/
   window.addEventListener("scroll", (e) => {
-    if (!!(window.scrollY > 5)) {
+    if (!!(window.scrollY > 150)) {
       header1.classList.remove("header-scroll-null");
       header1.classList.add("header-scroll");
       /*header1.style.paddingTop = "10px";
