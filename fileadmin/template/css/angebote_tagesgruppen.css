@@ -124,7 +124,7 @@
 .custom-parent-angebote
   .custom-3columns-haupt-section
   .section-row
-  > div:nth-child(1)
+  > div
   .textpic-item {
   width: 85vw !important;
 }
@@ -132,7 +132,7 @@
   .custom-parent-angebote
     .custom-3columns-haupt-section
     .section-row
-    > div:nth-child(1)
+    > div
     .textpic-item {
     width: calc(50vw - (40px / 2)) !important;
   }
@@ -378,10 +378,177 @@
     padding-left: 7% !important;
   }
 }
-/***2-Carousel*/
-.custom-parent-angebote #c195 {
-  margin: 0 !important;
-  margin-bottom: 0px !important;
-  padding-bottom: 0;
-  padding-top: 0px !important;
+/***2-Bild+Text+Icon, Ansprechpartner*/
+.custom-parent-angebote
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  div.frame-type-icon_group
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(1)
+  > div.icongroup-item-icon {
+  width: 400px;
+}
+.custom-parent-angebote
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  div.frame-type-icon_group
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div.icongroup-item-text
+  h2 {
+  display: none !important;
+}
+.custom-parent-angebote
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  div.frame-type-icon_group
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > div.icongroup-item-icon {
+  order: 2;
+  margin-bottom: 10px;
+  margin-left: -3vw;
+}
+.custom-parent-angebote
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  div.frame-type-icon_group
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > div.icongroup-item-icon
+  svg {
+  height: 16px !important;
+}
+.custom-parent-angebote
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  div.frame-type-icon_group
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > div.icongroup-item-text {
+  width: 12vw !important;
+}
+.custom-parent-angebote
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  div.frame-type-icon_group
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > div.icongroup-item-text
+  a {
+  text-decoration: none !important;
+}
+.custom-parent-angebote
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  div.frame-type-icon_group
+  > div
+  > div
+  > div
+  > div
+  > div {
+  align-items: center;
+}
+.custom-parent-angebote
+  #page-content
+  > div.section.section-default.custom-3columns-haupt-section
+  div.frame-type-icon_group
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2) {
+  align-items: end;
+}
+@media (max-width: 1770px) {
+  .custom-parent-angebote
+    #page-content
+    > div.section.section-default.custom-3columns-haupt-section
+    div.frame-type-icon_group
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div:nth-child(2)
+    > div.icongroup-item-text {
+    width: 15vw !important;
+  }
+}
+@media (max-width: 1349px) {
+  .custom-parent-angebote
+    #page-content
+    > div.section.section-default.custom-3columns-haupt-section
+    div.frame-type-icon_group
+    > div
+    > div
+    > div
+    > div
+    > div {
+    flex-direction: column !important;
+  }
+  .custom-parent-angebote
+    #page-content
+    > div.section.section-default.custom-3columns-haupt-section
+    div.frame-type-icon_group
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div:nth-child(2)
+    > div.icongroup-item-text {
+    width: 30vw !important;
+  }
+}
+@media (max-width: 1349px) {
+  .custom-parent-angebote
+    #page-content
+    > div.section.section-default.custom-3columns-haupt-section
+    div.frame-type-icon_group
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div:nth-child(2)
+    > div.icongroup-item-text {
+    width: 50vw !important;
+  }
+  .custom-parent-angebote
+    #page-content
+    > div.section.section-default.custom-3columns-haupt-section
+    div.frame-type-icon_group {
+    padding-bottom: 150px;
+  }
+}
+/****/
+/*3-section Arbeiten*/
+.custom-parent-angebote #page-content .custom-arbeiten-section {
+  display: none !important;
 }

@@ -164,7 +164,8 @@
   padding-bottom: 0;
   padding-top: 150px;
 }
-.custom-3columns-haupt-section
+body:not(:has(.custom-parent-angebote))
+  .custom-3columns-haupt-section
   .section-row
   > div:nth-child(1)
   .textpic.textpic-left
@@ -432,7 +433,7 @@ span.texticon-inner-icon.custom-new-span-icon-copy svg {
   z-index: -1;
   position: relative;
   margin-top: -30px;
-  margin-bottom: -10vw !important;
+  margin-bottom: -2vw !important;
 }
 #p6 .custom-1column-ofthree,
 #p6 .custom-3column-ofthree {
