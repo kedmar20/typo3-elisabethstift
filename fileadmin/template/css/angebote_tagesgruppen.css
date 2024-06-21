@@ -169,7 +169,6 @@
   > div
   > div.section-column.maincontent-wrap
   > div.frame-type-accordion {
-  margin-left: auto !important;
   width: 85vw !important;
   margin-bottom: 0 !important;
 }
@@ -547,8 +546,101 @@
     padding-bottom: 150px;
   }
 }
-/****/
+/*******************************************************/
 /*3-section Arbeiten*/
 .custom-parent-angebote #page-content .custom-arbeiten-section {
   display: none !important;
+}
+
+/*******************************************************/
+/*4-section Kontakt*/
+.custom-parent-angebote .custom-setion-kontakt {
+  position: relative;
+  z-index: 2;
+  background-image: url(../../../fileadmin/user_upload/images/Angebote/Tagesgruppen/tagesgruppen-kontakt-section.png);
+  background-repeat: no-repeat;
+  min-height: auto;
+  background-size: 100% 100%;
+  padding-top: 10vw !important;
+  padding-bottom: 15vw !important;
+  padding-left: 7vw;
+  padding-right: 37vw;
+  margin-bottom: -50px;
+}
+.custom-parent-angebote .custom-setion-kontakt a {
+  text-decoration: none !important;
+}
+.custom-parent-angebote
+  .custom-setion-kontakt
+  .custom-1column-kontakt
+  .frame-container.frame-container-default {
+  margin-bottom: 45px;
+}
+.custom-parent-angebote
+  .custom-setion-kontakt
+  .custom-1column-kontakt
+  .frame-container.frame-container-default,
+.custom-parent-angebote
+  .custom-setion-kontakt
+  .custom-3columns-kontakt
+  .frame-container.frame-container-default {
+  max-width: none !important;
+  padding: 0 !important;
+}
+.custom-parent-angebote
+  .custom-setion-kontakt
+  .texticon-icon
+  .texticon-inner-icon
+  svg {
+  height: 24px;
+}
+.custom-parent-angebote .custom-setion-kontakt .custom-1column-kontakt hr {
+  opacity: 1 !important;
+  color: white !important;
+}
+.custom-parent-angebote .custom-setion-kontakt .custom-3columns-kontakt {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+}
+.custom-parent-angebote .custom-setion-kontakt .custom-3columns-kontakt > div. {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.custom-parent-angebote .custom-setion-kontakt .frame-type-texticon,
+.custom-parent-angebote .custom-setion-kontakt .frame-type-text {
+  padding: 0 !important;
+  margin: 0 !important;
+  align-items: center;
+  justify-content: start;
+  display: flex;
+  min-height: 45px;
+  width: max-content;
+}
+.custom-parent-angebote .custom-setion-kontakt .custom-kontakt-adresse,
+.custom-parent-angebote
+  .custom-setion-kontakt
+  .custom-kontakt-kommunikationsauswahl {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 45px;
+}
+@media (max-width: 1149px) {
+  .custom-parent-angebote .custom-setion-kontakt {
+    padding-right: 7vw !important;
+    padding-top: 30vw !important;
+    padding-bottom: 25vw !important;
+    background-size: auto 100%;
+    z-index: 8 !important;
+    margin-top: -100px !important;
+  }
+  .custom-parent-angebote .custom-setion-kontakt .frame-type-texticon,
+  .custom-parent-angebote .custom-setion-kontakt .frame-type-text {
+    width: auto !important;
+    word-break: break-all !important;
+  }
+  .custom-parent-angebote .custom-setion-kontakt .custom-3columns-kontakt {
+    grid-template: auto / 1fr;
+  }
 }
