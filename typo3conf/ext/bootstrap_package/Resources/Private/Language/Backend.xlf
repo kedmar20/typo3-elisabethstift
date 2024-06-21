@@ -16,7 +16,7 @@
                 <source>Thumbnail</source>
             </trans-unit>
 
-             <trans-unit id="backend_layout.header_1">
+            <trans-unit id="backend_layout.header_1">
                 <source>Header-1</source>
             </trans-unit>
             <trans-unit id="backend_layout.default">
@@ -93,6 +93,12 @@
             </trans-unit>
             <trans-unit id="backend_layout.column.custom3">
                 <source>Custom: Right</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.hilfsangebote_section">
+                <source>Section: Hilfsangebote</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.kontakt_section">
+                <source>Section: Kontakt</source>
             </trans-unit>
 
             <trans-unit id="backend_layout.column.main2">
