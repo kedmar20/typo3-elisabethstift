@@ -162,12 +162,13 @@ const linkRowAll = document.querySelectorAll(
 
 if (!!linkRowAll) {
   linkRowAll.forEach((rowLink) => {
-    const whereAppend = rowLink.querySelector(".texticon-content>p>a");
+    const whereAppend = rowLink.querySelector(".texticon-content>* a");
     const whatAppendIcon = rowLink.querySelector(
       ".texticon span.texticon-inner-icon"
     );
     const newElementToCopyIcon = document.createElement("span");
-
+    console.log("hier you are->> linkRowAll: ", linkRowAll);
+    console.log("hier you are->> whereAppend: ", whereAppend);
     newElementToCopyIcon.innerHTML = whatAppendIcon.innerHTML;
     newElementToCopyIcon.classList = whatAppendIcon.classList;
     newElementToCopyIcon.classList.add("custom-new-span-icon-copy");
@@ -230,11 +231,9 @@ const parentElemOfButton = document.querySelectorAll(
   "*:has(>.custom-rte-button-1)"
 );
 if (!!parentElemOfButton) {
-  console.log(parentElemOfButton);
   parentElemOfButton.forEach((parentElement) => {
     let textColor = parentElement.style.color;
     let backgroundColor = parentElement.style.backgroundColor;
-    console.log(textColor, backgroundColor);
     const elementToChangeHtml = parentElement.querySelector(
       ".custom-rte-button-1"
     );
@@ -257,7 +256,6 @@ if (screen.width >= 768) {
   const whatImageSrc = document.querySelector(
     ".custom-parent-angebote .custom-3columns-hero-section .section-row> div:nth-child(2)> div:nth-child(2).frame img"
   ).src;
-  console.log(whatImageSrc);
   if (!!whatImageSrc) {
     const whereImage = document.querySelector(
       ".custom-parent-angebote .custom-3columns-hero-section .section-row > div:nth-child(2)"
