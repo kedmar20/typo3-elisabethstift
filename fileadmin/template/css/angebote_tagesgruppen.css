@@ -546,6 +546,70 @@
     padding-bottom: 150px;
   }
 }
+@media (max-width: 500px) {
+  .custom-parent-angebote
+    #page-content
+    > div.section.section-default.custom-3columns-haupt-section
+    div.frame-type-icon_group
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div:nth-child(1)
+    > div.icongroup-item-icon {
+    width: 80vw !important;
+  }
+}
+/*2-HauptS-right column with sticky menu */
+@media (max-width: 950px) {
+  .custom-parent-angebote
+    .custom-3columns-haupt-section
+    .section-row
+    > div:nth-child(3)
+    .custom-menu-sidebar {
+    top: 10vh !important;
+  }
+}
+@media (max-width: 767px) {
+  .custom-parent-angebote
+    .custom-3columns-haupt-section
+    .section-row
+    > div:nth-child(3) {
+    display: flex !important;
+    position: relative !important;
+    order: 1 !important;
+    margin-left: -10%;
+    width: 120% !important;
+    background: var(--bs-default);
+    min-height: unset !important;
+  }
+  .custom-parent-angebote
+    .custom-3columns-haupt-section
+    .section-row
+    > div:nth-child(1) {
+    order: 2 !important;
+  }
+  .custom-parent-angebote .custom-3columns-haupt-section .section-row {
+    flex-direction: column !important;
+  }
+  .custom-parent-angebote
+    .custom-3columns-haupt-section
+    .section-row
+    > div:nth-child(3)::before {
+    background-image: unset !important;
+  }
+  .custom-parent-angebote
+    .custom-3columns-haupt-section
+    .section-row
+    > div:nth-child(3)
+    .custom-menu-sidebar {
+    position: static !important;
+    min-width: auto !important;
+    width: inherit !important;
+    padding: 8vh 1vw 5vh 16vw !important;
+  }
+}
 /*******************************************************/
 /*3-section Arbeiten*/
 .custom-parent-angebote #page-content .custom-arbeiten-section {

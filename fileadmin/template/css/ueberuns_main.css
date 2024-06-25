@@ -341,7 +341,7 @@ body:not(:has(.custom-parent-angebote))
   .custom-menu-sidebar
   > div
   .texticon-content
-  > p
+  > *
   > a {
   display: flex;
   flex-wrap: nowrap;
@@ -356,7 +356,7 @@ span.texticon-inner-icon.custom-new-span-icon-copy svg {
   > div
   .texticon:hover
   .texticon-content
-  > p
+  > *
   > a
   span.texticon-inner-icon.custom-new-span-icon-copy
   svg {
