@@ -1,0 +1,10 @@
+/*Template: 3Columns.html*/
+/*all css setup apply also from ueberuns_main.css and from angebote_tagesgruppen.css*/
+/*for subpages from parent-page 'Angebote' crucial class-name is '.custom-parent-angebote'*/
+/*always make all changes with the specific ID from this subpage*/
+
+/*******************************************************/
+/*4-section Kontakt*/
+#p34 .custom-parent-angebote .custom-setion-kontakt {
+  background-image: url(../../../fileadmin/user_upload/images/Angebote/Familienanaloge_Hilfen/kontakt-familienaanaloge_hilfen.svg);
+}
