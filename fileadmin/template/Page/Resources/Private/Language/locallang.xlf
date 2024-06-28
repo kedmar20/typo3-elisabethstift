@@ -3,8 +3,7 @@
     <file source-language="en" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z"
           product-name="bootstrap_package">
         <header/>
-        <body>
-
+        <body>          
             <trans-unit id="skiptomaincontent">
                 <source>Skip to main content</source>
             </trans-unit>
