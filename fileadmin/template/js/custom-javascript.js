@@ -1,105 +1,83 @@
 if (screen.width > 1150) {
-  console.log("hello JavaScript");
-  /*Footer-Menu*/
-  const fotterMenuUl = document.querySelector(
-    "#c56 > div > div > div > div > ul"
-  );
-  fotterMenuUl.classList.add("catamaran-22-medium");
+   console.log("hello JavaScript");
+   /*Footer-Menu*/
+   const fotterMenuUl = document.querySelector("#c56 > div > div > div > div > ul");
+   fotterMenuUl.classList.add("catamaran-22-medium");
 
-  /*Dropdownmenu on hover*/
-  const hauptmenuItemAll = [
-    ...document.querySelectorAll("#mainnavigation > ul > li"),
-  ];
-  const header1 = document.querySelector("header");
-  const dropdownContainer = document.querySelectorAll(".dropdown-menu");
+   /*Dropdownmenu on hover*/
+   const hauptmenuItemAll = [...document.querySelectorAll("#mainnavigation > ul > li")];
+   const header1 = document.querySelector("header");
+   const dropdownContainer = document.querySelectorAll(".dropdown-menu");
 
-  hauptmenuItemAll.forEach((elemHauptMenuItem) => {
-    const megaMenuContainer = elemHauptMenuItem.querySelector(
-      ".dropdown-menu.dropdown-menu-simple"
-    );
+   hauptmenuItemAll.forEach((elemHauptMenuItem) => {
+      const megaMenuContainer = elemHauptMenuItem.querySelector(".dropdown-menu.dropdown-menu-simple");
 
-    elemHauptMenuItem.addEventListener("mouseover", (event) => {
-      /*setTimeout(function() {*/
-      if (!!megaMenuContainer) {
-        megaMenuContainer.classList.add("show");
-        megaMenuContainer.setAttribute("data-bs-popper", "static");
+      elemHauptMenuItem.addEventListener("mouseover", (event) => {
+         /*setTimeout(function() {*/
+         if (!!megaMenuContainer) {
+            megaMenuContainer.classList.add("show");
+            megaMenuContainer.setAttribute("data-bs-popper", "static");
 
-        const arrayWithoutElemhauptmenuitem = hauptmenuItemAll.filter(
-          (item) => {
-            return item !== elemHauptMenuItem;
-          }
-        );
-        arrayWithoutElemhauptmenuitem.forEach((e) => {
-          const megaMenuContainerNotActiv = e.querySelector(
-            ".dropdown-menu.dropdown-menu-simple"
-          );
-          if (!!megaMenuContainerNotActiv) {
-            megaMenuContainerNotActiv.classList.remove("show");
-            megaMenuContainerNotActiv.removeAttribute(
-              "data-bs-popper",
-              "static"
-            );
-          }
-        });
-      }
-      /*}, 200);                       */
-    });
+            const arrayWithoutElemhauptmenuitem = hauptmenuItemAll.filter((item) => {
+               return item !== elemHauptMenuItem;
+            });
+            arrayWithoutElemhauptmenuitem.forEach((e) => {
+               const megaMenuContainerNotActiv = e.querySelector(".dropdown-menu.dropdown-menu-simple");
+               if (!!megaMenuContainerNotActiv) {
+                  megaMenuContainerNotActiv.classList.remove("show");
+                  megaMenuContainerNotActiv.removeAttribute("data-bs-popper", "static");
+               }
+            });
+         }
+         /*}, 200);                       */
+      });
 
-    header1.addEventListener("mouseleave", (e) => {
-      /*setTimeout(function() {*/
-      if (
-        !!megaMenuContainer &&
-        !elemHauptMenuItem.classList.contains("active")
-      ) {
-        megaMenuContainer.classList.remove("show");
-        megaMenuContainer.removeAttribute("data-bs-popper", "static");
-      }
-      /*}, 200);*/
-    });
-  });
+      header1.addEventListener("mouseleave", (e) => {
+         /*setTimeout(function() {*/
+         if (!!megaMenuContainer && !elemHauptMenuItem.classList.contains("active")) {
+            megaMenuContainer.classList.remove("show");
+            megaMenuContainer.removeAttribute("data-bs-popper", "static");
+         }
+         /*}, 200);*/
+      });
+   });
 
-  /*scroll event + smaller Header*/
-  window.addEventListener("scroll", (e) => {
-    if (!!(window.scrollY > 150)) {
-      header1.classList.remove("header-scroll-null");
-      header1.classList.add("header-scroll");
-      /*header1.style.paddingTop = "10px";
+   /*scroll event + smaller Header*/
+   window.addEventListener("scroll", (e) => {
+      if (!!(window.scrollY > 150)) {
+         header1.classList.remove("header-scroll-null");
+         header1.classList.add("header-scroll");
+         /*header1.style.paddingTop = "10px";
       header1.style.paddingBottom = "10px";
       header1.style.height = "8vw";
       header1.style.maxHeight = "8vw";*/
-      !!dropdownContainer
-        ? dropdownContainer.forEach((item) => {
-            /* item.style.top = "8vw";*/
-            item.classList.add("dropdown-scroll");
-          })
-        : "";
-    } else {
-      header1.classList.remove("header-scroll");
-      header1.classList.add("header-scroll-null");
-      !!dropdownContainer
-        ? dropdownContainer.forEach((item) => {
-            item.classList.remove("dropdown-scroll");
-          })
-        : "";
-    }
-  });
+         !!dropdownContainer
+            ? dropdownContainer.forEach((item) => {
+                 /* item.style.top = "8vw";*/
+                 item.classList.add("dropdown-scroll");
+              })
+            : "";
+      } else {
+         header1.classList.remove("header-scroll");
+         header1.classList.add("header-scroll-null");
+         !!dropdownContainer
+            ? dropdownContainer.forEach((item) => {
+                 item.classList.remove("dropdown-scroll");
+              })
+            : "";
+      }
+   });
 }
 
 /*********************************************************************************************/
 /*homepage>section-3columns, clip-Path border*/
-const parentOf3columnsWrapper = document.querySelector(
-  ".custom-parent-of-sectionrow-3columnssection"
-);
+const parentOf3columnsWrapper = document.querySelector(".custom-parent-of-sectionrow-3columnssection");
 
 if (screen.width > 1339) {
-  if (
-    !(window.location.pathname === "/") &&
-    !(window.location.pathname === "") &&
-    !(window.location.pathname === "/elisabethstift/app/")
-  ) {
-    console.log("yes");
-    parentOf3columnsWrapper
-      ? (parentOf3columnsWrapper.innerHTML += `
+   if (!(window.location.pathname === "/") && !(window.location.pathname === "") && !(window.location.pathname === "/elisabethstift/app/")) {
+      console.log("yes");
+      parentOf3columnsWrapper
+         ? (parentOf3columnsWrapper.innerHTML += `
             <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" viewBox="0 0 1920 361.156">
             <defs>
             <clipPath id="wave">
@@ -108,15 +86,15 @@ if (screen.width > 1339) {
             </defs>
             </svg>
             `)
-      : "";
+         : "";
 
-    setTimeout(() => {
-      const sectionRow = parentOf3columnsWrapper.querySelector(".section-row");
-      sectionRow.style.clipPath = "url(#wave)";
-    }, 100);
-  } else {
-    console.log("no");
-  }
+      setTimeout(() => {
+         const sectionRow = parentOf3columnsWrapper.querySelector(".section-row");
+         sectionRow.style.clipPath = "url(#wave)";
+      }, 100);
+   } else {
+      console.log("no");
+   }
 }
 
 /*********************************************************************************************/
@@ -124,9 +102,9 @@ if (screen.width > 1339) {
 const footerLinks = [...document.querySelectorAll("footer li a, footer h5 a")];
 const docsUrl = document.URL;
 footerLinks.forEach((elLink) => {
-  if (!!(elLink.href.toString() === docsUrl)) {
-    elLink.classList.add("custom-active");
-  }
+   if (!!(elLink.href.toString() === docsUrl)) {
+      elLink.classList.add("custom-active");
+   }
 });
 
 /*********************************************************************************************/
@@ -135,110 +113,79 @@ const url3columnsSpalteOrange = document.querySelector("#c112");
 const url3columnsSpalteBlue = document.querySelector("#c113");
 const url3columnsSpalteViolet = document.querySelector("#c114");
 
-const firstColumnOrange = document.querySelector(
-  "#page-content > div.section.section-default.custom-3columns-section > div > div > a:nth-child(1)"
-);
-firstColumnOrange
-  ? (firstColumnOrange.href = url3columnsSpalteOrange.innerText)
-  : "";
+const firstColumnOrange = document.querySelector("#page-content > div.section.section-default.custom-3columns-section > div > div > a:nth-child(1)");
+firstColumnOrange ? (firstColumnOrange.href = url3columnsSpalteOrange.innerText) : "";
 
-const firstColumnBlue = document.querySelector(
-  "#page-content > div.section.section-default.custom-3columns-section > div > div > a:nth-child(2)"
-);
+const firstColumnBlue = document.querySelector("#page-content > div.section.section-default.custom-3columns-section > div > div > a:nth-child(2)");
 firstColumnBlue ? (firstColumnBlue.href = url3columnsSpalteBlue.innerText) : "";
 
-const firstColumnViolet = document.querySelector(
-  "#page-content > div.section.section-default.custom-3columns-section > div > div > a:nth-child(3)"
-);
-firstColumnViolet
-  ? (firstColumnViolet.href = url3columnsSpalteViolet.innerText)
-  : "";
+const firstColumnViolet = document.querySelector("#page-content > div.section.section-default.custom-3columns-section > div > div > a:nth-child(3)");
+firstColumnViolet ? (firstColumnViolet.href = url3columnsSpalteViolet.innerText) : "";
 
 /*********************************************************************************************/
 /*Template '3columns' - SideBarMenu - copy icon */
-const linkRowAll = document.querySelectorAll(
-  ".custom-3columns-haupt-section .custom-menu-sidebar>div"
-);
+const linkRowAll = document.querySelectorAll(".custom-3columns-haupt-section .custom-menu-sidebar>div");
 
 if (!!linkRowAll) {
-  linkRowAll.forEach((rowLink) => {
-    const whereAppend = rowLink.querySelector(".texticon-content>* a");
-    const whatAppendIcon = rowLink.querySelector(
-      ".texticon span.texticon-inner-icon"
-    );
-    const newElementToCopyIcon = document.createElement("span");
-    console.log("hier you are->> linkRowAll: ", linkRowAll);
-    console.log("hier you are->> whereAppend: ", whereAppend);
-    newElementToCopyIcon.innerHTML = whatAppendIcon.innerHTML;
-    newElementToCopyIcon.classList = whatAppendIcon.classList;
-    newElementToCopyIcon.classList.add("custom-new-span-icon-copy");
-    whereAppend ? whereAppend.appendChild(newElementToCopyIcon) : "";
-  });
+   linkRowAll.forEach((rowLink) => {
+      const whereAppend = rowLink.querySelector(".texticon-content>* a");
+      const whatAppendIcon = rowLink.querySelector(".texticon span.texticon-inner-icon");
+      const newElementToCopyIcon = document.createElement("span");
+      console.log("hier you are->> linkRowAll: ", linkRowAll);
+      console.log("hier you are->> whereAppend: ", whereAppend);
+      newElementToCopyIcon.innerHTML = whatAppendIcon.innerHTML;
+      newElementToCopyIcon.classList = whatAppendIcon.classList;
+      newElementToCopyIcon.classList.add("custom-new-span-icon-copy");
+      whereAppend ? whereAppend.appendChild(newElementToCopyIcon) : "";
+   });
 }
 
 /*********************************************************************************************/
 /**bzgl. Header Mobil, Elm. Mit Text:"startseite"*/
-if (
-  !!(window.location.pathname === "/") ||
-  !!(window.location.pathname === "") ||
-  !!(window.location.pathname === "/elisabethstift/app/")
-) {
-  const ulWhereToAppend = document.querySelector(
-    "#page-header #mainnavigation > ul"
-  );
-  const beforeWhatToAppend = document.querySelector(
-    "#mainnavigation > ul > li:nth-child(1)"
-  );
-  if (!!ulWhereToAppend && screen.width < 1150) {
-    const newLinkElement = document.createElement("a");
-    newLinkElement.setAttribute("href", "/");
-    newLinkElement.textContent = "Startseite";
-    newLinkElement.classList.add("custom-new-link-elm");
-    ulWhereToAppend.insertBefore(newLinkElement, beforeWhatToAppend);
-  }
+if (!!(window.location.pathname === "/") || !!(window.location.pathname === "") || !!(window.location.pathname === "/elisabethstift/app/")) {
+   const ulWhereToAppend = document.querySelector("#page-header #mainnavigation > ul");
+   const beforeWhatToAppend = document.querySelector("#mainnavigation > ul > li:nth-child(1)");
+   if (!!ulWhereToAppend && screen.width < 1150) {
+      const newLinkElement = document.createElement("a");
+      newLinkElement.setAttribute("href", "/");
+      newLinkElement.textContent = "Startseite";
+      newLinkElement.classList.add("custom-new-link-elm");
+      ulWhereToAppend.insertBefore(newLinkElement, beforeWhatToAppend);
+   }
 }
 /*********************************************************************************************/
 /*Header - Link to 'Lupe' - open Subpage 'Suchenergebnisse'*/
-const dieLupeButton = document.querySelector(
-  "#mainnavigation > nav > div > button"
-);
+const dieLupeButton = document.querySelector("#mainnavigation > nav > div > button");
 dieLupeButton
-  ? dieLupeButton.addEventListener("click", (el) => {
-      document.location.href =
-        "https://dev-typografix.de/elisabethstift/app/suchergebnis";
-    })
-  : "";
+   ? dieLupeButton.addEventListener("click", (el) => {
+        document.location.href = "https://dev-typografix.de/elisabethstift/app/suchergebnis";
+     })
+   : "";
 
 /*********************************************************************************************/
 /*Accordieon - Angebote - Title under the Image*/
 const rowsOfimagesByAccordions = document.querySelectorAll(
-  "#p7 #page-content > div.section.section-default.custom-3columns-haupt-section div.frame-type-accordion div.accordion-content-item.accordion-content-media div.gallery-row"
+   "#p7 #page-content > div.section.section-default.custom-3columns-haupt-section div.frame-type-accordion div.accordion-content-item.accordion-content-media div.gallery-row"
 );
 rowsOfimagesByAccordions.forEach((row) => {
-  const imagesByThisAccordion = row.querySelectorAll("div.gallery-item img");
-  imagesByThisAccordion.forEach((image) => {
-    const newPElementWithImageTitle = document.createElement("p");
-    newPElementWithImageTitle.textContent = image.title.toString();
-    newPElementWithImageTitle.classList.add(
-      "custom-new-undertitle-accordion-image"
-    );
-    image.after(newPElementWithImageTitle);
-  });
+   const imagesByThisAccordion = row.querySelectorAll("div.gallery-item img");
+   imagesByThisAccordion.forEach((image) => {
+      const newPElementWithImageTitle = document.createElement("p");
+      newPElementWithImageTitle.textContent = image.title.toString();
+      newPElementWithImageTitle.classList.add("custom-new-undertitle-accordion-image");
+      image.after(newPElementWithImageTitle);
+   });
 });
 /*********************************************************************************************/
 /*Button-von CKEditor-Automatisierung - subpages of Angebote*/
-const parentElemOfButton = document.querySelectorAll(
-  "*:has(>.custom-rte-button-1)"
-);
+const parentElemOfButton = document.querySelectorAll("*:has(>.custom-rte-button-1)");
 if (!!parentElemOfButton) {
-  parentElemOfButton.forEach((parentElement) => {
-    let textColor = parentElement.style.color;
-    let backgroundColor = parentElement.style.backgroundColor;
-    const elementToChangeHtml = parentElement.querySelector(
-      ".custom-rte-button-1"
-    );
+   parentElemOfButton.forEach((parentElement) => {
+      let textColor = parentElement.style.color;
+      let backgroundColor = parentElement.style.backgroundColor;
+      const elementToChangeHtml = parentElement.querySelector(".custom-rte-button-1");
 
-    elementToChangeHtml.innerHTML = `
+      elementToChangeHtml.innerHTML = `
   <a href="" class="custom-a-button">
    <button class="custom-button-1" style="background-color:${backgroundColor};">
       <h4 class="catamaran-25-semibold"><span class="custom-button-1-span" style="color:${textColor};">${elementToChangeHtml.innerText}</span></h4>
@@ -248,31 +195,33 @@ if (!!parentElemOfButton) {
    </button>
    </a>
   `;
-  });
+   });
 }
 /*********************************************************************************************/
 /*Background-HeroImage2-Subpages of Angebote */
 if (screen.width >= 768) {
-  const whatImageSrc = document.querySelector(
-    ".custom-parent-angebote .custom-3columns-hero-section .section-row> div:nth-child(2)> div:nth-child(2).frame img"
-  ).src;
-  if (!!whatImageSrc) {
-    const whereImage = document.querySelector(
-      ".custom-parent-angebote .custom-3columns-hero-section .section-row > div:nth-child(2)"
-    );
-    whereImage.style.backgroundImage = `url(${whatImageSrc})`;
-  }
+   const whatImage = document.querySelector(
+      ".custom-parent-angebote .custom-3columns-hero-section .section-row> div:nth-child(2)> div:nth-child(2).frame img"
+   );
+   if (!!whatImage) {
+      const whatImageSrc = whatImage.src;
+      const whereImage = document.querySelector(".custom-parent-angebote .custom-3columns-hero-section .section-row > div:nth-child(2)");
+      whereImage.style.backgroundImage = `url(${whatImageSrc})`;
+   }
 }
 if (screen.width < 768) {
-  const whatImageSrc = document.querySelector(
-    ".custom-parent-angebote .custom-3columns-hero-section .section-row> div:nth-child(2)> div:nth-child(3).frame img"
-  ).src;
-  console.log(whatImageSrc);
-  if (!!whatImageSrc) {
-    const whereImage = document.querySelector(
-      ".custom-parent-angebote .custom-3columns-hero-section .section-row > div:nth-child(2)"
-    );
-    whereImage.style.backgroundImage = `url(${whatImageSrc})`;
-  }
+   const whatImage = document.querySelector(
+      ".custom-parent-angebote .custom-3columns-hero-section .section-row> div:nth-child(2)> div:nth-child(3).frame img"
+   );
+   console.log(whatImage);
+   if (!!whatImage) {
+      const whatImageSrc = whatImage.src;
+      const whereImage = document.querySelector(".custom-parent-angebote .custom-3columns-hero-section .section-row > div:nth-child(2)");
+      whereImage.style.backgroundImage = `url(${whatImageSrc})`;
+   }
 }
+/*********************************************************************************************/
+/*Hauptmenu - Unterseiten 'Angebote', ? - Verlinkung ausblenden*/
+const linkInMenuAngebote = document.querySelector("#mainnavigation .navbar-nav #nav-item-3");
+linkInMenuAngebote ? linkInMenuAngebote.setAttribute("href", "#") : "";
 /*********************************************************************************************/
