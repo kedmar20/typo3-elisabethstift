@@ -39,8 +39,8 @@ Alle Suchbegriffe werden in Kleinschreibung umgewandelt.
         <target state="final">Suchformular</target>
       </trans-unit>
       <trans-unit id="form.searchFor" resname="form.searchFor" approved="yes">
-        <source>Search for</source>
-        <target state="final">Suchen nach</target>
+        <source>Search</source>
+        <target state="final">Gesucht nach</target>
       </trans-unit>
       <trans-unit id="form.extResume" resname="form.extResume" approved="yes">
         <source>Extended resume</source>
@@ -304,7 +304,7 @@ Alle Suchbegriffe werden in Kleinschreibung umgewandelt.
       </trans-unit>
       <trans-unit id="searchFor" resname="searchFor" approved="yes">
         <source>Search for</source>
-        <target state="final">Suchen nach</target>
+        <target state="final">Gesucht nach</target>
       </trans-unit>
       <trans-unit id="searchFor.or" resname="searchFor.or" approved="yes">
         <source>or</source>
@@ -332,7 +332,8 @@ Alle Suchbegriffe werden in Kleinschreibung umgewandelt.
       </trans-unit>
       <trans-unit id="displayResults" resname="displayResults" approved="yes">
         <source><![CDATA[Displaying results <strong>%1$s to %2$s</strong> out of <strong>%3$s</strong>]]></source>
-        <target state="final"><![CDATA[Anzeige der Ergebnisse <strong>%1$s bis %2$s</strong> von insgesamt <strong>%3$s</strong>]]></target>
+        <!-- <target state="final"><![CDATA[Anzeige der Ergebnisse <strong>%1$s bis %2$s</strong> von insgesamt <strong>%3$s</strong>]]></target>-->
+        <target state="final"><![CDATA[Es wurden <strong>%3$s Ergebnisse</strong> gefunden.]]></target>
       </trans-unit>
       <trans-unit id="administration.menu.general" resname="administration.menu.general" approved="yes">
         <source>General statistics</source>
