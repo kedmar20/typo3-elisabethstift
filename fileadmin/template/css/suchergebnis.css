@@ -1,0 +1,67 @@
+/*Template: 3Columns.html*/
+/*all css setup apply also from ueberuns_main.css */
+/*always make all changes with the specific ID from this subpage*/
+
+/*****************************************/
+#p12 .custom-arbeiten-section,
+#p12 .custom-3columns-haupt-section .section-row > div:nth-child(3) {
+  display: none !important;
+}
+
+#p12 .custom-3columns-hero-section .section-row > div:nth-child(2) {
+  display: none !important;
+}
+
+#p12 .custom-3columns-haupt-section {
+  background-color: var(--bs-default);
+  padding-right: 17vw !important;
+}
+@media (max-width: 767px) {
+  #p12 .custom-3columns-haupt-section {
+    padding-right: 7vw !important;
+  }
+}
+
+#p12 .mt-3,
+#p12 .mt-3 p,
+#p12 .mt-3 ul,
+#p12 .mt-3 h4,
+#p12 .mt-3 a,
+#p12 .form-control {
+  color: var(--bs-primary) !important;
+}
+
+#p12 #tx-indexedsearch-searchbox-sword {
+  border-radius: 50px 0 0 50px;
+  border: 1px var(--bs-primary) solid;
+  padding: 10px 3%;
+}
+
+#p12 #tx-indexedsearch-searchbox-button-submit {
+  border-radius: 0 50px 50px 0;
+  padding: 0 5%;
+  order: 3 !important;
+}
+
+#p12 .input-group {
+  min-width: 60dvw !important;
+}
+
+#p12 .frame-container-default {
+  max-width: none !important;
+}
+
+#p12 .mt-3 {
+  margin-top: 55px !important;
+}
+
+#p12 .mt-3 > p:nth-child(2) {
+  margin-bottom: 35px !important;
+}
+#p12 .mt-3 > article {
+  margin-bottom: 25px !important;
+}
+
+#p12 #c2 > div > div > div > div > div > article > div > h4 > a {
+  text-decoration: none !important;
+}
