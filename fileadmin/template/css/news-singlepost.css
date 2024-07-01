@@ -1,0 +1,26 @@
+/*Template: 3Columns.html*/
+/*all css setup apply also from ueberuns_main.css */
+/*always make all changes with the specific ID from this subpage*/
+
+/*****************************************/
+#p27 .custom-arbeiten-section,
+#p27 .custom-3columns-haupt-section .section-row > div:nth-child(3) {
+  display: none !important;
+}
+#p27 .custom-3columns-hero-section .section-row > div:nth-child(2) {
+  display: none !important;
+}
+
+#p27 .custom-3columns-haupt-section {
+  background-color: var(--bs-default);
+  padding-right: 17vw !important;
+}
+@media (max-width: 767px) {
+  #p27 .custom-3columns-haupt-section {
+    padding-right: 7vw !important;
+  }
+}
+
+#p27 .custom-3columns-haupt-section .news-single .col-md-8 > .lead {
+  display: none !important;
+}
